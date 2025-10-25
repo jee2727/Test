@@ -600,8 +600,8 @@ class HockeyStatsCompiler:
                 continue
 
             boxscore = game['boxscore']
-            home_score = game.get('home_score', 0)
-            away_score = game.get('away_score', 0)
+            home_score = game.get('home_score') or 0
+            away_score = game.get('away_score') or 0
 
             teams = boxscore.get('teams', [])
             if len(teams) < 2:
