@@ -2383,5 +2383,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618069.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618069.pdf",
+  "starting_goalies": {
+    "home_goalie": "EDWARD LACHANCE",
+    "away_goalie": "VICTOR DESROCHERS"
+  }
 }
