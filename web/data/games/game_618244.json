@@ -2424,5 +2424,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618244.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618244.pdf",
+  "starting_goalies": {
+    "home_goalie": "BRENDAN BOILY",
+    "away_goalie": "SAMUEL PAIEMENT"
+  }
 }

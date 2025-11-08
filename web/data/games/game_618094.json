@@ -2447,5 +2447,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618094.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618094.pdf",
+  "starting_goalies": {
+    "home_goalie": "GABRIEL HOULE",
+    "away_goalie": "WILLIAM LACROIX"
+  }
 }

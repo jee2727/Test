@@ -2342,5 +2342,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618222.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618222.pdf",
+  "starting_goalies": {
+    "home_goalie": "ALEXIS BOISVERT",
+    "away_goalie": "OLIVIER PELLETIER"
+  }
 }

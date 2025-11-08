@@ -2720,5 +2720,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618213.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618213.pdf",
+  "starting_goalies": {
+    "home_goalie": "INAKI ECHEVARRIA",
+    "away_goalie": "PIER-OLIVIER FOURNIER"
+  }
 }

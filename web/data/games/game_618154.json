@@ -2567,5 +2567,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618154.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618154.pdf",
+  "starting_goalies": {
+    "home_goalie": "JUSTIN HOULE",
+    "away_goalie": "XAVIER ROUSSEAU"
+  }
 }

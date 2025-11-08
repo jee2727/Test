@@ -2712,5 +2712,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618315.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618315.pdf",
+  "starting_goalies": {
+    "home_goalie": "NATHAN DONTIGNY",
+    "away_goalie": "THOMAS ST-MARTIN"
+  }
 }

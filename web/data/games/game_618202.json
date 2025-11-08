@@ -2208,5 +2208,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618202.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618202.pdf",
+  "starting_goalies": {
+    "home_goalie": "ADAMO ALESSANDRINI",
+    "away_goalie": "RAPHAEL DESROCHERS"
+  }
 }

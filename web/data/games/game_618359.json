@@ -2423,5 +2423,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618359.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618359.pdf",
+  "starting_goalies": {
+    "home_goalie": "JEAN-PHILIPPE GILBERT",
+    "away_goalie": "JUSTIN HOULE"
+  }
 }

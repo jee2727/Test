@@ -2606,5 +2606,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618337.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618337.pdf",
+  "starting_goalies": {
+    "home_goalie": "ZACK DESSUREAULT",
+    "away_goalie": "VICTOR DESROCHERS"
+  }
 }

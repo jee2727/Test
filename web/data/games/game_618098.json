@@ -2419,5 +2419,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618098.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618098.pdf",
+  "starting_goalies": {
+    "home_goalie": "FÉLIX BOUCHER",
+    "away_goalie": "JACOB BOURGOIN"
+  }
 }

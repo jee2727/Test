@@ -2281,5 +2281,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618259.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618259.pdf",
+  "starting_goalies": {
+    "home_goalie": "KALEB PATRY",
+    "away_goalie": "ÉTIENNE GAGNÉ"
+  }
 }

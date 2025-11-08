@@ -2423,5 +2423,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618115.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618115.pdf",
+  "starting_goalies": {
+    "home_goalie": "FELIX PELLETIER",
+    "away_goalie": "JACOB BOURGOIN"
+  }
 }

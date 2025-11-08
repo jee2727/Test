@@ -2815,5 +2815,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618248.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618248.pdf",
+  "starting_goalies": {
+    "home_goalie": "BRENDAN BOILY",
+    "away_goalie": "LUCAS LESSARD"
+  }
 }

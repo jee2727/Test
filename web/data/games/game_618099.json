@@ -2681,5 +2681,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618099.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618099.pdf",
+  "starting_goalies": {
+    "home_goalie": "TRISTAN GASSER",
+    "away_goalie": "LUCAS LESSARD"
+  }
 }

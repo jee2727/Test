@@ -504,6 +504,15 @@
     "status": "FINAL"
   },
   {
+    "id": 618165,
+    "date": "2025-11-07",
+    "home_team": "PIONNIERS LANAUDIÈRE",
+    "away_team": "ROCKET JR LAVAL",
+    "home_score": 1,
+    "away_score": 4,
+    "status": "FINAL"
+  },
+  {
     "id": 618166,
     "date": "2025-09-21",
     "home_team": "PIONNIERS",
@@ -969,6 +978,15 @@
     "away_team": "CANAM BEAUCE-APPALACHES",
     "home_score": 5,
     "away_score": 2,
+    "status": "FINAL"
+  },
+  {
+    "id": 618307,
+    "date": "2025-11-06",
+    "home_team": "AS QUÉBEC",
+    "away_team": "CORSAIRES POINTE-LÉVY",
+    "home_score": 4,
+    "away_score": 1,
     "status": "FINAL"
   },
   {

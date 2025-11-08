@@ -2902,5 +2902,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618335.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618335.pdf",
+  "starting_goalies": {
+    "home_goalie": "THOMAS ST-MARTIN",
+    "away_goalie": "INAKI ECHEVARRIA"
+  }
 }

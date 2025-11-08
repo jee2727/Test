@@ -2374,5 +2374,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618214.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618214.pdf",
+  "starting_goalies": {
+    "home_goalie": "INAKI ECHEVARRIA",
+    "away_goalie": "RAPHAEL DESROCHERS"
+  }
 }

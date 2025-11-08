@@ -2485,5 +2485,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618361.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618361.pdf",
+  "starting_goalies": {
+    "home_goalie": "ALEX-ANTOINE LANGLAIS",
+    "away_goalie": "JEAN-PHILIPPE GILBERT"
+  }
 }

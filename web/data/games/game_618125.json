@@ -2629,5 +2629,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618125.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618125.pdf",
+  "starting_goalies": {
+    "home_goalie": "ZACK DESSUREAULT",
+    "away_goalie": "FÉLIX PINEAULT"
+  }
 }

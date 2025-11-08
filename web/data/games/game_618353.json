@@ -2109,5 +2109,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618353.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618353.pdf",
+  "starting_goalies": {
+    "home_goalie": "ZACKARY TOUCHETTE",
+    "away_goalie": "BRENDAN BOILY"
+  }
 }

@@ -2603,5 +2603,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618276.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618276.pdf",
+  "starting_goalies": {
+    "home_goalie": "EMILE CAMPAGNA",
+    "away_goalie": "ALEX-ANTOINE LANGLAIS"
+  }
 }

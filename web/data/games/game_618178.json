@@ -2705,5 +2705,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618178.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618178.pdf",
+  "starting_goalies": {
+    "home_goalie": "ALEX-ANTOINE LANGLAIS",
+    "away_goalie": "ALEXIS BOISVERT"
+  }
 }

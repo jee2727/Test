@@ -2694,5 +2694,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618373.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618373.pdf",
+  "starting_goalies": {
+    "home_goalie": "LUDOVIC LAVALLEE",
+    "away_goalie": "FÉLIX BOUCHER"
+  }
 }

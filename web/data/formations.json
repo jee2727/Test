@@ -1487,6 +1487,32 @@
       {
         "players": [
           {
+            "name": "RYAN DUCHARME",
+            "position": "F",
+            "number": 44
+          },
+          {
+            "name": "LOUIS BEAUDOIN",
+            "position": "F",
+            "number": 38
+          },
+          {
+            "name": "LOUKA LEBREUX",
+            "position": "F",
+            "number": 27
+          }
+        ],
+        "goals": 3,
+        "assists": 3,
+        "points": 6,
+        "type": "deduced_trio",
+        "raw_score": 6,
+        "dominance_score": 19.4,
+        "rank": "Line 1"
+      },
+      {
+        "players": [
+          {
             "name": "LOUIS BEAUDOIN",
             "position": "F",
             "number": 38
@@ -1502,8 +1528,8 @@
         "points": 6,
         "type": "pair",
         "raw_score": 6,
-        "dominance_score": 20.7,
-        "rank": "Line 1"
+        "dominance_score": 19.4,
+        "rank": "Line 2"
       },
       {
         "players": [
@@ -1523,33 +1549,7 @@
         "points": 6,
         "type": "pair",
         "raw_score": 6,
-        "dominance_score": 20.7,
-        "rank": "Line 2"
-      },
-      {
-        "players": [
-          {
-            "name": "RYAN DUCHARME",
-            "position": "F",
-            "number": 44
-          },
-          {
-            "name": "LOUIS BEAUDOIN",
-            "position": "F",
-            "number": 38
-          },
-          {
-            "name": "LOUKA LEBREUX",
-            "position": "F",
-            "number": 27
-          }
-        ],
-        "goals": 2,
-        "assists": 2,
-        "points": 4,
-        "type": "deduced_trio",
-        "raw_score": 4,
-        "dominance_score": 13.8,
+        "dominance_score": 19.4,
         "rank": "Line 3"
       }
     ],
@@ -1667,6 +1667,21 @@
       {
         "players": [
           {
+            "name": "RYAN DUCHARME",
+            "position": "F",
+            "number": 44
+          },
+          {
+            "name": "LOUKA LEBREUX",
+            "position": "F",
+            "number": 27
+          }
+        ],
+        "goals": 3
+      },
+      {
+        "players": [
+          {
             "name": "LOUIS BEAUDOIN",
             "position": "F",
             "number": 38
@@ -1708,21 +1723,6 @@
           }
         ],
         "goals": 3
-      },
-      {
-        "players": [
-          {
-            "name": "RYAN DUCHARME",
-            "position": "F",
-            "number": 44
-          },
-          {
-            "name": "LOUKA LEBREUX",
-            "position": "F",
-            "number": 27
-          }
-        ],
-        "goals": 2
       },
       {
         "players": [
@@ -3445,7 +3445,7 @@
         "points": 12,
         "type": "deduced_trio",
         "raw_score": 12,
-        "dominance_score": 40.0,
+        "dominance_score": 37.5,
         "rank": "Line 1"
       },
       {
@@ -3471,7 +3471,7 @@
         "points": 6,
         "type": "deduced_trio",
         "raw_score": 6,
-        "dominance_score": 20.0,
+        "dominance_score": 18.8,
         "rank": "Line 2"
       },
       {
@@ -3492,7 +3492,7 @@
         "points": 4,
         "type": "pair",
         "raw_score": 4,
-        "dominance_score": 13.3,
+        "dominance_score": 12.5,
         "rank": "Line 3"
       }
     ],
@@ -4811,6 +4811,27 @@
       {
         "players": [
           {
+            "name": "FELIX BEAUCHESNE",
+            "position": "F",
+            "number": 22
+          },
+          {
+            "name": "ALEXIS MAHEUX",
+            "position": "F",
+            "number": 21
+          }
+        ],
+        "goals": 5,
+        "assists": 5,
+        "points": 10,
+        "type": "pair",
+        "raw_score": 10,
+        "dominance_score": 18.2,
+        "rank": "Line 1"
+      },
+      {
+        "players": [
+          {
             "name": "JUSTIN BERGERON",
             "position": "F",
             "number": 36
@@ -4826,8 +4847,8 @@
         "points": 8,
         "type": "pair",
         "raw_score": 8,
-        "dominance_score": 16.3,
-        "rank": "Line 1"
+        "dominance_score": 14.5,
+        "rank": "Line 2"
       },
       {
         "players": [
@@ -4852,33 +4873,7 @@
         "points": 6,
         "type": "trio",
         "raw_score": 6,
-        "dominance_score": 12.2,
-        "rank": "Line 2"
-      },
-      {
-        "players": [
-          {
-            "name": "EMILE GAUTHIER",
-            "position": "F",
-            "number": 41
-          },
-          {
-            "name": "FELIX BEAUCHESNE",
-            "position": "F",
-            "number": 22
-          },
-          {
-            "name": "CHARLES PELLETIER",
-            "position": "F",
-            "number": 37
-          }
-        ],
-        "goals": 2,
-        "assists": 4,
-        "points": 6,
-        "type": "deduced_trio",
-        "raw_score": 6,
-        "dominance_score": 12.2,
+        "dominance_score": 10.9,
         "rank": "Line 3"
       }
     ],
@@ -4907,7 +4902,7 @@
         "points": 3,
         "type": "powerplay",
         "raw_score": 3,
-        "dominance_score": 15.8,
+        "dominance_score": 14.3,
         "rank": "PP1"
       },
       {
@@ -4933,7 +4928,7 @@
         "points": 3,
         "type": "powerplay",
         "raw_score": 3,
-        "dominance_score": 15.8,
+        "dominance_score": 14.3,
         "rank": "PP2"
       },
       {
@@ -4959,7 +4954,7 @@
         "points": 3,
         "type": "powerplay",
         "raw_score": 3,
-        "dominance_score": 15.8,
+        "dominance_score": 14.3,
         "rank": "PP3"
       }
     ],
@@ -4968,9 +4963,9 @@
       {
         "players": [
           {
-            "name": "JUSTIN BERGERON",
+            "name": "FELIX BEAUCHESNE",
             "position": "F",
-            "number": 36
+            "number": 22
           },
           {
             "name": "ALEXIS MAHEUX",
@@ -4978,14 +4973,14 @@
             "number": 21
           }
         ],
-        "goals": 3
+        "goals": 5
       },
       {
         "players": [
           {
-            "name": "FELIX BEAUCHESNE",
+            "name": "JUSTIN BERGERON",
             "position": "F",
-            "number": 22
+            "number": 36
           },
           {
             "name": "ALEXIS MAHEUX",

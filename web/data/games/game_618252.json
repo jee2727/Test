@@ -2506,5 +2506,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618252.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618252.pdf",
+  "starting_goalies": {
+    "home_goalie": "SAMUEL CHARTRAND",
+    "away_goalie": "EDWARD LACHANCE"
+  }
 }

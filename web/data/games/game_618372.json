@@ -2229,5 +2229,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618372.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618372.pdf",
+  "starting_goalies": {
+    "home_goalie": "JACKSON MURRAY",
+    "away_goalie": "SAMUEL CHARTRAND"
+  }
 }

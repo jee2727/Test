@@ -2428,5 +2428,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618283.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618283.pdf",
+  "starting_goalies": {
+    "home_goalie": "CHRISTOPHE ROBERGE",
+    "away_goalie": "MASSIMO IAMMARRONE"
+  }
 }

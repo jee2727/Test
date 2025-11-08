@@ -2542,5 +2542,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618187.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618187.pdf",
+  "starting_goalies": {
+    "home_goalie": "ALEXIS DESHARNAIS",
+    "away_goalie": "ALEXIS BOISVERT"
+  }
 }

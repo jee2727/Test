@@ -2295,5 +2295,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618271.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618271.pdf",
+  "starting_goalies": {
+    "home_goalie": "XAVIER ROUSSEAU",
+    "away_goalie": "ALEK LEVASSEUR"
+  }
 }

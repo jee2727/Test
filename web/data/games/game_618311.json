@@ -2558,5 +2558,9 @@
       }
     }
   ],
-  "gamesheet_pdf_file": "web/data/gamesheets/game_618311.pdf"
+  "gamesheet_pdf_file": "web/data/gamesheets/game_618311.pdf",
+  "starting_goalies": {
+    "home_goalie": "FÉLIX PINEAULT",
+    "away_goalie": "LIAM DUBOIS"
+  }
 }
