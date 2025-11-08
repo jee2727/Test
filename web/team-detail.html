@@ -10,6 +10,11 @@
     <header class="header">
         <div class="container">
             <h1>LHEQ Statistics</h1>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="nav">
                 <a href="index.html" class="nav-link">Accueil</a>
                 <a href="teams.html" class="nav-link">Équipes</a>
@@ -54,19 +59,21 @@
                     <button id="games-next" class="pagination-btn">Suivant &rarr;</button>
                 </div>
                 <div class="table-container">
-                    <table class="games-table">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Adversaire</th>
-                                <th>Dom/Ext</th>
-                                <th>Résultat</th>
-                                <th>Score</th>
-                            </tr>
-                        </thead>
-                        <tbody id="games-body">
-                        </tbody>
-                    </table>
+                    <div class="table-wrapper">
+                        <table class="games-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Adversaire</th>
+                                    <th>Dom/Ext</th>
+                                    <th>Résultat</th>
+                                    <th>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody id="games-body">
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
 
@@ -107,43 +114,47 @@
 
                 <div class="tab-content active" id="skaters-tab">
                     <div class="table-container">
-                        <table class="players-table">
-                            <thead>
-                                <tr>
-                                    <th>Player</th>
-                                    <th>Pos</th>
-                                    <th>GP</th>
-                                    <th>G</th>
-                                    <th>A</th>
-                                    <th>Pts</th>
-                                    <th>PIM</th>
-                                    <th>PPG</th>
-                                    <th>SHG</th>
-                                </tr>
-                            </thead>
-                            <tbody id="skaters-body">
-                            </tbody>
-                        </table>
+                        <div class="table-wrapper">
+                            <table class="players-table">
+                                <thead>
+                                    <tr>
+                                        <th>Player</th>
+                                        <th>Pos</th>
+                                        <th>GP</th>
+                                        <th>G</th>
+                                        <th>A</th>
+                                        <th>Pts</th>
+                                        <th>PIM</th>
+                                        <th>PPG</th>
+                                        <th>SHG</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="skaters-body">
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
                 <div class="tab-content" id="goalies-tab">
                     <div class="table-container">
-                        <table class="players-table">
-                            <thead>
-                                <tr>
-                                    <th>Player</th>
-                                    <th>GP</th>
-                                    <th>W</th>
-                                    <th>L</th>
-                                    <th>T</th>
-                                    <th>GA</th>
-                                    <th>GAA</th>
-                                </tr>
-                            </thead>
-                            <tbody id="goalies-body">
-                            </tbody>
-                        </table>
+                        <div class="table-wrapper">
+                            <table class="players-table">
+                                <thead>
+                                    <tr>
+                                        <th>Player</th>
+                                        <th>GP</th>
+                                        <th>W</th>
+                                        <th>L</th>
+                                        <th>T</th>
+                                        <th>GA</th>
+                                        <th>GAA</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="goalies-body">
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </section>

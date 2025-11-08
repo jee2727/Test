@@ -305,3 +305,37 @@ window.utils = utils;
 window.tableUtils = tableUtils;
 window.filterUtils = filterUtils;
 window.loadingUtils = loadingUtils;
+
+// Mobile menu and filters functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+
+    if (hamburger && nav) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+    }
+
+    // Filters toggle
+    const filtersToggle = document.querySelector('.filters-toggle');
+    const filtersContent = document.querySelector('.filters-content');
+
+    if (filtersToggle && filtersContent) {
+        filtersToggle.addEventListener('click', function() {
+            filtersToggle.classList.toggle('active');
+            filtersContent.classList.toggle('active');
+        });
+    }
+});

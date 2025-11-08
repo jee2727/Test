@@ -10,6 +10,11 @@
     <header class="header">
         <div class="container">
             <h1>LHEQ Statistics</h1>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="nav">
                 <a href="index.html" class="nav-link">Accueil</a>
                 <a href="teams.html" class="nav-link">Équipes</a>
@@ -47,20 +52,22 @@
                 <div id="summary-tab" class="tab-content active">
                     <div class="period-scores">
                         <h3>Score par période</h3>
-                        <table class="period-table">
-                            <thead>
-                                <tr>
-                                    <th>Équipe</th>
-                                    <th>1ère</th>
-                                    <th>2e</th>
-                                    <th>3e</th>
-                                    <th>Prol.</th>
-                                    <th>Total</th>
-                                </tr>
-                            </thead>
-                            <tbody id="period-scores-body">
-                            </tbody>
-                        </table>
+                        <div class="table-wrapper">
+                            <table class="period-table">
+                                <thead>
+                                    <tr>
+                                        <th>Équipe</th>
+                                        <th>1ère</th>
+                                        <th>2e</th>
+                                        <th>3e</th>
+                                        <th>Prol.</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="period-scores-body">
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
