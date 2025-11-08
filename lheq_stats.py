@@ -79,10 +79,24 @@ class StartingGoalieParser:
         import subprocess
         import json
         import os
+        import tempfile
+        from pdf2image import convert_from_path
 
         try:
-            # Get the absolute path for the PDF
-            abs_pdf_path = os.path.abspath(pdf_path)
+            # Convert PDF to image (first page only)
+            print(f"  Converting PDF to image...")
+            images = convert_from_path(pdf_path, first_page=1, last_page=1, dpi=150)
+
+            if not images:
+                print(f"  Failed to convert PDF to image")
+                return None
+
+            # Save image to temporary file
+            with tempfile.NamedTemporaryFile(suffix='.png', delete=False, dir=os.getcwd()) as temp_img:
+                temp_img_path = temp_img.name
+                images[0].save(temp_img_path, 'PNG')
+
+            print(f"  Extracted first page as image")
 
             # Construct the Gemini command
             prompt = (
@@ -92,10 +106,16 @@ class StartingGoalieParser:
                 '"locaux": {"equipe": "LIONS LAC ST-LOUIS", "gardien_partant": "BRENDAN BOILY"}}'
             )
 
-            # Run Gemini command
-            cmd = ["gemini", prompt, f"@{abs_pdf_path}"]
+            # Run Gemini command with image
+            cmd = ["gemini", "-m", "gemini-2.5-flash", "-o", "json", prompt, f"@{temp_img_path}"]
             print(f"  Running Gemini AI extraction...")
-            result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=90)
+
+            # Clean up temporary image
+            try:
+                os.unlink(temp_img_path)
+            except:
+                pass
 
             if result.returncode != 0:
                 print(f"  Gemini command failed: {result.stderr}")
@@ -103,7 +123,14 @@ class StartingGoalieParser:
 
             # Parse JSON response (remove markdown code blocks if present)
             try:
-                response_text = result.stdout.strip()
+                # Parse JSON output from gemini
+                gemini_output = json.loads(result.stdout)
+                response_text = gemini_output.get('response', '')
+
+                if not response_text:
+                    print(f"  Empty response from Gemini")
+                    return None
+
                 # Remove markdown code blocks if present
                 if response_text.startswith('```json'):
                     response_text = response_text.replace('```json', '').replace('```', '').strip()
@@ -154,9 +181,21 @@ class StartingGoalieParser:
 
         except subprocess.TimeoutExpired:
             print("  Gemini command timed out")
+            # Clean up temporary image if it exists
+            try:
+                if 'temp_img_path' in locals():
+                    os.unlink(temp_img_path)
+            except:
+                pass
             return None
         except Exception as e:
             print(f"  Error calling Gemini: {e}")
+            # Clean up temporary image if it exists
+            try:
+                if 'temp_img_path' in locals():
+                    os.unlink(temp_img_path)
+            except:
+                pass
             return None
 
 

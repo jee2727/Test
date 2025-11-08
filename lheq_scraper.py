@@ -254,16 +254,34 @@ class FinalWorkingLHEQScraper:
         """Extract starting goalies using Gemini AI"""
         import subprocess
         import json
+        import tempfile
+        from pdf2image import convert_from_path
 
         try:
-            # Get the absolute path for the PDF
-            abs_pdf_path = os.path.abspath(pdf_filename)
+            # Convert PDF to image (first page only)
+            print(f"  Converting PDF to image...")
+            images = convert_from_path(pdf_filename, first_page=1, last_page=1, dpi=150)
 
-            # Construct the Gemini command
+            if not images:
+                print(f"  Failed to convert PDF to image")
+                return None
+
+            # Save image to temporary file
+            with tempfile.NamedTemporaryFile(suffix='.png', delete=False, dir=os.getcwd()) as temp_img:
+                temp_img_path = temp_img.name
+                images[0].save(temp_img_path, 'PNG')
+
+            print(f"  Extracted first page as image: {temp_img_path}")
+
+            # Construct the Gemini command with image reference
+            prompt = "Extract starting goalies from this hockey gamesheet. Note that the starting goalie has an asterisk after his name. Return a JSON with home_goalie and away_goalie containing the goalie names only. Format your response with only valid JSON: {\"home_goalie\": \"NAME\", \"away_goalie\": \"NAME\"}"
+
             command = [
                 "gemini",
                 "-m", "gemini-2.5-flash",
-                "-p", f"Extract starting goalies from this hockey gamesheet. Note that the starting goalie has an asterisk after his name. Return a JSON with home_goalie and away_goalie containing the goalie names only. Format your response with only: {{\"home_goalie\": \"NAME\", \"away_goalie\": \"NAME\"}} @{abs_pdf_path}"
+                "-o", "json",
+                prompt,
+                f"@{temp_img_path}"
             ]
 
             # Execute command with timeout
@@ -271,22 +289,36 @@ class FinalWorkingLHEQScraper:
                 command,
                 capture_output=True,
                 text=True,
-                timeout=30,
+                timeout=60,
                 cwd=os.getcwd()
             )
+
+            # Clean up temporary image
+            try:
+                os.unlink(temp_img_path)
+            except:
+                pass
 
             if result.returncode == 0:
                 output = result.stdout.strip()
 
-                # Remove markdown code blocks if present
-                if output.startswith('```json'):
-                    output = output.replace('```json', '').replace('```', '').strip()
-                elif output.startswith('```'):
-                    output = output.replace('```', '').strip()
-
-                # Parse JSON response
+                # Parse JSON output from gemini
                 try:
-                    goalies_data = json.loads(output)
+                    gemini_output = json.loads(output)
+                    response_text = gemini_output.get('response', '')
+
+                    if not response_text:
+                        print(f"  Empty response from Gemini")
+                        return None
+
+                    # Remove markdown code blocks if present
+                    if response_text.startswith('```json'):
+                        response_text = response_text.replace('```json', '').replace('```', '').strip()
+                    elif response_text.startswith('```'):
+                        response_text = response_text.replace('```', '').strip()
+
+                    # Parse the goalies JSON from the response
+                    goalies_data = json.loads(response_text)
                     if isinstance(goalies_data, dict) and 'home_goalie' in goalies_data and 'away_goalie' in goalies_data:
                         return goalies_data
                     else:
@@ -302,9 +334,21 @@ class FinalWorkingLHEQScraper:
 
         except subprocess.TimeoutExpired:
             print(f"  Gemini command timed out for {pdf_filename}")
+            # Clean up temporary image if it exists
+            try:
+                if 'temp_img_path' in locals():
+                    os.unlink(temp_img_path)
+            except:
+                pass
             return None
         except Exception as e:
             print(f"  Error extracting goalies with Gemini: {e}")
+            # Clean up temporary image if it exists
+            try:
+                if 'temp_img_path' in locals():
+                    os.unlink(temp_img_path)
+            except:
+                pass
             return None
 
     def process_games(self, api_games, fetch_detailed_stats=True):
