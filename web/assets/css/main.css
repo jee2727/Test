@@ -238,8 +238,8 @@ tr:hover {
 
 /* Sticky columns for all screen sizes */
 /* Teams table - sticky team name column */
-.teams-table th:nth-child(3),
-.teams-table td:nth-child(3) {
+.teams-table th:nth-child(2),
+.teams-table td:nth-child(2) {
     position: sticky;
     left: 0;
     background: #f8f9fa;
@@ -247,11 +247,11 @@ tr:hover {
     box-shadow: 2px 0 4px rgba(0,0,0,0.1);
 }
 
-.teams-table td:nth-child(3) {
+.teams-table td:nth-child(2) {
     background: white;
 }
 
-.teams-table tr:hover td:nth-child(3) {
+.teams-table tr:hover td:nth-child(2) {
     background: #f8f9fa;
 }
 
@@ -602,7 +602,7 @@ tr:hover {
         -webkit-overflow-scrolling: touch;
         scrollbar-width: thin;
         scrollbar-color: #2a5298 #f8f9fa;
-        padding: 0 20px;
+        padding: 0;
     }
 
     .table-wrapper::-webkit-scrollbar {
@@ -626,6 +626,57 @@ tr:hover {
     th, td {
         padding: 0.5rem;
         white-space: nowrap;
+    }
+
+    /* Compact sticky columns on mobile */
+    .teams-table th:nth-child(2),
+    .teams-table td:nth-child(2) {
+        max-width: 100px;
+        white-space: normal;
+        word-wrap: break-word;
+        min-width: 80px;
+        font-size: 0.75rem;
+        padding: 0.4rem;
+    }
+
+    .players-table th:nth-child(2),
+    .players-table td:nth-child(2) {
+        max-width: 90px;
+        min-width: 70px;
+        white-space: normal;
+        word-wrap: break-word;
+        font-size: 0.75rem;
+        padding: 0.4rem;
+    }
+
+    .standings-table th:nth-child(2),
+    .standings-table td:nth-child(2) {
+        max-width: 80px;
+        min-width: 60px;
+        white-space: normal;
+        word-wrap: break-word;
+        font-size: 0.75rem;
+        padding: 0.4rem;
+    }
+
+    .period-table th:nth-child(1),
+    .period-table td:nth-child(1) {
+        max-width: 80px;
+        min-width: 60px;
+        white-space: normal;
+        word-wrap: break-word;
+        font-size: 0.75rem;
+        padding: 0.4rem;
+    }
+
+    .games-table th:nth-child(1),
+    .games-table td:nth-child(1) {
+        max-width: 70px;
+        min-width: 60px;
+        white-space: normal;
+        word-wrap: break-word;
+        font-size: 0.75rem;
+        padding: 0.4rem;
     }
 }
 
@@ -658,7 +709,48 @@ tr:hover {
     }
 
     .table-wrapper {
-        padding: 0 10px;
+        padding: 0;
+    }
+
+    /* Even more compact sticky columns on very small screens */
+    .teams-table th:nth-child(2),
+    .teams-table td:nth-child(2) {
+        max-width: 80px;
+        min-width: 60px;
+        font-size: 0.7rem;
+        padding: 0.3rem;
+    }
+
+    .players-table th:nth-child(2),
+    .players-table td:nth-child(2) {
+        max-width: 75px;
+        min-width: 55px;
+        font-size: 0.7rem;
+        padding: 0.3rem;
+    }
+
+    .standings-table th:nth-child(2),
+    .standings-table td:nth-child(2) {
+        max-width: 70px;
+        min-width: 50px;
+        font-size: 0.7rem;
+        padding: 0.3rem;
+    }
+
+    .period-table th:nth-child(1),
+    .period-table td:nth-child(1) {
+        max-width: 70px;
+        min-width: 50px;
+        font-size: 0.7rem;
+        padding: 0.3rem;
+    }
+
+    .games-table th:nth-child(1),
+    .games-table td:nth-child(1) {
+        max-width: 60px;
+        min-width: 50px;
+        font-size: 0.7rem;
+        padding: 0.3rem;
     }
 }
 

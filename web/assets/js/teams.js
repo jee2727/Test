@@ -39,11 +39,11 @@ class TeamsPage {
             ordering: true,
             info: false,
             columnDefs: [
-                { orderable: false, targets: [0, 1] }, // Position and Logo columns
-                { type: 'num', targets: [3, 4, 5, 6, 7, 8, 9, 10, 11] }, // Numeric columns
-                { orderData: [7], targets: [7] } // Default sort by Points
+                { orderable: false, targets: [0] }, // Position column
+                { type: 'num', targets: [2, 3, 4, 5, 6, 7, 8, 9, 10] }, // Numeric columns
+                { orderData: [6], targets: [6] } // Default sort by Points
             ],
-            order: [[7, 'desc']] // Sort by Points (Pts) column descending
+            order: [[6, 'desc']] // Sort by Points (Pts) column descending
         });
     }
 
@@ -117,7 +117,7 @@ class TeamsPage {
 
         if (this.currentData.length === 0) {
             const row = document.createElement('tr');
-            row.innerHTML = '<td colspan="13" class="text-center">Aucune équipe trouvée</td>';
+            row.innerHTML = '<td colspan="12" class="text-center">Aucune équipe trouvée</td>';
             tableBody.appendChild(row);
             return;
         }
@@ -134,12 +134,14 @@ class TeamsPage {
         row.innerHTML = `
             <td>${position}</td>
             <td>
-                <img src="${team.local_logo || 'assets/logos/default.png'}"
-                     alt="${team.name}"
-                     class="team-logo"
-                     onerror="this.style.display='none'">
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <img src="${team.local_logo || 'assets/logos/default.png'}"
+                         alt="${team.name}"
+                         class="team-logo"
+                         onerror="this.style.display='none'">
+                    <strong>${team.name}</strong>
+                </div>
             </td>
-            <td><strong>${team.name}</strong></td>
             <td>${team.games_played}</td>
             <td>${team.wins}</td>
             <td>${team.losses}</td>
