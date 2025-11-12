@@ -171,6 +171,15 @@
     "status": "FINAL"
   },
   {
+    "id": 618059,
+    "date": "2025-11-08",
+    "home_team": "NOIR ET OR DE MORTAGNE",
+    "away_team": "HARFANGS SHERBROOKE",
+    "home_score": 4,
+    "away_score": 1,
+    "status": "FINAL"
+  },
+  {
     "id": 618065,
     "date": "2025-10-19",
     "home_team": "NOIR ET OR DE MORTAGNE",
@@ -240,6 +249,15 @@
     "away_team": "PIONNIERS",
     "home_score": 5,
     "away_score": 4,
+    "status": "FINAL"
+  },
+  {
+    "id": 618079,
+    "date": "2025-11-08",
+    "home_team": "CONQUÉRANTS BASSES-LAURENTIDES",
+    "away_team": "INTREPIDE OUTAOUAIS",
+    "home_score": 2,
+    "away_score": 5,
     "status": "FINAL"
   },
   {
@@ -321,6 +339,15 @@
     "away_team": "COLLEGE FRANCAIS RIVE-SUD",
     "home_score": 5,
     "away_score": 2,
+    "status": "FINAL"
+  },
+  {
+    "id": 618110,
+    "date": "2025-11-08",
+    "home_team": "VERT & NOIR DE L'ÉCOLE FADETTE",
+    "away_team": "LIONS LAC ST-LOUIS",
+    "home_score": 3,
+    "away_score": 5,
     "status": "FINAL"
   },
   {
@@ -414,6 +441,24 @@
     "status": "FINAL"
   },
   {
+    "id": 618132,
+    "date": "2025-11-08",
+    "home_team": "GRENADIERS LAC ST-LOUIS",
+    "away_team": "COLLEGE FRANCAIS RIVE-SUD",
+    "home_score": 6,
+    "away_score": 0,
+    "status": "FINAL"
+  },
+  {
+    "id": 618133,
+    "date": "2025-11-09",
+    "home_team": "GRENADIERS LAC ST-LOUIS",
+    "away_team": "SEIGNEURS DES MILLE-ILES",
+    "home_score": 4,
+    "away_score": 3,
+    "status": "FINAL"
+  },
+  {
     "id": 618140,
     "date": "2025-09-27",
     "home_team": "FORESTIERS A-T",
@@ -474,6 +519,15 @@
     "away_team": "CORSAIRES POINTE-LÉVY",
     "home_score": 1,
     "away_score": 1,
+    "status": "FINAL"
+  },
+  {
+    "id": 618155,
+    "date": "2025-11-08",
+    "home_team": "ESTACADES MAURICIE",
+    "away_team": "CANAM BEAUCE-APPALACHES",
+    "home_score": 3,
+    "away_score": 3,
     "status": "FINAL"
   },
   {
@@ -612,6 +666,24 @@
     "status": "FINAL"
   },
   {
+    "id": 618191,
+    "date": "2025-11-08",
+    "home_team": "CASCADES ÉLITE",
+    "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
+    "home_score": 3,
+    "away_score": 0,
+    "status": "FINAL"
+  },
+  {
+    "id": 618192,
+    "date": "2025-11-09",
+    "home_team": "CASCADES ÉLITE",
+    "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
+    "home_score": 4,
+    "away_score": 0,
+    "status": "FINAL"
+  },
+  {
     "id": 618193,
     "date": "2025-09-21",
     "home_team": "LIONS LAC ST-LOUIS",
@@ -711,12 +783,30 @@
     "status": "FINAL"
   },
   {
+    "id": 618215,
+    "date": "2025-11-08",
+    "home_team": "ROCKET JR LAVAL",
+    "away_team": "SÉLECT DU NORD",
+    "home_score": 2,
+    "away_score": 7,
+    "status": "FINAL"
+  },
+  {
     "id": 618222,
     "date": "2025-11-02",
     "home_team": "AS QUÉBEC",
     "away_team": "ALBATROS",
     "home_score": 4,
     "away_score": 4,
+    "status": "FINAL"
+  },
+  {
+    "id": 618225,
+    "date": "2025-11-09",
+    "home_team": "SÉLECT DU NORD",
+    "away_team": "CONQUÉRANTS BASSES-LAURENTIDES",
+    "home_score": 3,
+    "away_score": 1,
     "status": "FINAL"
   },
   {
@@ -789,6 +879,15 @@
     "away_team": "COLLEGE FRANCAIS RIVE-SUD",
     "home_score": 7,
     "away_score": 3,
+    "status": "FINAL"
+  },
+  {
+    "id": 618250,
+    "date": "2025-11-09",
+    "home_team": "DYNAMIQUES CCL",
+    "away_team": "COLLEGE FRANCAIS RIVE-SUD",
+    "home_score": 4,
+    "away_score": 2,
     "status": "FINAL"
   },
   {
@@ -981,6 +1080,24 @@
     "status": "FINAL"
   },
   {
+    "id": 618303,
+    "date": "2025-11-09",
+    "home_team": "PIONNIERS LANAUDIÈRE",
+    "away_team": "NATIONAL MONTRÉAL",
+    "home_score": 2,
+    "away_score": 6,
+    "status": "FINAL"
+  },
+  {
+    "id": 618306,
+    "date": "2025-11-08",
+    "home_team": "AS QUÉBEC",
+    "away_team": "BLIZZARD SSF",
+    "home_score": 3,
+    "away_score": 4,
+    "status": "FINAL"
+  },
+  {
     "id": 618307,
     "date": "2025-11-06",
     "home_team": "AS QUÉBEC",
@@ -1068,6 +1185,15 @@
     "away_team": "ROCKET JR LAVAL",
     "home_score": 4,
     "away_score": 2,
+    "status": "FINAL"
+  },
+  {
+    "id": 618336,
+    "date": "2025-11-08",
+    "home_team": "SEIGNEURS DES MILLE-ILES",
+    "away_team": "NATIONAL MONTRÉAL",
+    "home_score": 1,
+    "away_score": 3,
     "status": "FINAL"
   },
   {
