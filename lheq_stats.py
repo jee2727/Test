@@ -306,6 +306,7 @@ class HockeyStatsCompiler:
         self.games = []
         self.team_logos = {}
         self.player_positions = {}
+        self.player_numbers = {}
         self.starting_goalies = {}
 
     def load_games(self):
@@ -361,9 +362,13 @@ class HockeyStatsCompiler:
     def initialize_player_stats(self, player_id, player_name, team_id, position):
         """Initialize player statistics structure"""
         if player_id not in self.players:
+            # Get player number from global index
+            player_number = self.player_numbers.get(player_id)
+
             self.players[player_id] = {
                 'id': player_id,
                 'name': player_name,
+                'number': player_number,
                 'team_id': team_id,
                 'position': position,
                 'games_played': 0,
@@ -382,8 +387,8 @@ class HockeyStatsCompiler:
             }
 
     def build_player_positions_index(self):
-        """Build a global index of player positions from all rosters"""
-        print("Building player positions index...")
+        """Build a global index of player positions and numbers from all rosters"""
+        print("Building player positions and numbers index...")
 
         for game in self.games:
             for roster_key in ['home_team_roster', 'away_team_roster']:
@@ -404,7 +409,13 @@ class HockeyStatsCompiler:
 
                     self.player_positions[player_id] = position
 
+                    # Store player number (only if valid)
+                    player_number = player.get('number')
+                    if player_number is not None and player_number != 0:
+                        self.player_numbers[player_id] = player_number
+
         print(f"Built position index for {len(self.player_positions)} players")
+        print(f"Built number index for {len(self.player_numbers)} players")
 
     def load_starting_goalies(self):
         """Load starting goalie data from game JSON files"""
