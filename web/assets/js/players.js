@@ -462,11 +462,6 @@ style.textContent = `
     }
 
     @media (max-width: 768px) {
-        .players-table th:nth-child(n+10),
-        .players-table td:nth-child(n+10) {
-            display: none;
-        }
-
         .filter-options {
             flex-direction: column;
             align-items: stretch;
@@ -474,13 +469,6 @@ style.textContent = `
 
         .filter-options select {
             width: 100%;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .players-table th:nth-child(n+7),
-        .players-table td:nth-child(n+7) {
-            display: none;
         }
     }
 `;
