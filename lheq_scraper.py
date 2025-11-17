@@ -39,7 +39,7 @@ class FinalWorkingLHEQScraper:
                     },
                     {
                         "scheduleId": {
-                            "inq": [182366]
+                            "inq": [182366,183835]
                         }
                     },
                     {
