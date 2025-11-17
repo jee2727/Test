@@ -2414,5 +2414,7 @@
   "starting_goalies": {
     "home_goalie": "SAMUEL CHARTRAND",
     "away_goalie": "TRISTAN GASSER"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

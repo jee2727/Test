@@ -2617,5 +2617,7 @@
   "starting_goalies": {
     "home_goalie": "GABRIEL HOULE",
     "away_goalie": "JACKSON MURRAY"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

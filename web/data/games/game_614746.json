@@ -2267,5 +2267,7 @@
   "starting_goalies": {
     "home_goalie": "RAPHAEL DESROCHERS",
     "away_goalie": "CHRISTOPHE ROBERGE"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

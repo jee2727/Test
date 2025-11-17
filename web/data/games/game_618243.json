@@ -2638,5 +2638,7 @@
   "starting_goalies": {
     "home_goalie": "TRISTAN GASSER",
     "away_goalie": "FINN GUEZEN"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

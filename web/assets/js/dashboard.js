@@ -8,6 +8,7 @@ class Dashboard {
     async init() {
         try {
             await dataManager.loadData();
+            this.setupEventListeners();
             this.renderDivisionStandings();
 
             // Initialize DataTables after DOM update
@@ -16,6 +17,42 @@ class Dashboard {
             }, 100);
         } catch (error) {
             console.error('Error initializing dashboard:', error);
+            this.showError();
+        }
+    }
+
+    setupEventListeners() {
+        // Tournament toggle
+        const tournamentToggle = document.getElementById('include-tournaments');
+        if (tournamentToggle) {
+            tournamentToggle.addEventListener('change', async (e) => {
+                await this.handleTournamentToggle(e.target.checked);
+            });
+        }
+    }
+
+    async handleTournamentToggle(includeTournaments) {
+        try {
+            // Reload data with new tournament setting
+            await dataManager.loadData(includeTournaments);
+
+            // Destroy existing DataTables
+            Object.values(this.dataTables).forEach(table => {
+                if (table) {
+                    table.destroy();
+                }
+            });
+            this.dataTables = {};
+
+            // Re-render division standings
+            this.renderDivisionStandings();
+
+            // Reinitialize DataTables
+            setTimeout(() => {
+                this.initDataTables();
+            }, 100);
+        } catch (error) {
+            console.error('Error toggling tournament data:', error);
             this.showError();
         }
     }
@@ -30,10 +67,11 @@ class Dashboard {
                 ordering: true,
                 info: false,
                 columnDefs: [
-                    { orderable: false, targets: [0] }, // Position column
-                    { type: 'num', targets: [2, 3, 4, 5, 6, 7, 8, 9, 10] }, // Numeric columns
+                    { orderable: false, targets: [0, 1] }, // Position and Team columns
+                    { type: 'num', targets: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] }, // Numeric columns
+                    { orderData: [10], targets: [10] } // ~POC column
                 ],
-                order: [[6, 'desc']] // Sort by Points (Pts) column descending by default
+                order: [[10, 'desc']] // Sort by ~POC column descending by default
             });
         });
     }
@@ -50,9 +88,15 @@ class Dashboard {
             const divisionTeams = dataManager.teams
                 .filter(team => team.division === divisionName)
                 .sort((a, b) => {
-                    // Sort by points descending, then by goal differential descending
-                    if (b.points !== a.points) {
-                        return b.points - a.points;
+                    // Sort by POC descending, then total points, then goal differential
+                    const pocA = a.poc_adjusted || a.poc_rating || 1000;
+                    const pocB = b.poc_adjusted || b.poc_rating || 1000;
+
+                    if (pocB !== pocA) {
+                        return pocB - pocA;
+                    }
+                    if (b.total_points !== a.total_points) {
+                        return b.total_points - a.total_points;
                     }
                     return b.goal_differential - a.goal_differential;
                 });
@@ -62,6 +106,9 @@ class Dashboard {
             divisionTeams.forEach((team, index) => {
                 const pocScore = team.poc_adjusted || team.poc_rating || 1000;
                 const pocClass = pocScore > 1000 ? 'positive' : (pocScore < 1000 ? 'negative' : '');
+                const totalPoints = team.total_points || (team.points + (team.fair_play_points || 0));
+                const fairPlayPoints = team.fair_play_points || 0;
+                const overtimeLosses = team.overtime_losses || 0;
 
                 const row = document.createElement('tr');
                 row.innerHTML = `
@@ -80,8 +127,11 @@ class Dashboard {
                     <td>${team.games_played}</td>
                     <td>${team.wins}</td>
                     <td>${team.losses}</td>
+                    <td>${overtimeLosses}</td>
                     <td>${team.ties}</td>
                     <td><strong>${team.points}</strong></td>
+                    <td>${fairPlayPoints}</td>
+                    <td><strong>${totalPoints}</strong></td>
                     <td class="${pocClass}" data-order="${pocScore}"><strong>${pocScore.toFixed(1)}</strong></td>
                     <td>${team.goals_for}</td>
                     <td>${team.goals_against}</td>

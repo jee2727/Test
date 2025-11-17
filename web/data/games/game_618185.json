@@ -2324,5 +2324,7 @@
   "starting_goalies": {
     "home_goalie": "ÉTIENNE GAGNÉ",
     "away_goalie": "ALEXIS DESHARNAIS"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

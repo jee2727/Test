@@ -2427,5 +2427,7 @@
   "starting_goalies": {
     "home_goalie": "JEAN-PHILIPPE GILBERT",
     "away_goalie": "JUSTIN HOULE"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

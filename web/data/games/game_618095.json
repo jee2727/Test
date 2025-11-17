@@ -2031,5 +2031,7 @@
   "starting_goalies": {
     "home_goalie": "FÉLIX BOUCHER",
     "away_goalie": "SAMUEL PAIEMENT"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

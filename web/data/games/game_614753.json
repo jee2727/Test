@@ -2049,5 +2049,7 @@
   "starting_goalies": {
     "home_goalie": "LIAM DUBOIS",
     "away_goalie": "ADAMO ALESSANDRINI"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

@@ -2121,5 +2121,7 @@
   "starting_goalies": {
     "home_goalie": "ALEK LEVASSEUR",
     "away_goalie": "OLIVIER PELLETIER"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

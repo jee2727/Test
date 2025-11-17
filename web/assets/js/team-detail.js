@@ -245,14 +245,22 @@ class TeamDetailPage {
             resultClass = 'tie';
         }
 
-        const date = new Date(game.date).toLocaleDateString('fr-CA', {
+        // Parse date as local time to avoid timezone issues
+        const [year, month, day] = game.date.split('-').map(Number);
+        const dateObj = new Date(year, month - 1, day);
+        const date = dateObj.toLocaleDateString('fr-CA', {
             day: '2-digit',
             month: '2-digit'
         });
 
+        // Add tournament indicator if applicable
+        const tournamentBadge = game.game_type === 'tournament'
+            ? '<span class="tournament-badge" title="Match de tournoi">🏆</span> '
+            : '';
+
         row.innerHTML = `
             <td>${date}</td>
-            <td>${opponentName}</td>
+            <td>${tournamentBadge}${opponentName}</td>
             <td>${isHome ? 'Dom' : 'Ext'}</td>
             <td><span class="result-badge ${resultClass}">${result}</span></td>
             <td><strong>${teamScore}-${opponentScore}</strong></td>

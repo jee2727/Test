@@ -2090,5 +2090,7 @@
   "starting_goalies": {
     "home_goalie": "LUDOVIC LAVALLEE",
     "away_goalie": "FINN GUEZEN"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

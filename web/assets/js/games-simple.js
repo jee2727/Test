@@ -112,7 +112,10 @@ class SimpleGamesManager {
             window.location.href = `game-detail.html?id=${game.id}`;
         };
 
-        const date = new Date(game.date).toLocaleDateString('fr-CA', {
+        // Parse date as local time to avoid timezone issues
+        const [year, month, day] = game.date.split('-').map(Number);
+        const dateObj = new Date(year, month - 1, day);
+        const date = dateObj.toLocaleDateString('fr-CA', {
             year: 'numeric',
             month: 'short',
             day: 'numeric'

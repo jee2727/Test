@@ -1914,5 +1914,7 @@
   "starting_goalies": {
     "home_goalie": "VICTOR DESROCHERS",
     "away_goalie": "NATHAN DONTIGNY"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

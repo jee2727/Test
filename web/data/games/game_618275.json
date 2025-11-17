@@ -2374,5 +2374,7 @@
   "starting_goalies": {
     "home_goalie": "XAVIER ROUSSEAU",
     "away_goalie": "ANTOINE LÉTOURNEAU"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

@@ -2452,5 +2452,7 @@
   "starting_goalies": {
     "home_goalie": "NATHAN DONTIGNY",
     "away_goalie": "INAKI ECHEVARRIA"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

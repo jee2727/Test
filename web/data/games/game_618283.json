@@ -2432,5 +2432,7 @@
   "starting_goalies": {
     "home_goalie": "CHRISTOPHE ROBERGE",
     "away_goalie": "MASSIMO IAMMARRONE"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

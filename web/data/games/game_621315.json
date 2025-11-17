@@ -2012,5 +2012,7 @@
   "starting_goalies": {
     "home_goalie": "OLIVIER PELLETIER",
     "away_goalie": "EMILE CAMPAGNA"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

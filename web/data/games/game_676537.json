@@ -1,0 +1,2310 @@
+{
+  "id": 676537,
+  "status": "FINAL",
+  "original_status": "ACTIVE",
+  "home_team": "GRENADIERS LAC ST-LOUIS",
+  "away_team": "SÉLECT DU NORD",
+  "date": "2025-11-15",
+  "start_time": "2025-11-15T17:30:50.000Z",
+  "home_score": 0,
+  "away_score": 5,
+  "detail_url": "https://lheq.qc.ca/calendrier/676537",
+  "gamesheet_pdf_url": "https://pdf.play.spordle.com/game/676537?locale=fr",
+  "boxscore": {
+    "gameNumber": "38",
+    "teams": [
+      {
+        "id": 128310,
+        "name": "GRENADIERS LAC ST-LOUIS",
+        "isPublic": true,
+        "logoUrl": "https://cdn.hcr.spordle.com/teams/1f05e5ce-43b6-667c-8c7a-0627b38ad1df/logos/1f05e5ce-4399-67a2-a606-0627b38ad1df.png"
+      },
+      {
+        "id": 128318,
+        "name": "SÉLECT DU NORD",
+        "isPublic": true,
+        "logoUrl": "https://d1yykh3c16sa22.cloudfront.net/teams/1f05e5ce-42ae-61ee-9d0e-0627b38ad1df/logos/1f05e5ce-428d-61c4-8f5d-0627b38ad1df.jpg"
+      }
+    ],
+    "goals": [
+      {
+        "gameTime": {
+          "period": "1",
+          "minutes": 6,
+          "seconds": 24,
+          "elapsedMinutes": 8,
+          "elapsedSeconds": 36
+        },
+        "teamId": 128318,
+        "participant": {
+          "fullName": "ALEX DEROY",
+          "number": 89,
+          "participantId": 957056,
+          "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fa-5d85-614c-a6cb-0695742fcc0e/profile/small/1f0a536d-f39c-6698-9adc-02d85374e4dd.jpg"
+        },
+        "assists": [],
+        "isPowerplay": false,
+        "isShorthanded": true,
+        "isEmptyNet": false,
+        "isPenaltyShot": false,
+        "isOwnGoal": null
+      },
+      {
+        "gameTime": {
+          "period": "3",
+          "minutes": 7,
+          "seconds": 0,
+          "elapsedMinutes": 8,
+          "elapsedSeconds": 0
+        },
+        "teamId": 128318,
+        "participant": {
+          "fullName": "THOMAS DELISLE",
+          "number": 22,
+          "participantId": 767269,
+          "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fa-6814-6aea-8942-06803bcf766a/profile/small/1f0a536d-11dc-62da-9dc3-02ec0d6aa587.jpg"
+        },
+        "assists": [
+          {
+            "fullName": "ANTHONY ST-LAURENT",
+            "number": 2,
+            "participantId": 957076
+          }
+        ],
+        "isPowerplay": false,
+        "isShorthanded": false,
+        "isEmptyNet": false,
+        "isPenaltyShot": false,
+        "isOwnGoal": null
+      },
+      {
+        "gameTime": {
+          "period": "2",
+          "minutes": 6,
+          "seconds": 52,
+          "elapsedMinutes": 8,
+          "elapsedSeconds": 8
+        },
+        "teamId": 128318,
+        "participant": {
+          "fullName": "THOMAS DELISLE",
+          "number": 22,
+          "participantId": 767269,
+          "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fa-6814-6aea-8942-06803bcf766a/profile/small/1f0a536d-11dc-62da-9dc3-02ec0d6aa587.jpg"
+        },
+        "assists": [],
+        "isPowerplay": false,
+        "isShorthanded": false,
+        "isEmptyNet": false,
+        "isPenaltyShot": false,
+        "isOwnGoal": null
+      },
+      {
+        "gameTime": {
+          "period": "1",
+          "minutes": 8,
+          "seconds": 28,
+          "elapsedMinutes": 6,
+          "elapsedSeconds": 32
+        },
+        "teamId": 128318,
+        "participant": {
+          "fullName": "HENRIK COURNOYER",
+          "number": 72,
+          "participantId": 767271,
+          "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fa-894c-6104-bc3a-020a2d3ab872/profile/small/1f0a536a-3ca7-6a44-bba4-067f8c035ee7.jpg"
+        },
+        "assists": [],
+        "isPowerplay": false,
+        "isShorthanded": false,
+        "isEmptyNet": false,
+        "isPenaltyShot": false,
+        "isOwnGoal": null
+      },
+      {
+        "gameTime": {
+          "period": "1",
+          "minutes": 11,
+          "seconds": 22,
+          "elapsedMinutes": 3,
+          "elapsedSeconds": 38
+        },
+        "teamId": 128318,
+        "participant": {
+          "fullName": "HENRIK COURNOYER",
+          "number": 72,
+          "participantId": 767271,
+          "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fa-894c-6104-bc3a-020a2d3ab872/profile/small/1f0a536a-3ca7-6a44-bba4-067f8c035ee7.jpg"
+        },
+        "assists": [
+          {
+            "fullName": "ALEX DEROY",
+            "number": 89,
+            "participantId": 957056,
+            "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fa-5d85-614c-a6cb-0695742fcc0e/profile/small/1f0a536d-f39c-6698-9adc-02d85374e4dd.jpg"
+          }
+        ],
+        "isPowerplay": false,
+        "isShorthanded": false,
+        "isEmptyNet": false,
+        "isPenaltyShot": false,
+        "isOwnGoal": null
+      }
+    ],
+    "penalties": [
+      {
+        "gameTime": {
+          "period": "3",
+          "minutes": 9,
+          "seconds": 35,
+          "elapsedMinutes": 5,
+          "elapsedSeconds": 25
+        },
+        "teamId": 128318,
+        "infraction": "Tripping",
+        "duration": {
+          "name": "Minor",
+          "description": null,
+          "i18n": {
+            "fr": {
+              "name": "Mineure"
+            }
+          }
+        },
+        "participant": {
+          "fullName": "MAIK FORGET",
+          "number": 14,
+          "participantId": 957055,
+          "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fb-6510-6992-aa88-06803bcf766a/profile/small/1f0a5371-8356-60d8-b8fc-067f8c035ee7.jpg"
+        },
+        "isBenchPenalty": false,
+        "code": null,
+        "i18n": {
+          "fr": {
+            "infraction": "Faire trébucher"
+          }
+        }
+      },
+      {
+        "gameTime": {
+          "period": "3",
+          "minutes": 2,
+          "seconds": 7,
+          "elapsedMinutes": 12,
+          "elapsedSeconds": 53
+        },
+        "teamId": 128310,
+        "infraction": "Cross checking",
+        "duration": {
+          "name": "Minor",
+          "description": null,
+          "i18n": {
+            "fr": {
+              "name": "Mineure"
+            }
+          }
+        },
+        "participant": {
+          "fullName": "JACKSON MURRAY",
+          "number": 1,
+          "participantId": 841211
+        },
+        "isBenchPenalty": false,
+        "code": null,
+        "i18n": {
+          "fr": {
+            "infraction": "Donner un double échec"
+          }
+        }
+      },
+      {
+        "gameTime": {
+          "period": "1",
+          "minutes": 7,
+          "seconds": 1,
+          "elapsedMinutes": 7,
+          "elapsedSeconds": 59
+        },
+        "teamId": 128318,
+        "infraction": "Slashing",
+        "duration": {
+          "name": "Minor",
+          "description": null,
+          "i18n": {
+            "fr": {
+              "name": "Mineure"
+            }
+          }
+        },
+        "participant": {
+          "fullName": "THOMAS DELISLE",
+          "number": 22,
+          "participantId": 767269,
+          "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fa-6814-6aea-8942-06803bcf766a/profile/small/1f0a536d-11dc-62da-9dc3-02ec0d6aa587.jpg"
+        },
+        "isBenchPenalty": false,
+        "code": null,
+        "i18n": {
+          "fr": {
+            "infraction": "Coup de bâton"
+          }
+        }
+      },
+      {
+        "gameTime": {
+          "period": "2",
+          "minutes": 12,
+          "seconds": 37,
+          "elapsedMinutes": 2,
+          "elapsedSeconds": 23
+        },
+        "teamId": 128310,
+        "infraction": "Slashing",
+        "duration": {
+          "name": "Minor",
+          "description": null,
+          "i18n": {
+            "fr": {
+              "name": "Mineure"
+            }
+          }
+        },
+        "participant": {
+          "fullName": "ZACK-OLIVIER AMYOT",
+          "number": 42,
+          "participantId": 953040
+        },
+        "isBenchPenalty": false,
+        "code": null,
+        "i18n": {
+          "fr": {
+            "infraction": "Coup de bâton"
+          }
+        }
+      },
+      {
+        "gameTime": {
+          "period": "1",
+          "minutes": 2,
+          "seconds": 31,
+          "elapsedMinutes": 12,
+          "elapsedSeconds": 29
+        },
+        "teamId": 128318,
+        "infraction": "Interference",
+        "duration": {
+          "name": "Minor",
+          "description": null,
+          "i18n": {
+            "fr": {
+              "name": "Mineure"
+            }
+          }
+        },
+        "participant": {
+          "fullName": "ELIOTT FORTIN",
+          "number": 97,
+          "participantId": 957058,
+          "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fa-4be6-6a76-b224-021e976b8d94/profile/small/1f0a5373-64fa-65a6-a5e3-02d85374e4dd.jpg"
+        },
+        "isBenchPenalty": false,
+        "code": null,
+        "i18n": {
+          "fr": {
+            "infraction": "Obstruction"
+          }
+        }
+      },
+      {
+        "gameTime": {
+          "period": "3",
+          "minutes": 3,
+          "seconds": 4,
+          "elapsedMinutes": 11,
+          "elapsedSeconds": 56
+        },
+        "teamId": 128310,
+        "infraction": "Body checking",
+        "duration": {
+          "name": "Minor",
+          "description": null,
+          "i18n": {
+            "fr": {
+              "name": "Mineure"
+            }
+          }
+        },
+        "participant": {
+          "fullName": "VINCENT VINET",
+          "number": 39,
+          "participantId": 807527
+        },
+        "isBenchPenalty": false,
+        "code": null,
+        "i18n": {
+          "fr": {
+            "infraction": "Mise en échec corporelle"
+          }
+        }
+      }
+    ]
+  },
+  "detailed_game_info": {
+    "number": "38",
+    "date": "2025-11-15",
+    "startTime": "2025-11-15T17:30:50.000Z",
+    "endTime": "2025-11-15T18:30:50.000Z",
+    "timezone": "America/Toronto",
+    "division": "U13",
+    "gender": "Integrated",
+    "categoryId": "ba267b3e-9734-478c-a9e2-4890895cfc47",
+    "seasonId": "2025-26",
+    "arenaId": 10639,
+    "scheduleId": 183835,
+    "groupId": null,
+    "crossGroupId": null,
+    "crossScheduleId": null,
+    "officeId": 9175,
+    "homeTeamId": 128310,
+    "awayTeamId": 128318,
+    "status": "Active",
+    "comments": "Gagnant No: 32 vs. Gagnant No: 34",
+    "isApproved": true,
+    "isCertified": false,
+    "spectators": null,
+    "actualStartTime": null,
+    "actualEndTime": null,
+    "id": 676537,
+    "category": {
+      "id": "ba267b3e-9734-478c-a9e2-4890895cfc47",
+      "name": "U13 AAA Elite",
+      "divisionId": "5904e905-ab85-4a34-85ac-9fcae9204250",
+      "gender": "Integrated",
+      "classId": "0b050ba5-ddd1-4759-9ad9-5ac1bf365ac7",
+      "order": 1602,
+      "i18n": {
+        "fr": {
+          "name": "M13 AAA Elite"
+        }
+      },
+      "nameFr": "M13 AAA Elite",
+      "externalId": "1f030d9f-9961-6798-8152-0666a1a64601",
+      "division": {
+        "id": "5904e905-ab85-4a34-85ac-9fcae9204250",
+        "name": "U13",
+        "shortName": "U13",
+        "order": 10,
+        "i18n": {
+          "fr": {
+            "name": "M13",
+            "shortName": "M13"
+          }
+        }
+      },
+      "class": {
+        "id": "0b050ba5-ddd1-4759-9ad9-5ac1bf365ac7",
+        "name": "AAA",
+        "shortName": "AAA",
+        "order": 1,
+        "i18n": {
+          "fr": {
+            "name": "AAA",
+            "shortName": "AAA"
+          }
+        }
+      }
+    },
+    "gameBracket": {
+      "id": "bb4b3deb-5a49-4992-9cb1-2df6f3e47c8c",
+      "gameId": 676537,
+      "draftGameId": null,
+      "bracketId": "UNI-TE23",
+      "referenceId": 38,
+      "homeGameId": 676539,
+      "homeResult": "Winner",
+      "homeSeed": null,
+      "awayGameId": 676540,
+      "awayResult": "Winner",
+      "awaySeed": null
+    },
+    "teamStats": [
+      {
+        "gameId": 676537,
+        "teamId": 128310,
+        "schemaId": "8f056ea1-457e-4fc6-b9f7-86e4e04eb058",
+        "id": 1089551,
+        "pk": 3,
+        "pim": 6,
+        "pko": 3,
+        "ppg": 0,
+        "ppo": 3,
+        "points": 0,
+        "goalFor": 0,
+        "shotFor": null,
+        "pointsPct": 0.25,
+        "gameResult": "loss",
+        "goalAgainst": 5,
+        "shotAgainst": null,
+        "winLossType": "regulation",
+        "sportsmanship": 1,
+        "sportsmanshipPim": {
+          "totalPim": 6,
+          "regularTimePim": 6
+        },
+        "penaltyOccurrences": 3
+      },
+      {
+        "gameId": 676537,
+        "teamId": 128318,
+        "schemaId": "8f056ea1-457e-4fc6-b9f7-86e4e04eb058",
+        "id": 1089552,
+        "pk": 3,
+        "pim": 6,
+        "pko": 3,
+        "ppg": 0,
+        "ppo": 3,
+        "points": 3,
+        "goalFor": 5,
+        "shotFor": null,
+        "pointsPct": 1,
+        "gameResult": "win",
+        "goalAgainst": 0,
+        "shotAgainst": null,
+        "winLossType": "regulation",
+        "sportsmanship": 1,
+        "sportsmanshipPim": {
+          "totalPim": 4,
+          "regularTimePim": 4
+        },
+        "penaltyOccurrences": 3
+      }
+    ],
+    "surface": {
+      "venueId": "30a0e791-7866-47b4-aead-e1d5595ea0b4",
+      "parentId": null,
+      "name": "Glace 1",
+      "fraction": null,
+      "alias": "J-G-TALBOT",
+      "timezone": "America/Toronto",
+      "sports": [
+        "Hockey"
+      ],
+      "type": "Ice",
+      "size": "M",
+      "path": "10639",
+      "externalId": "f78845b3-6665-4ec7-a7aa-3cd0af1b86b3",
+      "id": 10639,
+      "venue": {
+        "id": "30a0e791-7866-47b4-aead-e1d5595ea0b4",
+        "name": "Colisée Jean-Guy Talbot",
+        "address": "1740 Av. Gilles-Villeneuve",
+        "city": "Trois-Rivières",
+        "region": "QC",
+        "postalCode": "G8Y 7B6",
+        "country": "Canada",
+        "alias": null,
+        "timezone": "America/Toronto",
+        "externalId": "49056331-ff94-4ad6-bc41-6a0eb8f1b713"
+      }
+    },
+    "schedule": {
+      "name": "M13 AAA-ÉLITES",
+      "type": "Tournament",
+      "division": "U13",
+      "gender": "Integrated",
+      "categoryId": "ba267b3e-9734-478c-a9e2-4890895cfc47",
+      "startDate": "2025-11-13T00:00:00.000Z",
+      "endDate": "2025-11-16T00:00:00.000Z",
+      "gameFormat": null,
+      "seasonId": "2025-26",
+      "officeId": 9175,
+      "isPublic": true,
+      "comments": null,
+      "externalId": null,
+      "id": 183835,
+      "category": "AAA"
+    },
+    "awayTeam": {
+      "HCRId": "20251644500026634",
+      "name": "SÉLECT DU NORD",
+      "shortName": "SÉLECT DU NORD",
+      "division": "U13",
+      "gender": "Integrated",
+      "categoryId": "ba267b3e-9734-478c-a9e2-4890895cfc47",
+      "seasonId": "2025-26",
+      "logoId": null,
+      "externalId": "1f05e5ce-42ae-61ee-9d0e-0627b38ad1df",
+      "isPublic": true,
+      "isSanctioned": true,
+      "homeColor": "BLANC",
+      "awayColor": "NOIR",
+      "id": 128318,
+      "createdAt": "2025-07-11T13:42:30.000Z",
+      "updatedAt": "2025-11-07T01:03:19.402Z",
+      "officeId": 6002,
+      "logoUrl": "https://d1yykh3c16sa22.cloudfront.net/teams/1f05e5ce-42ae-61ee-9d0e-0627b38ad1df/logos/1f05e5ce-428d-61c4-8f5d-0627b38ad1df.jpg",
+      "category": {
+        "id": "ba267b3e-9734-478c-a9e2-4890895cfc47",
+        "name": "U13 AAA Elite",
+        "divisionId": "5904e905-ab85-4a34-85ac-9fcae9204250",
+        "gender": "Integrated",
+        "classId": "0b050ba5-ddd1-4759-9ad9-5ac1bf365ac7",
+        "order": 1602,
+        "i18n": {
+          "fr": {
+            "name": "M13 AAA Elite"
+          }
+        },
+        "nameFr": "M13 AAA Elite",
+        "externalId": "1f030d9f-9961-6798-8152-0666a1a64601",
+        "division": {
+          "id": "5904e905-ab85-4a34-85ac-9fcae9204250",
+          "name": "U13",
+          "shortName": "U13",
+          "order": 10,
+          "i18n": {
+            "fr": {
+              "name": "M13",
+              "shortName": "M13"
+            }
+          }
+        },
+        "class": {
+          "id": "0b050ba5-ddd1-4759-9ad9-5ac1bf365ac7",
+          "name": "AAA",
+          "shortName": "AAA",
+          "order": 1,
+          "i18n": {
+            "fr": {
+              "name": "AAA",
+              "shortName": "AAA"
+            }
+          }
+        }
+      }
+    },
+    "homeTeam": {
+      "HCRId": "20251154100026643",
+      "name": "GRENADIERS LAC ST-LOUIS",
+      "shortName": "GRENADIERS LAC ST-LOUIS",
+      "division": "U13",
+      "gender": "Integrated",
+      "categoryId": "ba267b3e-9734-478c-a9e2-4890895cfc47",
+      "seasonId": "2025-26",
+      "logoId": null,
+      "externalId": "1f05e5ce-43b6-667c-8c7a-0627b38ad1df",
+      "isPublic": true,
+      "isSanctioned": true,
+      "homeColor": "BLEU",
+      "awayColor": "BLANC",
+      "id": 128310,
+      "createdAt": "2025-07-11T13:42:30.000Z",
+      "updatedAt": "2025-10-30T00:15:14.920Z",
+      "officeId": 5946,
+      "logoUrl": "https://cdn.hcr.spordle.com/teams/1f05e5ce-43b6-667c-8c7a-0627b38ad1df/logos/1f05e5ce-4399-67a2-a606-0627b38ad1df.png",
+      "category": {
+        "id": "ba267b3e-9734-478c-a9e2-4890895cfc47",
+        "name": "U13 AAA Elite",
+        "divisionId": "5904e905-ab85-4a34-85ac-9fcae9204250",
+        "gender": "Integrated",
+        "classId": "0b050ba5-ddd1-4759-9ad9-5ac1bf365ac7",
+        "order": 1602,
+        "i18n": {
+          "fr": {
+            "name": "M13 AAA Elite"
+          }
+        },
+        "nameFr": "M13 AAA Elite",
+        "externalId": "1f030d9f-9961-6798-8152-0666a1a64601",
+        "division": {
+          "id": "5904e905-ab85-4a34-85ac-9fcae9204250",
+          "name": "U13",
+          "shortName": "U13",
+          "order": 10,
+          "i18n": {
+            "fr": {
+              "name": "M13",
+              "shortName": "M13"
+            }
+          }
+        },
+        "class": {
+          "id": "0b050ba5-ddd1-4759-9ad9-5ac1bf365ac7",
+          "name": "AAA",
+          "shortName": "AAA",
+          "order": 1,
+          "i18n": {
+            "fr": {
+              "name": "AAA",
+              "shortName": "AAA"
+            }
+          }
+        }
+      }
+    },
+    "externalProviders": [],
+    "isLive": false,
+    "score": {
+      "128310": 0,
+      "128318": 5
+    }
+  },
+  "home_team_roster": [
+    {
+      "teamId": 128310,
+      "participantId": 807536,
+      "positions": [
+        "G"
+      ],
+      "number": 33,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d35d-8705-6aa8-980c-0207247345f5",
+      "id": 2094846,
+      "participant": {
+        "firstName": "LUDOVIC",
+        "lastName": "LAVALLEE",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64f0-30b0-6932-b22a-0220ca96f6a8",
+        "id": 807536,
+        "fullName": "LUDOVIC LAVALLEE"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 841211,
+      "positions": [
+        "G"
+      ],
+      "number": 1,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d35e-faa1-661e-bf6b-0207247345f5",
+      "id": 2094848,
+      "participant": {
+        "firstName": "JACKSON",
+        "lastName": "MURRAY",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ed11338-9cc4-6a22-b5c4-0243d9933572",
+        "id": 841211,
+        "fullName": "JACKSON MURRAY"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 953040,
+      "positions": [
+        "D"
+      ],
+      "number": 42,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d360-b6e8-68e4-b7a4-02338d534395",
+      "id": 2094849,
+      "participant": {
+        "firstName": "ZACK-OLIVIER",
+        "lastName": "AMYOT",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64f9-aff1-615c-ab68-0220ca96f6a8",
+        "id": 953040,
+        "fullName": "ZACK-OLIVIER AMYOT"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 807534,
+      "positions": [
+        "D"
+      ],
+      "number": 29,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d367-c5d7-6dee-8fa0-0207247345f5",
+      "id": 2094853,
+      "participant": {
+        "firstName": "ALEXIS",
+        "lastName": "BOILLAT",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64ef-2bfc-64a0-9a96-068fc9a36a40",
+        "id": 807534,
+        "fullName": "ALEXIS BOILLAT"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 953041,
+      "positions": [
+        "D"
+      ],
+      "number": 43,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d367-c8b1-6be6-8de8-0207247345f5",
+      "id": 2094854,
+      "participant": {
+        "firstName": "LUCA",
+        "lastName": "FILIATRAULT",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64f1-0247-6de2-b1bb-020a2d3ab872",
+        "id": 953041,
+        "fullName": "LUCA FILIATRAULT"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 807541,
+      "positions": [
+        "D"
+      ],
+      "number": 26,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d367-ca18-6ad4-b13f-0207247345f5",
+      "id": 2094855,
+      "participant": {
+        "firstName": "MICHAEL",
+        "lastName": "DI CIERO",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64ef-375e-6744-85e3-068fc9a36a40",
+        "id": 807541,
+        "fullName": "MICHAEL DI CIERO"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 807533,
+      "positions": [
+        "D"
+      ],
+      "number": 35,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d367-cb72-68da-9546-0207247345f5",
+      "id": 2094856,
+      "participant": {
+        "firstName": "JACOB",
+        "lastName": "PROULX",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64f8-f68e-625a-bebe-021e976b8d94",
+        "id": 807533,
+        "fullName": "JACOB PROULX"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 807537,
+      "positions": [
+        "D"
+      ],
+      "number": 27,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d367-c759-6956-a83e-0207247345f5",
+      "id": 2094857,
+      "participant": {
+        "firstName": "EMMANUEL",
+        "lastName": "CAMPBELL",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64f1-540a-663e-a754-0695742fcc0e",
+        "id": 807537,
+        "fullName": "EMMANUEL CAMPBELL"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 807529,
+      "positions": [
+        "F"
+      ],
+      "number": 22,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d37d-e16f-6c1c-b326-068b95867d1f",
+      "id": 2094863,
+      "participant": {
+        "firstName": "MATHIS",
+        "lastName": "BOISVERT",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64ef-55c6-6bfa-812d-0695742fcc0e",
+        "id": 807529,
+        "fullName": "MATHIS BOISVERT"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 807538,
+      "positions": [
+        "F"
+      ],
+      "number": 23,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d37d-ec4b-6b0e-84de-068b95867d1f",
+      "id": 2094864,
+      "participant": {
+        "firstName": "RAPHAEL",
+        "lastName": "RENAUD",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64f9-9954-6430-9e2b-020a2d3ab872",
+        "id": 807538,
+        "fullName": "RAPHAEL RENAUD"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 953049,
+      "positions": [
+        "F"
+      ],
+      "number": 38,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d37d-e7cc-61d2-bf8b-068b95867d1f",
+      "id": 2094865,
+      "participant": {
+        "firstName": "HENRI",
+        "lastName": "HEBERT",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ee1681d-fdd5-6ca4-ae53-06bba40fa00c",
+        "id": 953049,
+        "fullName": "HENRI HEBERT"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 807530,
+      "positions": [
+        "F"
+      ],
+      "number": 34,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d37d-e94b-688c-816d-068b95867d1f",
+      "id": 2094866,
+      "participant": {
+        "firstName": "TURNER",
+        "lastName": "LAHACHE",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64f9-17e7-6c08-afcc-068fc9a36a40",
+        "id": 807530,
+        "fullName": "TURNER LAHACHE"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 807527,
+      "positions": [
+        "F"
+      ],
+      "number": 39,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d37d-edc7-6db6-8a87-068b95867d1f",
+      "id": 2094867,
+      "participant": {
+        "firstName": "VINCENT",
+        "lastName": "VINET",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64f1-4823-6276-890a-020a2d3ab872",
+        "id": 807527,
+        "fullName": "VINCENT VINET"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 807531,
+      "positions": [
+        "F"
+      ],
+      "number": 24,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d37d-eace-6c54-bfe8-068b95867d1f",
+      "id": 2094868,
+      "participant": {
+        "firstName": "MIKO",
+        "lastName": "PAINCHAUD",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64ef-1415-6382-abfb-06803bcf766a",
+        "id": 807531,
+        "fullName": "MIKO PAINCHAUD"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 953050,
+      "positions": [
+        "F"
+      ],
+      "number": 28,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d37d-e2fb-6f04-aa53-068b95867d1f",
+      "id": 2094869,
+      "participant": {
+        "firstName": "RYAN",
+        "lastName": "BOYD",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64f8-e00e-69c6-ac62-06803bcf766a",
+        "id": 953050,
+        "fullName": "RYAN BOYD"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 807525,
+      "positions": [
+        "F"
+      ],
+      "number": 41,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d37d-e643-68ce-b196-068b95867d1f",
+      "id": 2094870,
+      "participant": {
+        "firstName": "JACOB",
+        "lastName": "FLETCHER",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64f9-80f1-60aa-823f-0220ca96f6a8",
+        "id": 807525,
+        "fullName": "JACOB FLETCHER"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 807532,
+      "positions": [
+        "F"
+      ],
+      "number": 37,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f07d37d-e4ab-6ebc-99fa-068b95867d1f",
+      "id": 2094871,
+      "participant": {
+        "firstName": "HENRY",
+        "lastName": "COLDRICK",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64ef-66ca-6ef6-b6ab-06803bcf766a",
+        "id": 807532,
+        "fullName": "HENRY COLDRICK"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 956196,
+      "positions": [
+        "Head Coach"
+      ],
+      "number": null,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f084346-2d41-6c98-86c1-02b729a8ae7b",
+      "id": 2110531,
+      "participant": {
+        "firstName": "PATRICK",
+        "lastName": "LAPOINTE",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb656b-8975-6038-9d0a-0220ca96f6a8/profile/1ec40c4c-2471-62dc-ae84-06173abd286a.jpg",
+        "externalId": "1ebb656b-8975-6038-9d0a-0220ca96f6a8",
+        "id": 956196,
+        "fullName": "PATRICK LAPOINTE"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 956877,
+      "positions": [
+        "Assistant Coach"
+      ],
+      "number": null,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f085aeb-009c-6456-9297-028667cee5ff",
+      "id": 2114001,
+      "participant": {
+        "firstName": "HUGO",
+        "lastName": "AUDETTE",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebbca72-b046-6344-90e4-06744de97da0",
+        "id": 956877,
+        "fullName": "HUGO AUDETTE"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 807543,
+      "positions": [
+        "G"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f08f1fa-1121-6e60-9126-06d853421783",
+      "id": 2140558,
+      "participant": {
+        "firstName": "LOIC",
+        "lastName": "DAOUST",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64f0-baa4-630a-b0cc-068fc9a36a40",
+        "id": 807543,
+        "fullName": "LOIC DAOUST"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 960075,
+      "positions": [
+        "F"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f08f453-8e69-6764-8481-06d853421783",
+      "id": 2141701,
+      "participant": {
+        "firstName": "AYDEN",
+        "lastName": "CLOUTIER",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64f9-0863-69a8-8793-021e976b8d94",
+        "id": 960075,
+        "fullName": "AYDEN CLOUTIER"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 960072,
+      "positions": [
+        "F"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f08f585-5aee-6956-8f16-06d853421783",
+      "id": 2142059,
+      "participant": {
+        "firstName": "JOSHUA",
+        "lastName": "FARKAS",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64f9-074c-6894-b457-021e976b8d94",
+        "id": 960072,
+        "fullName": "JOSHUA FARKAS"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 956892,
+      "positions": [
+        "Assistant Coach"
+      ],
+      "number": null,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f098c66-0dca-6422-9721-02949a4dcdbf",
+      "id": 2192893,
+      "participant": {
+        "firstName": "SAMUEL",
+        "lastName": "BOURDAGES",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebbf49f-487c-66bc-adb3-0295c0461c8a",
+        "id": 956892,
+        "fullName": "SAMUEL BOURDAGES"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 774475,
+      "positions": [
+        "Assistant Coach"
+      ],
+      "number": null,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f098c66-ccf9-6f1e-b184-02c4da980a79",
+      "id": 2192900,
+      "participant": {
+        "firstName": "JULIO",
+        "lastName": "BEAUDIN",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb6564-65d0-61c0-bc3a-068fc9a36a40",
+        "id": 774475,
+        "fullName": "JULIO BEAUDIN"
+      }
+    },
+    {
+      "teamId": 128310,
+      "participantId": 959387,
+      "positions": [
+        "Assistant Coach"
+      ],
+      "number": null,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 5946,
+      "externalId": "1f098c67-9474-6cec-b589-06189a6ed02f",
+      "id": 2192902,
+      "participant": {
+        "firstName": "FRANCIS",
+        "lastName": "CASTONGUAY",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64f9-7b3a-64c2-9a8e-0220ca96f6a8",
+        "id": 959387,
+        "fullName": "FRANCIS CASTONGUAY"
+      }
+    }
+  ],
+  "away_team_roster": [
+    {
+      "teamId": 128318,
+      "participantId": 957054,
+      "positions": [
+        "D"
+      ],
+      "number": 91,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860a2-9231-6ef4-88ce-028667cee5ff",
+      "id": 2114636,
+      "participant": {
+        "firstName": "NATHAN",
+        "lastName": "BOURRET",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fb-5bcc-6d18-a2c4-06803bcf766a/profile/small/1f0a5368-d950-6abe-8587-02d85374e4dd.jpg",
+        "externalId": "1ebb64fb-5bcc-6d18-a2c4-06803bcf766a",
+        "id": 957054,
+        "fullName": "NATHAN BOURRET"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 767271,
+      "positions": [
+        "F"
+      ],
+      "number": 72,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860a3-afe2-6d3a-a798-02b729a8ae7b",
+      "id": 2114637,
+      "participant": {
+        "firstName": "HENRIK",
+        "lastName": "COURNOYER",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fa-894c-6104-bc3a-020a2d3ab872/profile/small/1f0a536a-3ca7-6a44-bba4-067f8c035ee7.jpg",
+        "externalId": "1ebb64fa-894c-6104-bc3a-020a2d3ab872",
+        "id": 767271,
+        "fullName": "HENRIK COURNOYER"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 767269,
+      "positions": [
+        "F"
+      ],
+      "number": 22,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860a5-5cc3-690e-a0b6-06d853421783",
+      "id": 2114639,
+      "participant": {
+        "firstName": "THOMAS",
+        "lastName": "DELISLE",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fa-6814-6aea-8942-06803bcf766a/profile/small/1f0a536d-11dc-62da-9dc3-02ec0d6aa587.jpg",
+        "externalId": "1ebb64fa-6814-6aea-8942-06803bcf766a",
+        "id": 767269,
+        "fullName": "THOMAS DELISLE"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 957055,
+      "positions": [
+        "F"
+      ],
+      "number": 14,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860c0-ec5d-62b6-9c4e-02b729a8ae7b",
+      "id": 2114671,
+      "participant": {
+        "firstName": "MAIK",
+        "lastName": "FORGET",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fb-6510-6992-aa88-06803bcf766a/profile/small/1f0a5371-8356-60d8-b8fc-067f8c035ee7.jpg",
+        "externalId": "1ebb64fb-6510-6992-aa88-06803bcf766a",
+        "id": 957055,
+        "fullName": "MAIK FORGET"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 767264,
+      "positions": [
+        "D"
+      ],
+      "number": 24,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860c4-521f-6fba-8a64-06d853421783",
+      "id": 2114678,
+      "participant": {
+        "firstName": "JACOB",
+        "lastName": "DUBE DESSEAUX",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fb-dd11-6a68-92a1-0695742fcc0e/profile/small/1f0a536f-3f80-62b6-b81a-067f8c035ee7.jpg",
+        "externalId": "1ebb64fb-dd11-6a68-92a1-0695742fcc0e",
+        "id": 767264,
+        "fullName": "JACOB DUBE DESSEAUX"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 957056,
+      "positions": [
+        "F"
+      ],
+      "number": 89,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860c7-319d-6dde-a10f-02b729a8ae7b",
+      "id": 2114681,
+      "participant": {
+        "firstName": "ALEX",
+        "lastName": "DEROY",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fa-5d85-614c-a6cb-0695742fcc0e/profile/small/1f0a536d-f39c-6698-9adc-02d85374e4dd.jpg",
+        "externalId": "1ebb64fa-5d85-614c-a6cb-0695742fcc0e",
+        "id": 957056,
+        "fullName": "ALEX DEROY"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 767270,
+      "positions": [
+        "G"
+      ],
+      "number": 29,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860ca-adf9-67f4-906d-06d853421783",
+      "id": 2114683,
+      "participant": {
+        "firstName": "NATHAN",
+        "lastName": "DONTIGNY",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fa-3823-6c6e-9b74-068fc9a36a40/profile/small/1f0a536b-a9f6-67de-a73a-02ec0d6aa587.jpg",
+        "externalId": "1ebb64fa-3823-6c6e-9b74-068fc9a36a40",
+        "id": 767270,
+        "fullName": "NATHAN DONTIGNY"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 957058,
+      "positions": [
+        "F"
+      ],
+      "number": 97,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860d5-c517-6eee-9a02-06d853421783",
+      "id": 2114691,
+      "participant": {
+        "firstName": "ELIOTT",
+        "lastName": "FORTIN",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fa-4be6-6a76-b224-021e976b8d94/profile/small/1f0a5373-64fa-65a6-a5e3-02d85374e4dd.jpg",
+        "externalId": "1ebb64fa-4be6-6a76-b224-021e976b8d94",
+        "id": 957058,
+        "fullName": "ELIOTT FORTIN"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 957059,
+      "positions": [
+        "D"
+      ],
+      "number": 6,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860d8-92e7-611a-91e2-02b729a8ae7b",
+      "id": 2114692,
+      "participant": {
+        "firstName": "ELOI",
+        "lastName": "GAUTHIER",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fb-5fae-6486-8ecb-06803bcf766a/profile/small/1f0a5374-23e1-6f32-a923-067f8c035ee7.jpg",
+        "externalId": "1ebb64fb-5fae-6486-8ecb-06803bcf766a",
+        "id": 957059,
+        "fullName": "ELOI GAUTHIER"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 957060,
+      "positions": [
+        "C"
+      ],
+      "number": 98,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860da-3682-6b84-affb-02b729a8ae7b",
+      "id": 2114693,
+      "participant": {
+        "firstName": "JEROME",
+        "lastName": "LACHAPELLE",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fb-74fd-658a-86a6-021e976b8d94/profile/small/1f0a5374-f843-68b6-a281-02d85374e4dd.jpg",
+        "externalId": "1ebb64fb-74fd-658a-86a6-021e976b8d94",
+        "id": 957060,
+        "fullName": "JEROME LACHAPELLE"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 767262,
+      "positions": [
+        "F"
+      ],
+      "number": 94,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860db-933b-66fe-af77-02b729a8ae7b",
+      "id": 2114695,
+      "participant": {
+        "firstName": "DYLAN",
+        "lastName": "LANGEVIN",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fb-5231-6ea2-8582-06803bcf766a/profile/small/1f0a5375-e2ca-6b28-a739-02ec0d6aa587.jpg",
+        "externalId": "1ebb64fb-5231-6ea2-8582-06803bcf766a",
+        "id": 767262,
+        "fullName": "DYLAN LANGEVIN"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 755213,
+      "positions": [
+        "C"
+      ],
+      "number": 74,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860de-3424-61c2-b444-02b729a8ae7b",
+      "id": 2114696,
+      "participant": {
+        "firstName": "JAYKE",
+        "lastName": "LE PAGE",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fa-5fba-6c5a-a95f-021e976b8d94/profile/small/1f0a5376-c6ba-6dec-923c-067f8c035ee7.jpg",
+        "externalId": "1ebb64fa-5fba-6c5a-a95f-021e976b8d94",
+        "id": 755213,
+        "fullName": "JAYKE LE PAGE"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 767266,
+      "positions": [
+        "D"
+      ],
+      "number": 19,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860e0-1471-6a6c-a543-028667cee5ff",
+      "id": 2114700,
+      "participant": {
+        "firstName": "JAYDEN",
+        "lastName": "LEDUC",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fc-238e-6da6-8b0c-068fc9a36a40/profile/small/1f0a5377-c45e-6516-83cb-02ec0d6aa587.jpg",
+        "externalId": "1ebb64fc-238e-6da6-8b0c-068fc9a36a40",
+        "id": 767266,
+        "fullName": "JAYDEN LEDUC"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 957062,
+      "positions": [
+        "D"
+      ],
+      "number": 16,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860e1-575c-62fe-8926-028667cee5ff",
+      "id": 2114719,
+      "participant": {
+        "firstName": "MICHAEL",
+        "lastName": "PARE",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fc-1823-62e6-a93b-06803bcf766a/profile/small/1f0a5378-a44c-6588-a643-02ec0d6aa587.jpg",
+        "externalId": "1ebb64fc-1823-62e6-a93b-06803bcf766a",
+        "id": 957062,
+        "fullName": "MICHAEL PARE"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 767267,
+      "positions": [
+        "G"
+      ],
+      "number": 1,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860e2-f666-6808-a0cc-02b729a8ae7b",
+      "id": 2114720,
+      "participant": {
+        "firstName": "FÉLIX",
+        "lastName": "PINEAULT",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb64fb-649d-638e-b295-0220ca96f6a8/profile/small/1f0a5379-7df2-66f2-9776-02d85374e4dd.jpg",
+        "externalId": "1ebb64fb-649d-638e-b295-0220ca96f6a8",
+        "id": 767267,
+        "fullName": "FÉLIX PINEAULT"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 957064,
+      "positions": [
+        "F"
+      ],
+      "number": 9,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0860e5-66fe-6ee2-b941-02b729a8ae7b",
+      "id": 2114722,
+      "participant": {
+        "firstName": "WILLIAM",
+        "lastName": "VALLIERES",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb6502-4bdd-6220-8774-021e976b8d94/profile/small/1f0a537a-57f0-670a-870c-02ec0d6aa587.jpg",
+        "externalId": "1ebb6502-4bdd-6220-8774-021e976b8d94",
+        "id": 957064,
+        "fullName": "WILLIAM VALLIERES"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 807817,
+      "positions": [
+        "Assistant Coach"
+      ],
+      "number": null,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f086910-ee29-64fc-9343-028667cee5ff",
+      "id": 2115390,
+      "participant": {
+        "firstName": "PIERRE-LUC",
+        "lastName": "LEVESQUE-MARION",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64fa-66e3-65b8-b7eb-06803bcf766a",
+        "id": 807817,
+        "fullName": "PIERRE-LUC LEVESQUE-MARION"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 957194,
+      "positions": [
+        "Assistant Coach"
+      ],
+      "number": null,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f086913-2694-6272-819b-028667cee5ff",
+      "id": 2115391,
+      "participant": {
+        "firstName": "MATHIEU",
+        "lastName": "FORGET",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64fa-9b7b-60aa-866f-0695742fcc0e",
+        "id": 957194,
+        "fullName": "MATHIEU FORGET"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 796067,
+      "positions": [
+        "D"
+      ],
+      "number": 11,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f08c34c-3a6a-63ee-ab1b-028667cee5ff",
+      "id": 2129675,
+      "participant": {
+        "firstName": "LOIK",
+        "lastName": "FERLATTE",
+        "alternateName": null,
+        "pictureUrl": "https://cdn.hcr.spordle.com/members/1ebb6500-febc-605a-854d-021e976b8d94/profile/small/1f0a5370-468e-68b8-8f1c-067f8c035ee7.jpg",
+        "externalId": "1ebb6500-febc-605a-854d-021e976b8d94",
+        "id": 796067,
+        "fullName": "LOIK FERLATTE"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 849884,
+      "positions": [
+        "Head Coach"
+      ],
+      "number": null,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f08c359-ea2c-6cf2-8480-02b729a8ae7b",
+      "id": 2129678,
+      "participant": {
+        "firstName": "JEAN-MATHIEU",
+        "lastName": "ROY",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64fb-747e-6fd2-b347-06803bcf766a",
+        "id": 849884,
+        "fullName": "JEAN-MATHIEU ROY"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 767268,
+      "positions": [
+        "Assistant Coach"
+      ],
+      "number": null,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f08db8a-13a2-63f0-8a6d-028667cee5ff",
+      "id": 2135445,
+      "participant": {
+        "firstName": "BENOIT",
+        "lastName": "GRATTON",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb6589-57de-6268-a988-020a2d3ab872",
+        "id": 767268,
+        "fullName": "BENOIT GRATTON"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 975182,
+      "positions": [
+        "Assistant Coach"
+      ],
+      "number": null,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": false,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0994d4-2cbc-6a1c-b12b-06aeb8159e59",
+      "id": 2197136,
+      "participant": {
+        "firstName": "NOAH",
+        "lastName": "PATRY DONTIGNY",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64fe-8c53-6934-8339-068fc9a36a40",
+        "id": 975182,
+        "fullName": "NOAH PATRY DONTIGNY"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 808300,
+      "positions": [
+        "C"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0a2c9a-f5d1-62b4-94a7-02499752e1af",
+      "id": 2318571,
+      "participant": {
+        "firstName": "MALIK",
+        "lastName": "GITTO",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb6502-5b32-6c8e-b7e0-0695742fcc0e",
+        "id": 808300,
+        "fullName": "MALIK GITTO"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 808282,
+      "positions": [
+        "D"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0a2c9b-d52e-6678-a0ea-061c8b8d0863",
+      "id": 2318574,
+      "participant": {
+        "firstName": "LOGAN",
+        "lastName": "ASPIROT",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb6502-3a85-6bb2-afc2-068fc9a36a40",
+        "id": 808282,
+        "fullName": "LOGAN ASPIROT"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 808284,
+      "positions": [
+        "D"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0a2c9c-bb10-6074-9304-06d0ece535d5",
+      "id": 2318579,
+      "participant": {
+        "firstName": "MAXIME",
+        "lastName": "BOUCHER",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb6502-6c5e-633c-9102-0220ca96f6a8",
+        "id": 808284,
+        "fullName": "MAXIME BOUCHER"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 957076,
+      "positions": [
+        "F"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0a2ca0-60ee-6178-940b-02499752e1af",
+      "id": 2318588,
+      "participant": {
+        "firstName": "ANTHONY",
+        "lastName": "ST-LAURENT",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64fa-1c82-65be-ab18-020a2d3ab872",
+        "id": 957076,
+        "fullName": "ANTHONY ST-LAURENT"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 807820,
+      "positions": [
+        "G"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0a2ca1-4943-666c-9bfe-06d0ece535d5",
+      "id": 2318591,
+      "participant": {
+        "firstName": "JACOB",
+        "lastName": "PAQUETTE",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64fb-c0c0-6b34-954d-06803bcf766a",
+        "id": 807820,
+        "fullName": "JACOB PAQUETTE"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 784610,
+      "positions": [
+        "G"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0a2ca2-1a41-6e30-adfd-020cd29acb85",
+      "id": 2318598,
+      "participant": {
+        "firstName": "NATHAN",
+        "lastName": "SANTERRE",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64fb-4a3a-6faa-9d3e-068fc9a36a40",
+        "id": 784610,
+        "fullName": "NATHAN SANTERRE"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 807821,
+      "positions": [
+        "F"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0a2ca2-c2a7-6e94-9f1b-06764d9f354b",
+      "id": 2318600,
+      "participant": {
+        "firstName": "DEREK",
+        "lastName": "VILLENEUVE",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64fb-e9bc-6cf4-8f1b-021e976b8d94",
+        "id": 807821,
+        "fullName": "DEREK VILLENEUVE"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 831160,
+      "positions": [
+        "F"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0a2ca4-e10d-6ec2-9836-020cd29acb85",
+      "id": 2318621,
+      "participant": {
+        "firstName": "ALEXIS",
+        "lastName": "SLEIGHER",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64fa-4ff4-6654-8a72-020a2d3ab872",
+        "id": 831160,
+        "fullName": "ALEXIS SLEIGHER"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 784583,
+      "positions": [
+        "F"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0a2ca5-cd13-6416-85e3-06d0ece535d5",
+      "id": 2318627,
+      "participant": {
+        "firstName": "THEO",
+        "lastName": "CABANA",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64fb-ba38-6208-a5b1-06803bcf766a",
+        "id": 784583,
+        "fullName": "THEO CABANA"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 976589,
+      "positions": [
+        "F"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0b0351-5046-68ce-808a-067f8c035ee7",
+      "id": 2464315,
+      "participant": {
+        "firstName": "LEO",
+        "lastName": "BOUTHILLETTE",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebddb6b-7c6f-6e38-8389-0692a971d5ea",
+        "id": 976589,
+        "fullName": "LEO BOUTHILLETTE"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 976587,
+      "positions": [
+        "D"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0b0353-9f9c-6d04-a928-067f8c035ee7",
+      "id": 2464327,
+      "participant": {
+        "firstName": "CHAD",
+        "lastName": "BERNIER",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64fa-945f-6cee-bd88-021e976b8d94",
+        "id": 976587,
+        "fullName": "CHAD BERNIER"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 918355,
+      "positions": [
+        "C"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0b7fb0-9df1-619c-b6ba-067f8c035ee7",
+      "id": 2511414,
+      "participant": {
+        "firstName": "ANTOINE",
+        "lastName": "LÉVESQUE",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64fb-8b9c-61ce-9dbe-06803bcf766a",
+        "id": 918355,
+        "fullName": "ANTOINE LÉVESQUE"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 952909,
+      "positions": [
+        "D"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0b7fb2-1712-6ea8-b660-067f8c035ee7",
+      "id": 2511417,
+      "participant": {
+        "firstName": "LOICK",
+        "lastName": "DORE",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64fa-6d9a-65a0-8954-0695742fcc0e",
+        "id": 952909,
+        "fullName": "LOICK DORE"
+      }
+    },
+    {
+      "teamId": 128318,
+      "participantId": 751991,
+      "positions": [
+        "F"
+      ],
+      "number": 0,
+      "isCaptain": false,
+      "isAlternate": false,
+      "isAffiliate": true,
+      "isOverage": false,
+      "isUnderage": false,
+      "isReleased": false,
+      "seasonId": "2025-26",
+      "officeId": 6002,
+      "externalId": "1f0bb757-b95c-69e8-a38e-067f8c035ee7",
+      "id": 2528769,
+      "participant": {
+        "firstName": "FRANCOIS",
+        "lastName": "CYR",
+        "alternateName": null,
+        "pictureUrl": null,
+        "externalId": "1ebb64fa-5e9f-6334-969c-0220ca96f6a8",
+        "id": 751991,
+        "fullName": "FRANCOIS CYR"
+      }
+    }
+  ],
+  "gamesheet_pdf_file": "web/data/gamesheets/game_676537.pdf",
+  "starting_goalies": {
+    "home_goalie": "NATHAN DONTIGNY",
+    "away_goalie": "JACKSON MURRAY"
+  },
+  "game_type": "tournament",
+  "schedule_id": 183835
+}

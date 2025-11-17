@@ -298,9 +298,10 @@ class StartingGoalieParser:
 class HockeyStatsCompiler:
     """Processes JSON game files to compile team and player statistics"""
 
-    def __init__(self, games_dir, web_dir):
+    def __init__(self, games_dir, web_dir, include_tournaments=True):
         self.games_dir = games_dir
         self.web_dir = web_dir
+        self.include_tournaments = include_tournaments
         self.teams = {}
         self.players = {}
         self.games = []
@@ -312,7 +313,13 @@ class HockeyStatsCompiler:
     def load_games(self):
         """Load all JSON game files"""
         print("Loading game files...")
+        if not self.include_tournaments:
+            print("  Tournament games will be excluded from stats")
+
         game_files = [f for f in os.listdir(self.games_dir) if f.endswith('.json')]
+
+        season_count = 0
+        tournament_count = 0
 
         for filename in sorted(game_files):
             file_path = os.path.join(self.games_dir, filename)
@@ -321,14 +328,26 @@ class HockeyStatsCompiler:
                     game_data = json.load(f)
 
                 if game_data.get('status') == 'FINAL' and 'boxscore' in game_data:
+                    game_type = game_data.get('game_type', 'season')
+
+                    # Skip tournament games if not including them
+                    if not self.include_tournaments and game_type == 'tournament':
+                        print(f"  Skipped (tournament): {filename}")
+                        tournament_count += 1
+                        continue
+
                     self.games.append(game_data)
-                    print(f"  Loaded: {filename}")
+                    if game_type == 'tournament':
+                        tournament_count += 1
+                    else:
+                        season_count += 1
+                    print(f"  Loaded ({game_type}): {filename}")
                 else:
                     print(f"  Skipped (not final): {filename}")
             except Exception as e:
                 print(f"  Error loading {filename}: {e}")
 
-        print(f"Total games loaded: {len(self.games)}")
+        print(f"Total games loaded: {len(self.games)} (Season: {season_count}, Tournament: {tournament_count})")
 
     def initialize_team_stats(self, team_id, team_name):
         """Initialize team statistics structure"""
@@ -340,7 +359,10 @@ class HockeyStatsCompiler:
                 'wins': 0,
                 'losses': 0,
                 'ties': 0,
+                'overtime_losses': 0,
                 'points': 0,
+                'fair_play_points': 0,
+                'total_points': 0,
                 'goals_for': 0,
                 'goals_against': 0,
                 'goal_differential': 0,
@@ -568,7 +590,25 @@ class HockeyStatsCompiler:
         penalty_events = []
         for penalty in penalties:
             game_time = penalty.get('gameTime', {})
-            period = int(game_time.get('period', 1))
+
+            # Handle period conversion (regular periods are 1, 2, 3, OT is 4, etc.)
+            period_value = game_time.get('period', 1)
+            if isinstance(period_value, str):
+                # Convert string periods to numeric values
+                period_upper = period_value.upper()
+                if period_upper == 'OT':
+                    period = 4
+                elif period_upper == 'SO':
+                    period = 5  # Shootout
+                else:
+                    # Try to extract number from string, or default to 1
+                    try:
+                        period = int(''.join(filter(str.isdigit, period_value)) or '1')
+                    except ValueError:
+                        period = 1
+            else:
+                period = int(period_value)
+
             minutes = int(game_time.get('minutes', 0))
             seconds = int(game_time.get('seconds', 0))
 
@@ -692,20 +732,55 @@ class HockeyStatsCompiler:
             self.teams[away_team_id]['goals_for'] += away_score
             self.teams[away_team_id]['goals_against'] += home_score
 
+            # Get detailed team stats for overtime/shootout info and fair play points
+            home_team_stats = None
+            away_team_stats = None
+            if 'detailed_game_info' in game and 'teamStats' in game['detailed_game_info']:
+                for team_stat in game['detailed_game_info']['teamStats']:
+                    if team_stat.get('teamId') == home_team_id:
+                        home_team_stats = team_stat
+                    elif team_stat.get('teamId') == away_team_id:
+                        away_team_stats = team_stat
+
+            # Add fair play points
+            if home_team_stats and 'sportsmanship' in home_team_stats:
+                self.teams[home_team_id]['fair_play_points'] += home_team_stats['sportsmanship']
+            if away_team_stats and 'sportsmanship' in away_team_stats:
+                self.teams[away_team_id]['fair_play_points'] += away_team_stats['sportsmanship']
+
             # Determine outcome
             if home_score > away_score:
+                # Home team wins
                 self.teams[home_team_id]['wins'] += 1
                 self.teams[home_team_id]['home_wins'] += 1
                 self.teams[home_team_id]['points'] += 2
-                self.teams[away_team_id]['losses'] += 1
-                self.teams[away_team_id]['away_losses'] += 1
+
+                # Check if away team lost in overtime/shootout (gets 1 point)
+                if away_team_stats and away_team_stats.get('winLossType') in ['overtime', 'shootout']:
+                    self.teams[away_team_id]['overtime_losses'] += 1
+                    self.teams[away_team_id]['away_losses'] += 1
+                    self.teams[away_team_id]['points'] += 1
+                else:
+                    self.teams[away_team_id]['losses'] += 1
+                    self.teams[away_team_id]['away_losses'] += 1
+
             elif away_score > home_score:
+                # Away team wins
                 self.teams[away_team_id]['wins'] += 1
                 self.teams[away_team_id]['away_wins'] += 1
                 self.teams[away_team_id]['points'] += 2
-                self.teams[home_team_id]['losses'] += 1
-                self.teams[home_team_id]['home_losses'] += 1
+
+                # Check if home team lost in overtime/shootout (gets 1 point)
+                if home_team_stats and home_team_stats.get('winLossType') in ['overtime', 'shootout']:
+                    self.teams[home_team_id]['overtime_losses'] += 1
+                    self.teams[home_team_id]['home_losses'] += 1
+                    self.teams[home_team_id]['points'] += 1
+                else:
+                    self.teams[home_team_id]['losses'] += 1
+                    self.teams[home_team_id]['home_losses'] += 1
+
             else:
+                # Tie
                 self.teams[home_team_id]['ties'] += 1
                 self.teams[home_team_id]['home_ties'] += 1
                 self.teams[home_team_id]['points'] += 1
@@ -896,9 +971,10 @@ class HockeyStatsCompiler:
                 else:
                     self.players[player_id]['games_played'] = len(game_set)
 
-        # Calculate goal differentials
+        # Calculate goal differentials and total points
         for team in self.teams.values():
             team['goal_differential'] = team['goals_for'] - team['goals_against']
+            team['total_points'] = team['points'] + team['fair_play_points']
 
         print(f"Processed {len(self.teams)} teams and {len(self.players)} players")
 
@@ -946,17 +1022,22 @@ class HockeyStatsCompiler:
 
         print(f"Logo download summary: {downloaded_count} downloaded, {skipped_count} already existed")
 
-    def save_data(self):
+    def save_data(self, suffix=''):
         """Save compiled statistics to JSON files"""
-        print("Saving statistics data...")
+        print(f"Saving statistics data{' (' + suffix + ')' if suffix else ''}...")
 
         data_dir = os.path.join(self.web_dir, 'data')
         os.makedirs(data_dir, exist_ok=True)
 
-        # Sort teams by points
+        # Sort teams by POC (descending), then total points, then goal differential
         teams_list = sorted(
             self.teams.values(),
-            key=lambda x: (-x['points'], -x['goal_differential'], x['name'])
+            key=lambda x: (
+                -x.get('poc_adjusted', x.get('poc_rating', 1000)),  # Higher POC is better
+                -x['total_points'],
+                -x['goal_differential'],
+                x['name']
+            )
         )
 
         # Sort players by points
@@ -965,29 +1046,38 @@ class HockeyStatsCompiler:
             key=lambda x: (-x['points'], -x['goals'], x['name'])
         )
 
+        # Determine filenames
+        teams_filename = f'teams{suffix}.json'
+        players_filename = f'players{suffix}.json'
+
         # Save teams
-        with open(os.path.join(data_dir, 'teams.json'), 'w', encoding='utf-8') as f:
+        with open(os.path.join(data_dir, teams_filename), 'w', encoding='utf-8') as f:
             json.dump(teams_list, f, indent=2, ensure_ascii=False)
 
         # Save players
-        with open(os.path.join(data_dir, 'players.json'), 'w', encoding='utf-8') as f:
+        with open(os.path.join(data_dir, players_filename), 'w', encoding='utf-8') as f:
             json.dump(players_list, f, indent=2, ensure_ascii=False)
 
-        # Save games
-        games_summary = []
-        for game in self.games:
-            games_summary.append({
-                'id': game['id'],
-                'date': game['date'],
-                'home_team': game['home_team'],
-                'away_team': game['away_team'],
-                'home_score': game.get('home_score', 0),
-                'away_score': game.get('away_score', 0),
-                'status': game['status']
-            })
+        # Save games (only save games.json with ALL games, not filtered versions)
+        # This ensures team detail pages always show all games including tournaments
+        if suffix == '':  # Only save games.json during the "all games" compilation
+            games_summary = []
+            for game in self.games:
+                games_summary.append({
+                    'id': game['id'],
+                    'date': game['date'],
+                    'home_team': game['home_team'],
+                    'away_team': game['away_team'],
+                    'home_score': game.get('home_score', 0),
+                    'away_score': game.get('away_score', 0),
+                    'status': game['status'],
+                    'game_type': game.get('game_type', 'season')
+                })
 
-        with open(os.path.join(data_dir, 'games.json'), 'w', encoding='utf-8') as f:
-            json.dump(games_summary, f, indent=2, ensure_ascii=False)
+            with open(os.path.join(data_dir, 'games.json'), 'w', encoding='utf-8') as f:
+                json.dump(games_summary, f, indent=2, ensure_ascii=False)
+        else:
+            games_summary = []  # For summary stats only
 
         print(f"Saved data files to {data_dir}")
         print(f"\nSummary:")
@@ -1065,11 +1155,9 @@ class DivisionAssigner:
 
         return name
 
-    def assign_divisions(self):
-        """Assign divisions to all teams"""
-        print("Assigning divisions to teams...")
-
-        teams_file = os.path.join(self.web_dir, 'data', 'teams.json')
+    def assign_divisions_to_file(self, teams_filename):
+        """Assign divisions to teams in a specific file"""
+        teams_file = os.path.join(self.web_dir, 'data', teams_filename)
         divisions_file = os.path.join(self.web_dir, 'data', 'divisions.json')
 
         with open(teams_file, 'r', encoding='utf-8') as f:
@@ -1116,15 +1204,21 @@ class DivisionAssigner:
         with open(teams_file, 'w', encoding='utf-8') as f:
             json.dump(teams, f, indent=2, ensure_ascii=False)
 
-        # Print summary
-        division_counts = {}
-        for team in teams:
-            div = team['division']
-            division_counts[div] = division_counts.get(div, 0) + 1
+    def assign_divisions(self):
+        """Assign divisions to all teams in both teams.json and teams_season.json"""
+        print("Assigning divisions to teams...")
 
-        print("\nDivision Summary:")
-        for division, count in division_counts.items():
-            print(f"  {division}: {count} teams")
+        # Process teams.json
+        print("\n  Processing teams.json...")
+        self.assign_divisions_to_file('teams.json')
+
+        # Process teams_season.json if it exists
+        teams_season_file = os.path.join(self.web_dir, 'data', 'teams_season.json')
+        if os.path.exists(teams_season_file):
+            print("\n  Processing teams_season.json...")
+            self.assign_divisions_to_file('teams_season.json')
+
+        print("\n✓ Division assignment completed")
 
 
 # ============================================================================
@@ -1941,6 +2035,11 @@ def main():
         action='store_true',
         help='Skip logo download step'
     )
+    parser.add_argument(
+        '--exclude-tournaments',
+        action='store_true',
+        help='Exclude tournament games from statistics (only include season games)'
+    )
 
     args = parser.parse_args()
 
@@ -1975,7 +2074,8 @@ def main():
             print("\n" + "=" * 70)
             print("STEP 2: COMPILING TEAM AND PLAYER STATISTICS")
             print("=" * 70)
-            compiler = HockeyStatsCompiler(games_dir, web_dir)
+            include_tournaments = not args.exclude_tournaments
+            compiler = HockeyStatsCompiler(games_dir, web_dir, include_tournaments=include_tournaments)
             compiler.compile_all()
 
             if args.skip_logos:
@@ -2008,6 +2108,10 @@ def main():
                         with open(file_path, 'r', encoding='utf-8') as f:
                             game_data = json.load(f)
                             if game_data.get('status') == 'FINAL' and 'boxscore' in game_data:
+                                game_type = game_data.get('game_type', 'season')
+                                # Skip tournament games if excluded
+                                if not include_tournaments and game_type == 'tournament':
+                                    continue
                                 games.append(game_data)
                     except Exception as e:
                         print(f"  Error loading {filename}: {e}")

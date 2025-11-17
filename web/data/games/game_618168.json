@@ -2035,5 +2035,7 @@
   "starting_goalies": {
     "home_goalie": "JEAN-PHILIPPE GILBERT",
     "away_goalie": "ÉTIENNE GAGNÉ"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

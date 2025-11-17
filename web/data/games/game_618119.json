@@ -2747,5 +2747,7 @@
   "starting_goalies": {
     "home_goalie": "FELIX PELLETIER",
     "away_goalie": "FINN GUEZEN"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

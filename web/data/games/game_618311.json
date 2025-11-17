@@ -2562,5 +2562,7 @@
   "starting_goalies": {
     "home_goalie": "FÉLIX PINEAULT",
     "away_goalie": "LIAM DUBOIS"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

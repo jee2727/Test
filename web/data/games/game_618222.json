@@ -2346,5 +2346,7 @@
   "starting_goalies": {
     "home_goalie": "ALEXIS BOISVERT",
     "away_goalie": "OLIVIER PELLETIER"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

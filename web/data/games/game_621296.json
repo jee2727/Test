@@ -2189,5 +2189,7 @@
   "starting_goalies": {
     "home_goalie": "LUCAS LESSARD",
     "away_goalie": "SAMUEL PAIEMENT"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

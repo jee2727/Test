@@ -2300,5 +2300,7 @@
   "starting_goalies": {
     "home_goalie": "ALEXIS LIEBHABER",
     "away_goalie": "ALEXIS ROBERT"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

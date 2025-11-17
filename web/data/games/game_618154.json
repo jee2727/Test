@@ -2571,5 +2571,7 @@
   "starting_goalies": {
     "home_goalie": "JUSTIN HOULE",
     "away_goalie": "XAVIER ROUSSEAU"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

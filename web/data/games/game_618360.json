@@ -1981,5 +1981,7 @@
   "starting_goalies": {
     "home_goalie": "LUDOVIC LAVALLEE",
     "away_goalie": "WILLIAM LACROIX"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

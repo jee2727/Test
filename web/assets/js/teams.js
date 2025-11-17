@@ -39,11 +39,11 @@ class TeamsPage {
             ordering: true,
             info: false,
             columnDefs: [
-                { orderable: false, targets: [0] }, // Position column
-                { type: 'num', targets: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11] }, // Numeric columns
-                { orderData: [6], targets: [6] } // Default sort by Points
+                { orderable: false, targets: [0, 1] }, // Position and Team columns
+                { type: 'num', targets: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] }, // Numeric columns
+                { orderData: [10], targets: [10] } // ~POC column
             ],
-            order: [[6, 'desc']] // Sort by Points (Pts) column descending
+            order: [[10, 'desc']] // Sort by ~POC column descending by default
         });
     }
 
@@ -56,14 +56,63 @@ class TeamsPage {
                 this.handleDivisionFilter(e.target.value);
             });
         }
+
+        // Tournament toggle
+        const tournamentToggle = document.getElementById('include-tournaments');
+        if (tournamentToggle) {
+            tournamentToggle.addEventListener('change', async (e) => {
+                await this.handleTournamentToggle(e.target.checked);
+            });
+        }
+    }
+
+    async handleTournamentToggle(includeTournaments) {
+        const tableBody = document.getElementById('teams-table-body');
+        loadingUtils.showLoading(tableBody);
+
+        try {
+            // Reload data with new tournament setting
+            await dataManager.loadData(includeTournaments);
+
+            // Reload the current data
+            this.currentData = [...dataManager.teams];
+
+            // Repopulate division filter with new data
+            this.populateDivisionFilter();
+
+            // Destroy existing DataTable
+            if (this.dataTable) {
+                this.dataTable.destroy();
+                this.dataTable = null;
+            }
+
+            // Re-render table
+            this.renderTable();
+
+            // Reinitialize DataTable
+            if (this.currentData.length > 0) {
+                setTimeout(() => {
+                    this.initDataTable();
+                }, 100);
+            }
+        } catch (error) {
+            console.error('Error toggling tournament data:', error);
+            this.showError();
+        }
     }
 
     populateDivisionFilter() {
         const divisionFilter = document.getElementById('division-filter');
+
+        // Clear existing options except "Toutes les divisions"
+        while (divisionFilter.options.length > 1) {
+            divisionFilter.remove(1);
+        }
+
         const divisions = new Set();
 
-        // Collect all unique divisions from teams data
-        this.currentData.forEach(team => {
+        // Collect all unique divisions from ALL teams in dataManager (not filtered)
+        dataManager.teams.forEach(team => {
             if (team.division) {
                 divisions.add(team.division);
             }
@@ -117,7 +166,7 @@ class TeamsPage {
 
         if (this.currentData.length === 0) {
             const row = document.createElement('tr');
-            row.innerHTML = '<td colspan="13" class="text-center">Aucune équipe trouvée</td>';
+            row.innerHTML = '<td colspan="16" class="text-center">Aucune équipe trouvée</td>';
             tableBody.appendChild(row);
             return;
         }
@@ -134,6 +183,10 @@ class TeamsPage {
         const pocScore = team.poc_adjusted || team.poc_rating || 1000;
         const pocClass = pocScore > 1000 ? 'positive' : (pocScore < 1000 ? 'negative' : '');
 
+        const totalPoints = team.total_points || (team.points + (team.fair_play_points || 0));
+        const fairPlayPoints = team.fair_play_points || 0;
+        const overtimeLosses = team.overtime_losses || 0;
+
         row.innerHTML = `
             <td>${position}</td>
             <td>
@@ -148,8 +201,11 @@ class TeamsPage {
             <td>${team.games_played}</td>
             <td>${team.wins}</td>
             <td>${team.losses}</td>
+            <td>${overtimeLosses}</td>
             <td>${team.ties}</td>
             <td><strong>${team.points}</strong></td>
+            <td>${fairPlayPoints}</td>
+            <td><strong>${totalPoints}</strong></td>
             <td class="${pocClass}" data-order="${pocScore}"><strong>${pocScore.toFixed(1)}</strong></td>
             <td>${team.goals_for}</td>
             <td>${team.goals_against}</td>

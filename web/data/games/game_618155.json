@@ -2500,5 +2500,7 @@
   "starting_goalies": {
     "home_goalie": "KALEB PATRY",
     "away_goalie": "JUSTIN HOULE"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

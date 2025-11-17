@@ -2364,5 +2364,7 @@
   "starting_goalies": {
     "home_goalie": "JACKSON MURRAY",
     "away_goalie": "BRENDAN BOILY"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

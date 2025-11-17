@@ -2546,5 +2546,7 @@
   "starting_goalies": {
     "home_goalie": "ALEXIS DESHARNAIS",
     "away_goalie": "ALEXIS BOISVERT"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

@@ -1930,5 +1930,7 @@
   "starting_goalies": {
     "home_goalie": "JACOB BOURGOIN",
     "away_goalie": "ZACKARY TOUCHETTE"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

@@ -155,10 +155,48 @@ class PlayersPage {
         goalieBtn.addEventListener('click', () => {
             this.togglePlayerType(false);
         });
+
+        // Tournament toggle
+        const tournamentToggle = document.getElementById('include-tournaments');
+        if (tournamentToggle) {
+            tournamentToggle.addEventListener('change', async (e) => {
+                await this.handleTournamentToggle(e.target.checked);
+            });
+        }
+    }
+
+    async handleTournamentToggle(includeTournaments) {
+        const tableBody = document.getElementById('skater-table-body');
+        loadingUtils.showLoading(tableBody);
+
+        try {
+            // Reload data with new tournament setting
+            await dataManager.loadData(includeTournaments);
+
+            // Reload the current data
+            this.currentSkaters = [...dataManager.getSkaters()];
+            this.currentGoalies = [...dataManager.getGoalies()];
+
+            // Repopulate filters with new data
+            this.populateTeamFilter();
+            this.populateDivisionFilter();
+
+            // Re-apply current filters
+            this.applyFilters();
+        } catch (error) {
+            console.error('Error toggling tournament data:', error);
+            this.showError();
+        }
     }
 
     populateTeamFilter() {
         const teamFilter = document.getElementById('team-filter');
+
+        // Clear existing options except "Toutes"
+        while (teamFilter.options.length > 1) {
+            teamFilter.remove(1);
+        }
+
         const teams = [...dataManager.teams].sort((a, b) => a.name.localeCompare(b.name));
 
         teams.forEach(team => {
@@ -171,6 +209,12 @@ class PlayersPage {
 
     populateDivisionFilter() {
         const divisionFilter = document.getElementById('division-filter');
+
+        // Clear existing options except "Toutes"
+        while (divisionFilter.options.length > 1) {
+            divisionFilter.remove(1);
+        }
+
         const divisions = new Set();
 
         // Collect all unique divisions from teams data

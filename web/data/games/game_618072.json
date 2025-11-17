@@ -2726,5 +2726,7 @@
   "starting_goalies": {
     "home_goalie": "RAPHAEL DESROCHERS",
     "away_goalie": "EDWARD LACHANCE"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

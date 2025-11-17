@@ -2398,5 +2398,7 @@
   "starting_goalies": {
     "home_goalie": "ALEX-ANTOINE LANGLAIS",
     "away_goalie": "JUSTIN HOULE"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

@@ -2423,5 +2423,7 @@
   "starting_goalies": {
     "home_goalie": "FÉLIX BOUCHER",
     "away_goalie": "JACOB BOURGOIN"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

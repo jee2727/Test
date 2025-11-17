@@ -1828,5 +1828,7 @@
   "starting_goalies": {
     "home_goalie": "WILLIAM LACROIX",
     "away_goalie": "FÉLIX BOUCHER"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

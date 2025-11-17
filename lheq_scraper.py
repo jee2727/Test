@@ -389,6 +389,10 @@ class FinalWorkingLHEQScraper:
                 is_completed = self.is_game_completed(game)
                 home_score, away_score = self.extract_scores(game)
 
+                # Determine game type based on scheduleId
+                schedule_id = game.get('scheduleId')
+                game_type = 'tournament' if schedule_id == 183835 else 'season'
+
                 processed_game = {
                     'id': game_id,
                     'status': 'FINAL' if is_completed else 'SCHEDULED',
@@ -399,6 +403,8 @@ class FinalWorkingLHEQScraper:
                     'start_time': start_time,
                     'home_score': home_score,
                     'away_score': away_score,
+                    'game_type': game_type,
+                    'schedule_id': schedule_id,
                     'detail_url': f"https://lheq.qc.ca/calendrier/{game_id}",
                     'gamesheet_pdf_url': f"https://pdf.play.spordle.com/game/{game_id}?locale=fr" if is_completed else None
                 }

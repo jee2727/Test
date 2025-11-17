@@ -2821,5 +2821,7 @@
   "starting_goalies": {
     "home_goalie": "MASSIMO IAMMARRONE",
     "away_goalie": "LUDOVIK LACHANCE"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

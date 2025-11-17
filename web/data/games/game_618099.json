@@ -2685,5 +2685,7 @@
   "starting_goalies": {
     "home_goalie": "TRISTAN GASSER",
     "away_goalie": "LUCAS LESSARD"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

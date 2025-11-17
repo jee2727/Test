@@ -2878,5 +2878,7 @@
   "starting_goalies": {
     "home_goalie": "INAKI ECHEVARRIA",
     "away_goalie": "THOMAS ST-MARTIN"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

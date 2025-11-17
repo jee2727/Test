@@ -2622,5 +2622,7 @@
   "starting_goalies": {
     "home_goalie": "JEAN-PHILIPPE GILBERT",
     "away_goalie": "ANTOINE LÉTOURNEAU"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

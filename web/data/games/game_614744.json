@@ -2416,5 +2416,7 @@
   "starting_goalies": {
     "home_goalie": "XAVIER ROUSSEAU",
     "away_goalie": "SEAN NOONAN"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

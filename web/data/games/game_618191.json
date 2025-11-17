@@ -2275,5 +2275,7 @@
   "starting_goalies": {
     "home_goalie": "ÉLIAM LAVOIE",
     "away_goalie": "ALEXIS DESHARNAIS"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

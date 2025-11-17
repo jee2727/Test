@@ -2098,5 +2098,7 @@
   "starting_goalies": {
     "home_goalie": "OLIVIER PELLETIER",
     "away_goalie": "FÉLIX BOUCHER"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

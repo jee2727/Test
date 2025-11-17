@@ -2214,5 +2214,7 @@
   "starting_goalies": {
     "home_goalie": "LUDOVIK LACHANCE",
     "away_goalie": "CHRISTOPHE ROBERGE"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

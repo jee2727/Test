@@ -6,7 +6,8 @@
     "away_team": "BLIZZARD SSF",
     "home_score": 4,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614745,
@@ -15,7 +16,8 @@
     "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
     "home_score": 6,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614746,
@@ -24,7 +26,8 @@
     "away_team": "INTREPIDE OUTAOUAIS",
     "home_score": 4,
     "away_score": 5,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614747,
@@ -33,7 +36,8 @@
     "away_team": "COLLEGE FRANCAIS RIVE-SUD",
     "home_score": 9,
     "away_score": 0,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614748,
@@ -42,7 +46,8 @@
     "away_team": "NOIR ET OR DE MORTAGNE",
     "home_score": 3,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614749,
@@ -51,7 +56,8 @@
     "away_team": "NATIONAL MONTRÉAL",
     "home_score": 4,
     "away_score": 5,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614750,
@@ -60,7 +66,8 @@
     "away_team": "HARFANGS SHERBROOKE",
     "home_score": 4,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614751,
@@ -69,7 +76,8 @@
     "away_team": "ROCKET JR LAVAL",
     "home_score": 5,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614752,
@@ -78,7 +86,8 @@
     "away_team": "SEIGNEURS DES MILLE-ILES",
     "home_score": 3,
     "away_score": 7,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614753,
@@ -87,7 +96,8 @@
     "away_team": "NATIONAL MONTRÉAL",
     "home_score": 1,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614754,
@@ -96,7 +106,8 @@
     "away_team": "GRENADIERS LAC ST-LOUIS",
     "home_score": 3,
     "away_score": 5,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614755,
@@ -105,7 +116,8 @@
     "away_team": "CONQUÉRANTS",
     "home_score": 2,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614756,
@@ -114,7 +126,8 @@
     "away_team": "ESTACADES MAURICIE",
     "home_score": 2,
     "away_score": 0,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614757,
@@ -123,7 +136,8 @@
     "away_team": "HARFANGS SHERBROOKE",
     "home_score": 3,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614758,
@@ -132,7 +146,8 @@
     "away_team": "SÉLECTS",
     "home_score": 1,
     "away_score": 9,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614759,
@@ -141,7 +156,8 @@
     "away_team": "AS QUÉBEC",
     "home_score": 3,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614760,
@@ -150,7 +166,8 @@
     "away_team": "PIONNIERS",
     "home_score": 5,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614761,
@@ -159,7 +176,8 @@
     "away_team": "GRENADIERS LAC ST-LOUIS",
     "home_score": 0,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 614762,
@@ -168,7 +186,8 @@
     "away_team": "CASCADES ÉLITE",
     "home_score": 5,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618059,
@@ -177,7 +196,8 @@
     "away_team": "HARFANGS SHERBROOKE",
     "home_score": 4,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618065,
@@ -186,7 +206,8 @@
     "away_team": "LIONS LAC ST-LOUIS",
     "home_score": null,
     "away_score": 6,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618066,
@@ -195,7 +216,8 @@
     "away_team": "GRENADIERS LAC ST-LOUIS",
     "home_score": 6,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618069,
@@ -204,7 +226,8 @@
     "away_team": "FORESTIERS A-T",
     "home_score": 3,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618072,
@@ -213,7 +236,8 @@
     "away_team": "CONQUÉRANTS BASSES-LAURENTIDES",
     "home_score": 1,
     "away_score": 6,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618073,
@@ -222,7 +246,8 @@
     "away_team": "INTREPIDE OUTAOUAIS",
     "home_score": 2,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618074,
@@ -231,7 +256,8 @@
     "away_team": "SEIGNEURS DES MILLE-ILES",
     "home_score": 3,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618077,
@@ -240,7 +266,8 @@
     "away_team": "PIONNIERS",
     "home_score": 3,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618078,
@@ -249,7 +276,8 @@
     "away_team": "PIONNIERS",
     "home_score": 5,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618079,
@@ -258,7 +286,8 @@
     "away_team": "INTREPIDE OUTAOUAIS",
     "home_score": 2,
     "away_score": 5,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618088,
@@ -267,7 +296,8 @@
     "away_team": "DYNAMIQUES CCL",
     "home_score": 0,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618093,
@@ -276,7 +306,8 @@
     "away_team": "ESTACADES MAURICIE",
     "home_score": 2,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618094,
@@ -285,7 +316,8 @@
     "away_team": "NOIR ET OR DE MORTAGNE",
     "home_score": 2,
     "away_score": 6,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618095,
@@ -294,7 +326,8 @@
     "away_team": "VERT & NOIR DE L'ÉCOLE FADETTE",
     "home_score": 5,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618096,
@@ -303,7 +336,8 @@
     "away_team": "GRENADIERS LAC ST-LOUIS",
     "home_score": 4,
     "away_score": 5,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618097,
@@ -312,7 +346,8 @@
     "away_team": "DYNAMIQUES CCL",
     "home_score": 10,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618098,
@@ -321,7 +356,8 @@
     "away_team": "DYNAMIQUES CCL",
     "home_score": 0,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618099,
@@ -330,7 +366,8 @@
     "away_team": "COLLEGE FRANCAIS RIVE-SUD",
     "home_score": 3,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618109,
@@ -339,7 +376,8 @@
     "away_team": "COLLEGE FRANCAIS RIVE-SUD",
     "home_score": 5,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618110,
@@ -348,7 +386,8 @@
     "away_team": "LIONS LAC ST-LOUIS",
     "home_score": 3,
     "away_score": 5,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618113,
@@ -357,7 +396,8 @@
     "away_team": "DYNAMIQUES CCL",
     "home_score": 3,
     "away_score": 7,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618114,
@@ -366,7 +406,8 @@
     "away_team": "HARFANGS SHERBROOKE",
     "home_score": 1,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618115,
@@ -375,7 +416,8 @@
     "away_team": "DYNAMIQUES CCL",
     "home_score": 6,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618119,
@@ -384,7 +426,8 @@
     "away_team": "LIONS LAC ST-LOUIS",
     "home_score": 2,
     "away_score": 7,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618124,
@@ -393,7 +436,8 @@
     "away_team": "ROCKET JR LAVAL",
     "home_score": 4,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618125,
@@ -402,7 +446,8 @@
     "away_team": "SÉLECT DU NORD",
     "home_score": 0,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618128,
@@ -411,7 +456,8 @@
     "away_team": "LIONS LAC ST-LOUIS",
     "home_score": 5,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618129,
@@ -420,7 +466,8 @@
     "away_team": "VERT & NOIR DE L'ÉCOLE FADETTE",
     "home_score": 8,
     "away_score": 0,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618130,
@@ -429,7 +476,8 @@
     "away_team": "NOIR ET OR DE MORTAGNE",
     "home_score": 1,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618131,
@@ -438,7 +486,8 @@
     "away_team": "VERT & NOIR DE L'ÉCOLE FADETTE",
     "home_score": 3,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618132,
@@ -447,7 +496,8 @@
     "away_team": "COLLEGE FRANCAIS RIVE-SUD",
     "home_score": 6,
     "away_score": 0,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618133,
@@ -456,7 +506,8 @@
     "away_team": "SEIGNEURS DES MILLE-ILES",
     "home_score": 4,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618140,
@@ -465,7 +516,8 @@
     "away_team": "SÉLECTS",
     "home_score": 3,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618141,
@@ -474,7 +526,8 @@
     "away_team": "CONQUÉRANTS BASSES-LAURENTIDES",
     "home_score": 9,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618144,
@@ -483,7 +536,8 @@
     "away_team": "SÉLECTS",
     "home_score": 0,
     "away_score": 5,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618145,
@@ -492,7 +546,8 @@
     "away_team": "CONQUÉRANTS BASSES-LAURENTIDES",
     "home_score": 3,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618150,
@@ -501,7 +556,8 @@
     "away_team": "CORSAIRES POINTE-LÉVY",
     "home_score": 1,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618151,
@@ -510,7 +566,8 @@
     "away_team": "CANAM BEAUCE-APPALACHES",
     "home_score": 11,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618154,
@@ -519,7 +576,8 @@
     "away_team": "CORSAIRES POINTE-LÉVY",
     "home_score": 1,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618155,
@@ -528,7 +586,8 @@
     "away_team": "CANAM BEAUCE-APPALACHES",
     "home_score": 3,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618161,
@@ -537,7 +596,8 @@
     "away_team": "BLIZZARD SSF",
     "home_score": 0,
     "away_score": 5,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618162,
@@ -546,7 +606,8 @@
     "away_team": "ALBATROS",
     "home_score": 4,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618164,
@@ -555,7 +616,8 @@
     "away_team": "ROCKET JR LAVAL",
     "home_score": 4,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618165,
@@ -564,7 +626,8 @@
     "away_team": "ROCKET JR LAVAL",
     "home_score": 1,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618166,
@@ -573,7 +636,8 @@
     "away_team": "NATIONAL MONTRÉAL",
     "home_score": 3,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618167,
@@ -582,7 +646,8 @@
     "away_team": "CASCADES ÉLITE",
     "home_score": 0,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618168,
@@ -591,7 +656,8 @@
     "away_team": "CANAM BEAUCE-APPALACHES",
     "home_score": 1,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618170,
@@ -600,7 +666,8 @@
     "away_team": "CANAM BEAUCE-APPALACHES",
     "home_score": 1,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618175,
@@ -609,7 +676,8 @@
     "away_team": "ALBATROS",
     "home_score": 2,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618178,
@@ -618,7 +686,8 @@
     "away_team": "AS QUÉBEC",
     "home_score": 8,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618180,
@@ -627,7 +696,8 @@
     "away_team": "ESTACADES MAURICIE",
     "home_score": 2,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618184,
@@ -636,7 +706,8 @@
     "away_team": "CANAM BEAUCE-APPALACHES",
     "home_score": 2,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618185,
@@ -645,7 +716,8 @@
     "away_team": "ALBATROS",
     "home_score": 6,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618186,
@@ -654,7 +726,8 @@
     "away_team": "BLIZZARD SSF",
     "home_score": 3,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618187,
@@ -663,7 +736,8 @@
     "away_team": "AS QUÉBEC",
     "home_score": 3,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618191,
@@ -672,7 +746,8 @@
     "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
     "home_score": 3,
     "away_score": 0,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618192,
@@ -681,7 +756,8 @@
     "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
     "home_score": 4,
     "away_score": 0,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618193,
@@ -690,7 +766,8 @@
     "away_team": "DYNAMIQUES CCL",
     "home_score": 7,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618194,
@@ -699,7 +776,8 @@
     "away_team": "INTREPIDE OUTAOUAIS",
     "home_score": 8,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618200,
@@ -708,7 +786,8 @@
     "away_team": "INTREPIDE OUTAOUAIS",
     "home_score": 5,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618201,
@@ -717,7 +796,8 @@
     "away_team": "DYNAMIQUES CCL",
     "home_score": 5,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618202,
@@ -726,7 +806,8 @@
     "away_team": "CONQUÉRANTS BASSES-LAURENTIDES",
     "home_score": 5,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618209,
@@ -735,7 +816,8 @@
     "away_team": "COLLEGE FRANCAIS RIVE-SUD",
     "home_score": 3,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618210,
@@ -744,7 +826,8 @@
     "away_team": "SEIGNEURS DES MILLE-ILES",
     "home_score": 3,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618211,
@@ -753,7 +836,8 @@
     "away_team": "NATIONAL MONTRÉAL",
     "home_score": 1,
     "away_score": 5,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618212,
@@ -762,7 +846,8 @@
     "away_team": "NATIONAL MONTRÉAL",
     "home_score": 7,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618213,
@@ -771,7 +856,8 @@
     "away_team": "INTREPIDE OUTAOUAIS",
     "home_score": 6,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618214,
@@ -780,7 +866,8 @@
     "away_team": "CONQUÉRANTS BASSES-LAURENTIDES",
     "home_score": 1,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618215,
@@ -789,7 +876,8 @@
     "away_team": "SÉLECT DU NORD",
     "home_score": 2,
     "away_score": 7,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618222,
@@ -798,7 +886,8 @@
     "away_team": "ALBATROS",
     "home_score": 4,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618225,
@@ -807,7 +896,8 @@
     "away_team": "CONQUÉRANTS BASSES-LAURENTIDES",
     "home_score": 3,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618228,
@@ -816,7 +906,8 @@
     "away_team": "ALBATROS",
     "home_score": 3,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618232,
@@ -825,7 +916,8 @@
     "away_team": "AS QUÉBEC",
     "home_score": 3,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618237,
@@ -834,7 +926,8 @@
     "away_team": "ALBATROS",
     "home_score": 2,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618240,
@@ -843,7 +936,8 @@
     "away_team": "AS QUÉBEC",
     "home_score": 1,
     "away_score": 8,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618242,
@@ -852,7 +946,8 @@
     "away_team": "COLLEGE FRANCAIS RIVE-SUD",
     "home_score": 12,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618243,
@@ -861,7 +956,8 @@
     "away_team": "HARFANGS SHERBROOKE",
     "home_score": 5,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618244,
@@ -870,7 +966,8 @@
     "away_team": "VERT & NOIR DE L'ÉCOLE FADETTE",
     "home_score": 6,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618248,
@@ -879,7 +976,8 @@
     "away_team": "COLLEGE FRANCAIS RIVE-SUD",
     "home_score": 7,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618250,
@@ -888,7 +986,8 @@
     "away_team": "COLLEGE FRANCAIS RIVE-SUD",
     "home_score": 4,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618252,
@@ -897,7 +996,8 @@
     "away_team": "PIONNIERS LANAUDIÈRE",
     "home_score": 5,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618255,
@@ -906,7 +1006,8 @@
     "away_team": "CONQUÉRANTS BASSES-LAURENTIDES",
     "home_score": 8,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618256,
@@ -915,7 +1016,8 @@
     "away_team": "NOIR ET OR DE MORTAGNE",
     "home_score": 2,
     "away_score": 5,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618257,
@@ -924,7 +1026,8 @@
     "away_team": "AS QUÉBEC",
     "home_score": 1,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618259,
@@ -933,7 +1036,8 @@
     "away_team": "ALBATROS",
     "home_score": 3,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618262,
@@ -942,7 +1046,8 @@
     "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
     "home_score": 7,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618269,
@@ -951,7 +1056,8 @@
     "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
     "home_score": 0,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618270,
@@ -960,7 +1066,8 @@
     "away_team": "CANAM BEAUCE-APPALACHES",
     "home_score": 4,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618271,
@@ -969,7 +1076,8 @@
     "away_team": "CASCADES ÉLITE",
     "home_score": 2,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618275,
@@ -978,7 +1086,8 @@
     "away_team": "AS QUÉBEC",
     "home_score": 4,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618276,
@@ -987,7 +1096,8 @@
     "away_team": "BLIZZARD SSF",
     "home_score": 4,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618283,
@@ -996,7 +1106,8 @@
     "away_team": "NATIONAL MONTRÉAL",
     "home_score": 2,
     "away_score": 5,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618284,
@@ -1005,7 +1116,8 @@
     "away_team": "PIONNIERS LANAUDIÈRE",
     "home_score": 1,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618285,
@@ -1014,7 +1126,8 @@
     "away_team": "SEIGNEURS DES MILLE-ILES",
     "home_score": 1,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618286,
@@ -1023,7 +1136,8 @@
     "away_team": "CONQUÉRANTS",
     "home_score": 6,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618290,
@@ -1032,7 +1146,8 @@
     "away_team": "SEIGNEURS DES MILLE-ILES",
     "home_score": 1,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618291,
@@ -1041,7 +1156,8 @@
     "away_team": "CONQUÉRANTS",
     "home_score": 3,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618292,
@@ -1050,7 +1166,8 @@
     "away_team": "GRENADIERS LAC ST-LOUIS",
     "home_score": 4,
     "away_score": 0,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618293,
@@ -1059,7 +1176,8 @@
     "away_team": "NATIONAL MONTRÉAL",
     "home_score": 0,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618296,
@@ -1068,7 +1186,8 @@
     "away_team": "CASCADES ÉLITE",
     "home_score": 2,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618297,
@@ -1077,7 +1196,8 @@
     "away_team": "CANAM BEAUCE-APPALACHES",
     "home_score": 5,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618303,
@@ -1086,7 +1206,8 @@
     "away_team": "NATIONAL MONTRÉAL",
     "home_score": 2,
     "away_score": 6,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618306,
@@ -1095,7 +1216,8 @@
     "away_team": "BLIZZARD SSF",
     "home_score": 3,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618307,
@@ -1104,7 +1226,8 @@
     "away_team": "CORSAIRES POINTE-LÉVY",
     "home_score": 4,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618311,
@@ -1113,7 +1236,8 @@
     "away_team": "FORESTIERS A-T",
     "home_score": 4,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618313,
@@ -1122,7 +1246,8 @@
     "away_team": "CONQUÉRANTS",
     "home_score": 5,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618315,
@@ -1131,7 +1256,8 @@
     "away_team": "SEIGNEURS DES MILLE-ILES",
     "home_score": 4,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618319,
@@ -1140,7 +1266,8 @@
     "away_team": "LIONS LAC ST-LOUIS",
     "home_score": 2,
     "away_score": 10,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618323,
@@ -1149,7 +1276,8 @@
     "away_team": "GRENADIERS LAC ST-LOUIS",
     "home_score": 6,
     "away_score": 7,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618330,
@@ -1158,7 +1286,18 @@
     "away_team": "CASCADES ÉLITE",
     "home_score": 0,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
+    "id": 618331,
+    "date": "2025-11-01",
+    "home_team": "CONQUÉRANTS BASSES-LAURENTIDES",
+    "away_team": "NATIONAL MONTRÉAL",
+    "home_score": 0,
+    "away_score": 6,
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618333,
@@ -1167,7 +1306,8 @@
     "away_team": "INTREPIDE OUTAOUAIS",
     "home_score": 2,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618334,
@@ -1176,7 +1316,8 @@
     "away_team": "PIONNIERS",
     "home_score": 4,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618335,
@@ -1185,7 +1326,8 @@
     "away_team": "ROCKET JR LAVAL",
     "home_score": 4,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618336,
@@ -1194,7 +1336,8 @@
     "away_team": "NATIONAL MONTRÉAL",
     "home_score": 1,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618337,
@@ -1203,7 +1346,8 @@
     "away_team": "FORESTIERS A-T",
     "home_score": 7,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618340,
@@ -1212,7 +1356,8 @@
     "away_team": "CASCADES ÉLITE",
     "home_score": 3,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618345,
@@ -1221,7 +1366,8 @@
     "away_team": "ESTACADES MAURICIE",
     "home_score": 6,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618347,
@@ -1230,7 +1376,8 @@
     "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
     "home_score": 5,
     "away_score": 0,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618352,
@@ -1239,7 +1386,8 @@
     "away_team": "SEIGNEURS DES MILLE-ILES",
     "home_score": 2,
     "away_score": 5,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618353,
@@ -1248,7 +1396,8 @@
     "away_team": "LIONS LAC ST-LOUIS",
     "home_score": 1,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618354,
@@ -1257,7 +1406,8 @@
     "away_team": "CONQUÉRANTS BASSES-LAURENTIDES",
     "home_score": 2,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618357,
@@ -1266,7 +1416,8 @@
     "away_team": "FORESTIERS A-T",
     "home_score": 4,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618358,
@@ -1275,7 +1426,8 @@
     "away_team": "BLIZZARD SSF",
     "home_score": 2,
     "away_score": 5,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618359,
@@ -1284,7 +1436,8 @@
     "away_team": "ESTACADES MAURICIE",
     "home_score": 4,
     "away_score": 1,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618360,
@@ -1293,7 +1446,8 @@
     "away_team": "NOIR ET OR DE MORTAGNE",
     "home_score": 6,
     "away_score": 0,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618361,
@@ -1302,7 +1456,8 @@
     "away_team": "CANAM BEAUCE-APPALACHES",
     "home_score": 3,
     "away_score": 0,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618372,
@@ -1311,7 +1466,8 @@
     "away_team": "DYNAMIQUES CCL",
     "home_score": 2,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618373,
@@ -1320,7 +1476,8 @@
     "away_team": "HARFANGS SHERBROOKE",
     "home_score": 8,
     "away_score": 3,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 618374,
@@ -1329,7 +1486,8 @@
     "away_team": "NOIR ET OR DE MORTAGNE",
     "home_score": 3,
     "away_score": 4,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 621296,
@@ -1338,7 +1496,8 @@
     "away_team": "VERT & NOIR DE L'ÉCOLE FADETTE",
     "home_score": 4,
     "away_score": 8,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
   },
   {
     "id": 621315,
@@ -1347,6 +1506,457 @@
     "away_team": "ALBATROS",
     "home_score": 1,
     "away_score": 2,
-    "status": "FINAL"
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
+    "id": 676504,
+    "date": "2025-11-13",
+    "home_team": "VERT & NOIR DE L'ÉCOLE FADETTE",
+    "away_team": "GRENADIERS LAC ST-LOUIS",
+    "home_score": 6,
+    "away_score": 3,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676505,
+    "date": "2025-11-13",
+    "home_team": "ESPOIR SAGUENAY LAC ST-JEAN",
+    "away_team": "SÉLECT DU NORD",
+    "home_score": 2,
+    "away_score": 6,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676506,
+    "date": "2025-11-13",
+    "home_team": "CASCADES ÉLITE",
+    "away_team": "AS QUÉBEC",
+    "home_score": 4,
+    "away_score": 7,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676507,
+    "date": "2025-11-13",
+    "home_team": "CONQUÉRANTS BASSES-LAURENTIDES",
+    "away_team": "LIONS LAC ST-LOUIS",
+    "home_score": 1,
+    "away_score": 8,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676508,
+    "date": "2025-11-13",
+    "home_team": "NATIONAL MONTRÉAL",
+    "away_team": "FORESTIERS A-T",
+    "home_score": 5,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676509,
+    "date": "2025-11-13",
+    "home_team": "BLIZZARD SSF",
+    "away_team": "NOIR ET OR DE MORTAGNE",
+    "home_score": 4,
+    "away_score": 3,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676510,
+    "date": "2025-11-13",
+    "home_team": "COLLEGE FRANCAIS RIVE-SUD",
+    "away_team": "ALBATROS",
+    "home_score": 2,
+    "away_score": 4,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676511,
+    "date": "2025-11-13",
+    "home_team": "CORSAIRES POINTE-LÉVY",
+    "away_team": "CANAM BEAUCE-APPALACHES",
+    "home_score": 1,
+    "away_score": 3,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676512,
+    "date": "2025-11-13",
+    "home_team": "SEIGNEURS DES MILLE-ILES",
+    "away_team": "PIONNIERS LANAUDIÈRE",
+    "home_score": 4,
+    "away_score": 5,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676513,
+    "date": "2025-11-14",
+    "home_team": "NATIONAL MONTRÉAL",
+    "away_team": "CASCADES ÉLITE",
+    "home_score": 3,
+    "away_score": 4,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676514,
+    "date": "2025-11-13",
+    "home_team": "HARFANGS SHERBROOKE",
+    "away_team": "DYNAMIQUES CCL",
+    "home_score": 1,
+    "away_score": 2,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676515,
+    "date": "2025-11-13",
+    "home_team": "VERT & NOIR DE L'ÉCOLE FADETTE",
+    "away_team": "SEIGNEURS DES MILLE-ILES",
+    "home_score": 4,
+    "away_score": 3,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676516,
+    "date": "2025-11-13",
+    "home_team": "CANAM BEAUCE-APPALACHES",
+    "away_team": "CONQUÉRANTS BASSES-LAURENTIDES",
+    "home_score": 4,
+    "away_score": 2,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676517,
+    "date": "2025-11-13",
+    "home_team": "ROCKET JR LAVAL",
+    "away_team": "INTREPIDE OUTAOUAIS",
+    "home_score": 1,
+    "away_score": 4,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676518,
+    "date": "2025-11-14",
+    "home_team": "BLIZZARD SSF",
+    "away_team": "HARFANGS SHERBROOKE",
+    "home_score": 5,
+    "away_score": 3,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676519,
+    "date": "2025-11-14",
+    "home_team": "DYNAMIQUES CCL",
+    "away_team": "COLLEGE FRANCAIS RIVE-SUD",
+    "home_score": 2,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676520,
+    "date": "2025-11-14",
+    "home_team": "INTREPIDE OUTAOUAIS",
+    "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
+    "home_score": 5,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676521,
+    "date": "2025-11-13",
+    "home_team": "ESTACADES MAURICIE",
+    "away_team": "CORSAIRES POINTE-LÉVY",
+    "home_score": 2,
+    "away_score": 3,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676522,
+    "date": "2025-11-14",
+    "home_team": "AS QUÉBEC",
+    "away_team": "ROCKET JR LAVAL",
+    "home_score": 5,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676523,
+    "date": "2025-11-14",
+    "home_team": "ALBATROS",
+    "away_team": "NOIR ET OR DE MORTAGNE",
+    "home_score": 2,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676524,
+    "date": "2025-11-14",
+    "home_team": "DYNAMIQUES CCL",
+    "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
+    "home_score": 2,
+    "away_score": 5,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676525,
+    "date": "2025-11-14",
+    "home_team": "CANAM BEAUCE-APPALACHES",
+    "away_team": "SEIGNEURS DES MILLE-ILES",
+    "home_score": 2,
+    "away_score": 5,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676526,
+    "date": "2025-11-13",
+    "home_team": "LIONS LAC ST-LOUIS",
+    "away_team": "GRENADIERS LAC ST-LOUIS",
+    "home_score": 6,
+    "away_score": 2,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676527,
+    "date": "2025-11-15",
+    "home_team": "CASCADES ÉLITE",
+    "away_team": "NOIR ET OR DE MORTAGNE",
+    "home_score": 0,
+    "away_score": 2,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676528,
+    "date": "2025-11-14",
+    "home_team": "ALBATROS",
+    "away_team": "NATIONAL MONTRÉAL",
+    "home_score": 3,
+    "away_score": 4,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676529,
+    "date": "2025-11-14",
+    "home_team": "PIONNIERS LANAUDIÈRE",
+    "away_team": "FORESTIERS A-T",
+    "home_score": 3,
+    "away_score": 4,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676530,
+    "date": "2025-11-15",
+    "home_team": "AS QUÉBEC",
+    "away_team": "HARFANGS SHERBROOKE",
+    "home_score": 5,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676531,
+    "date": "2025-11-14",
+    "home_team": "VERT & NOIR DE L'ÉCOLE FADETTE",
+    "away_team": "CONQUÉRANTS BASSES-LAURENTIDES",
+    "home_score": 4,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676532,
+    "date": "2025-11-14",
+    "home_team": "BLIZZARD SSF",
+    "away_team": "ROCKET JR LAVAL",
+    "home_score": 3,
+    "away_score": 2,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676533,
+    "date": "2025-11-14",
+    "home_team": "SÉLECT DU NORD",
+    "away_team": "ESTACADES MAURICIE",
+    "home_score": 1,
+    "away_score": 2,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676534,
+    "date": "2025-11-15",
+    "home_team": "INTREPIDE OUTAOUAIS",
+    "away_team": "COLLEGE FRANCAIS RIVE-SUD",
+    "home_score": 2,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676535,
+    "date": "2025-11-15",
+    "home_team": "VERT & NOIR DE L'ÉCOLE FADETTE",
+    "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
+    "home_score": 5,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676536,
+    "date": "2025-11-15",
+    "home_team": "ESTACADES MAURICIE",
+    "away_team": "BLIZZARD SSF",
+    "home_score": 1,
+    "away_score": 2,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676537,
+    "date": "2025-11-15",
+    "home_team": "GRENADIERS LAC ST-LOUIS",
+    "away_team": "SÉLECT DU NORD",
+    "home_score": 0,
+    "away_score": 5,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676538,
+    "date": "2025-11-14",
+    "home_team": "LIONS LAC ST-LOUIS",
+    "away_team": "PIONNIERS LANAUDIÈRE",
+    "home_score": 10,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676539,
+    "date": "2025-11-14",
+    "home_team": "FORESTIERS A-T",
+    "away_team": "SÉLECT DU NORD",
+    "home_score": 3,
+    "away_score": 5,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676540,
+    "date": "2025-11-14",
+    "home_team": "CORSAIRES POINTE-LÉVY",
+    "away_team": "GRENADIERS LAC ST-LOUIS",
+    "home_score": 0,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676541,
+    "date": "2025-11-15",
+    "home_team": "SÉLECT DU NORD",
+    "away_team": "AS QUÉBEC",
+    "home_score": 3,
+    "away_score": 4,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676542,
+    "date": "2025-11-15",
+    "home_team": "NOIR ET OR DE MORTAGNE",
+    "away_team": "VERT & NOIR DE L'ÉCOLE FADETTE",
+    "home_score": 8,
+    "away_score": 0,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676543,
+    "date": "2025-11-15",
+    "home_team": "BLIZZARD SSF",
+    "away_team": "LIONS LAC ST-LOUIS",
+    "home_score": 0,
+    "away_score": 3,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676544,
+    "date": "2025-11-15",
+    "home_team": "SEIGNEURS DES MILLE-ILES",
+    "away_team": "NATIONAL MONTRÉAL",
+    "home_score": 0,
+    "away_score": 4,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676545,
+    "date": "2025-11-16",
+    "home_team": "NOIR ET OR DE MORTAGNE",
+    "away_team": "LIONS LAC ST-LOUIS",
+    "home_score": 1,
+    "away_score": 4,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676546,
+    "date": "2025-11-15",
+    "home_team": "INTREPIDE OUTAOUAIS",
+    "away_team": "NATIONAL MONTRÉAL",
+    "home_score": 4,
+    "away_score": 5,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676551,
+    "date": "2025-11-16",
+    "home_team": "LIONS LAC ST-LOUIS",
+    "away_team": "NATIONAL MONTRÉAL",
+    "home_score": 4,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "tournament"
+  },
+  {
+    "id": 676593,
+    "date": "2025-11-16",
+    "home_team": "NATIONAL MONTRÉAL",
+    "away_team": "AS QUÉBEC",
+    "home_score": 6,
+    "away_score": 5,
+    "status": "FINAL",
+    "game_type": "tournament"
   }
 ]

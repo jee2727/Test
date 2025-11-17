@@ -2116,5 +2116,7 @@
   "starting_goalies": {
     "home_goalie": "FÉLIX PINEAULT",
     "away_goalie": "RAPHAEL DESROCHERS"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

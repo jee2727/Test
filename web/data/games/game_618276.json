@@ -2607,5 +2607,7 @@
   "starting_goalies": {
     "home_goalie": "EMILE CAMPAGNA",
     "away_goalie": "ALEX-ANTOINE LANGLAIS"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

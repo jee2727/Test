@@ -2023,5 +2023,7 @@
   "starting_goalies": {
     "home_goalie": "BRENDAN BOILY",
     "away_goalie": "WILLIAM LACROIX"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

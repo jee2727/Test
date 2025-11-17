@@ -2538,5 +2538,7 @@
   "starting_goalies": {
     "home_goalie": "ADAMO ALESSANDRINI",
     "away_goalie": "THOMAS ST-MARTIN"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

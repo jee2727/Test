@@ -5,16 +5,24 @@ class DataManager {
         this.players = [];
         this.games = [];
         this.loaded = false;
+        this.includeTournaments = true; // Default to including tournaments
     }
 
-    async loadData() {
-        if (this.loaded) return;
+    async loadData(includeTournaments = true) {
+        // Allow reloading if tournament setting changed
+        if (this.loaded && this.includeTournaments === includeTournaments) return;
+
+        this.includeTournaments = includeTournaments;
+        this.loaded = false;
 
         try {
+            // Determine which files to load based on tournament setting
+            const suffix = includeTournaments ? '' : '_season';
+
             // Load all data files
             const [teamsResponse, playersResponse, gamesResponse] = await Promise.all([
-                fetch('data/teams.json'),
-                fetch('data/players.json'),
+                fetch(`data/teams${suffix}.json`),
+                fetch(`data/players${suffix}.json`),
                 fetch('data/games.json')
             ]);
 
@@ -29,7 +37,7 @@ class DataManager {
             });
 
             this.loaded = true;
-            console.log('Data loaded successfully');
+            console.log(`Data loaded successfully (${includeTournaments ? 'with' : 'without'} tournaments)`);
         } catch (error) {
             console.error('Error loading data:', error);
             throw error;
@@ -84,7 +92,10 @@ class DataManager {
 // Utility functions
 const utils = {
     formatDate(dateString) {
-        const date = new Date(dateString);
+        // Parse date as local time to avoid timezone issues
+        // Input format: YYYY-MM-DD
+        const [year, month, day] = dateString.split('-').map(Number);
+        const date = new Date(year, month - 1, day);
         return date.toLocaleDateString('fr-CA', {
             year: 'numeric',
             month: 'short',

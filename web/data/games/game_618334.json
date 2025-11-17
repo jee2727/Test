@@ -2767,5 +2767,7 @@
   "starting_goalies": {
     "home_goalie": "THOMAS ST-MARTIN",
     "away_goalie": "LUDOVIK LACHANCE"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

@@ -1849,5 +1849,7 @@
   "starting_goalies": {
     "home_goalie": "ST-DENIS, Louis-Félix",
     "away_goalie": "ZAPPIA, Gabriel"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

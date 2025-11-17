@@ -2661,5 +2661,7 @@
   "starting_goalies": {
     "home_goalie": "JEAN-PHILIPPE GILBERT",
     "away_goalie": "ÉLIAM LAVOIE"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

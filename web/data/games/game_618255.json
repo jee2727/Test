@@ -2377,5 +2377,7 @@
   "starting_goalies": {
     "home_goalie": "ALEXIS BOURQUE-BEDARD",
     "away_goalie": "LIAM DUBOIS"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

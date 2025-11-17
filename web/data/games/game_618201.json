@@ -2485,5 +2485,7 @@
   "starting_goalies": {
     "home_goalie": "JACOB BOURGOIN",
     "away_goalie": "MASSIMO IAMMARRONE"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

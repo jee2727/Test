@@ -2495,5 +2495,7 @@
   "starting_goalies": {
     "home_goalie": "THOMAS ST-MARTIN",
     "away_goalie": "ALEXIS BOURQUE-BEDARD"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

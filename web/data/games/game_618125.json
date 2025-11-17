@@ -2633,5 +2633,7 @@
   "starting_goalies": {
     "home_goalie": "ZACK DESSUREAULT",
     "away_goalie": "FÉLIX PINEAULT"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

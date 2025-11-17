@@ -2309,5 +2309,7 @@
   "starting_goalies": {
     "home_goalie": "PIER-OLIVIER FOURNIER",
     "away_goalie": "ZACK DESSUREAULT"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

@@ -2360,5 +2360,7 @@
   "starting_goalies": {
     "home_goalie": "ADAMO ALESSANDRINI",
     "away_goalie": "SAMUEL CHARTRAND"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

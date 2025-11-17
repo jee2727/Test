@@ -2092,5 +2092,7 @@
   "starting_goalies": {
     "home_goalie": "TRISTAN GASSER",
     "away_goalie": "LUDOVIC LAVALLEE"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

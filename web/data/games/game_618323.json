@@ -2271,5 +2271,7 @@
   "starting_goalies": {
     "home_goalie": "JACKSON MURRAY",
     "away_goalie": "FELIX PELLETIER"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

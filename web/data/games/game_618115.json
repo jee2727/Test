@@ -2427,5 +2427,7 @@
   "starting_goalies": {
     "home_goalie": "FELIX PELLETIER",
     "away_goalie": "JACOB BOURGOIN"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

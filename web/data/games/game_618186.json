@@ -2563,5 +2563,7 @@
   "starting_goalies": {
     "home_goalie": "SEAN NOONAN",
     "away_goalie": "ALEK LEVASSEUR"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

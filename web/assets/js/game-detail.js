@@ -221,7 +221,9 @@ class GameDetailManager {
 
 
     formatDate(dateStr) {
-        const date = new Date(dateStr);
+        // Parse date as local time to avoid timezone issues
+        const [year, month, day] = dateStr.split('-').map(Number);
+        const date = new Date(year, month - 1, day);
         return date.toLocaleDateString('fr-CA', {
             year: 'numeric',
             month: 'long',

@@ -2240,5 +2240,7 @@
   "starting_goalies": {
     "home_goalie": "TRISTAN GASSER",
     "away_goalie": "WILLIAM LACROIX"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }

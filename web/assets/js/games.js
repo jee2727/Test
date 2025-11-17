@@ -101,7 +101,10 @@ class GamesManager {
                         title: 'Date',
                         type: 'date',
                         render: function(data) {
-                            return new Date(data).toLocaleDateString('fr-CA', {
+                            // Parse date as local time to avoid timezone issues
+                            const [year, month, day] = data.split('-').map(Number);
+                            const date = new Date(year, month - 1, day);
+                            return date.toLocaleDateString('fr-CA', {
                                 year: 'numeric',
                                 month: 'short',
                                 day: 'numeric'

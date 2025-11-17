@@ -2357,5 +2357,7 @@
   "starting_goalies": {
     "home_goalie": "BRENDAN BOILY",
     "away_goalie": "PIER-OLIVIER FOURNIER"
-  }
+  },
+  "game_type": "season",
+  "schedule_id": 182366
 }
