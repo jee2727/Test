@@ -1001,10 +1001,32 @@ class HockeyStatsCompiler:
         if players_list:
             print(f"Top scorer: {players_list[0]['name']} ({players_list[0]['points']} pts)")
 
+    def calculate_poc_ratings(self):
+        """Calculate POC ratings for all teams"""
+        print("\nCalculating POC ratings...")
+
+        # Calculate POC scores
+        poc_calculator = POCCalculator(self.games)
+        poc_scores = poc_calculator.calculate()
+
+        # Add POC scores to each team
+        for team in self.teams.values():
+            team_name = team['name']
+            poc_data = poc_scores.get(team_name)
+            if poc_data:
+                team['poc_rating'] = poc_data['rating']
+                team['poc_adjusted'] = poc_data['adjusted_rating']
+            else:
+                team['poc_rating'] = 1000.0
+                team['poc_adjusted'] = 1000.0
+
+        print("POC ratings added to teams")
+
     def compile_all(self):
         """Run the complete compilation process"""
         self.load_games()
         self.process_games()
+        self.calculate_poc_ratings()
         self.download_team_logos()
         self.save_data()
 
@@ -1760,6 +1782,137 @@ class FormationDetector:
             json.dump(formations_data, f, indent=2, ensure_ascii=False)
 
         print(f"Formations exported to {output_file}")
+
+
+# ============================================================================
+# POC (POWER OF COMPETITION) CALCULATOR
+# ============================================================================
+
+class POCCalculator:
+    """
+    Calculate POC (Power of Competition) ratings for teams based on game results.
+
+    The POC system works as follows:
+    - All teams start with 1000 rating points
+    - Teams gain/lose points based on wins/losses and the rating difference with opponent
+    - Rating difference of 0 = 16 points per win
+    - Larger rating differences result in more points for the underdog winning
+    - What one team gains, the other loses
+    - The adjusted rating is normalized to the maximum number of games played
+    """
+
+    def __init__(self, games):
+        self.games = games
+        self.team_ratings = {}  # team_name -> current rating
+        self.team_games_played = {}  # team_name -> number of games
+        self.initial_rating = 1000
+        self.base_k_factor = 16  # Base points for evenly matched teams
+
+    def calculate(self):
+        """Calculate POC ratings for all teams based on game results"""
+        print("Calculating POC ratings...")
+
+        # Initialize all teams with 1000 rating
+        team_names = set()
+        for game in self.games:
+            if game.get('status') == 'FINAL':
+                team_names.add(game.get('home_team'))
+                team_names.add(game.get('away_team'))
+
+        for team_name in team_names:
+            self.team_ratings[team_name] = self.initial_rating
+            self.team_games_played[team_name] = 0
+
+        # Process games chronologically
+        sorted_games = sorted(self.games, key=lambda g: g.get('date', ''))
+
+        for game in sorted_games:
+            if game.get('status') != 'FINAL':
+                continue
+
+            home_team = game.get('home_team')
+            away_team = game.get('away_team')
+            home_score = game.get('home_score') or 0
+            away_score = game.get('away_score') or 0
+
+            if not home_team or not away_team:
+                continue
+
+            # Skip games without valid scores
+            if home_score is None or away_score is None:
+                continue
+
+            # Get current ratings
+            home_rating = self.team_ratings.get(home_team, self.initial_rating)
+            away_rating = self.team_ratings.get(away_team, self.initial_rating)
+
+            # Calculate rating change
+            if home_score > away_score:
+                # Home team wins
+                rating_change = self._calculate_rating_change(home_rating, away_rating)
+                self.team_ratings[home_team] = home_rating + rating_change
+                self.team_ratings[away_team] = away_rating - rating_change
+            elif away_score > home_score:
+                # Away team wins
+                rating_change = self._calculate_rating_change(away_rating, home_rating)
+                self.team_ratings[away_team] = away_rating + rating_change
+                self.team_ratings[home_team] = home_rating - rating_change
+            else:
+                # Tie - no rating change (or minimal change)
+                pass
+
+            # Track games played
+            self.team_games_played[home_team] = self.team_games_played.get(home_team, 0) + 1
+            self.team_games_played[away_team] = self.team_games_played.get(away_team, 0) + 1
+
+        # Calculate adjusted ratings
+        max_games = max(self.team_games_played.values()) if self.team_games_played else 1
+
+        results = {}
+        for team_name in team_names:
+            rating = self.team_ratings.get(team_name, self.initial_rating)
+            games_played = self.team_games_played.get(team_name, 0)
+
+            # Adjusted rating based on games played
+            # Teams with fewer games have their rating adjusted proportionally
+            if max_games > 0 and games_played > 0:
+                adjustment_factor = games_played / max_games
+                adjusted_rating = self.initial_rating + (rating - self.initial_rating) * adjustment_factor
+            else:
+                adjusted_rating = self.initial_rating
+
+            results[team_name] = {
+                'rating': round(rating, 1),
+                'adjusted_rating': round(adjusted_rating, 1),
+                'games_played': games_played
+            }
+
+        print(f"POC ratings calculated for {len(results)} teams")
+        return results
+
+    def _calculate_rating_change(self, winner_rating, loser_rating):
+        """
+        Calculate the rating change for a win.
+
+        Formula: Points gained = base_k_factor * (1 + (loser_rating - winner_rating) / 400)
+
+        This means:
+        - If ratings are equal (diff = 0): 16 points
+        - If underdog wins (winner_rating < loser_rating): more than 16 points
+        - If favorite wins (winner_rating > loser_rating): less than 16 points
+        """
+        rating_diff = loser_rating - winner_rating
+
+        # The multiplier increases when beating a higher-rated team
+        # and decreases when beating a lower-rated team
+        multiplier = 1 + (rating_diff / 400)
+
+        # Ensure minimum and maximum bounds
+        multiplier = max(0.1, min(multiplier, 3.0))
+
+        rating_change = self.base_k_factor * multiplier
+
+        return rating_change
 
 
 # ============================================================================

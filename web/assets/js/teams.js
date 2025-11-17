@@ -40,7 +40,7 @@ class TeamsPage {
             info: false,
             columnDefs: [
                 { orderable: false, targets: [0] }, // Position column
-                { type: 'num', targets: [2, 3, 4, 5, 6, 7, 8, 9, 10] }, // Numeric columns
+                { type: 'num', targets: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11] }, // Numeric columns
                 { orderData: [6], targets: [6] } // Default sort by Points
             ],
             order: [[6, 'desc']] // Sort by Points (Pts) column descending
@@ -117,7 +117,7 @@ class TeamsPage {
 
         if (this.currentData.length === 0) {
             const row = document.createElement('tr');
-            row.innerHTML = '<td colspan="12" class="text-center">Aucune équipe trouvée</td>';
+            row.innerHTML = '<td colspan="13" class="text-center">Aucune équipe trouvée</td>';
             tableBody.appendChild(row);
             return;
         }
@@ -130,6 +130,9 @@ class TeamsPage {
 
     createTeamRow(team, position) {
         const row = document.createElement('tr');
+
+        const pocScore = team.poc_adjusted || team.poc_rating || 1000;
+        const pocClass = pocScore > 1000 ? 'positive' : (pocScore < 1000 ? 'negative' : '');
 
         row.innerHTML = `
             <td>${position}</td>
@@ -147,6 +150,7 @@ class TeamsPage {
             <td>${team.losses}</td>
             <td>${team.ties}</td>
             <td><strong>${team.points}</strong></td>
+            <td class="${pocClass}" data-order="${pocScore}"><strong>${pocScore.toFixed(1)}</strong></td>
             <td>${team.goals_for}</td>
             <td>${team.goals_against}</td>
             <td class="${team.goal_differential >= 0 ? 'positive' : 'negative'}">
@@ -217,16 +221,25 @@ style.textContent = `
     }
 
     @media (max-width: 768px) {
-        .teams-table th:nth-child(n+12),
-        .teams-table td:nth-child(n+12) {
+        /* Hide only Home/Away column on tablets */
+        .teams-table th:nth-child(13),
+        .teams-table td:nth-child(13) {
             display: none;
         }
     }
 
     @media (max-width: 480px) {
-        .teams-table th:nth-child(n+8),
-        .teams-table td:nth-child(n+8) {
+        /* Hide PIM and Home/Away on mobile, keep POC, GF, GA, Diff */
+        .teams-table th:nth-child(12),
+        .teams-table td:nth-child(12),
+        .teams-table th:nth-child(13),
+        .teams-table td:nth-child(13) {
             display: none;
+        }
+
+        /* Make table text smaller on mobile */
+        .teams-table {
+            font-size: 0.85rem;
         }
     }
 `;

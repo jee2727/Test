@@ -1,6 +1,7 @@
 // Dashboard JavaScript for LHEQ Statistics homepage
 class Dashboard {
     constructor() {
+        this.dataTables = {};
         this.init();
     }
 
@@ -8,12 +9,34 @@ class Dashboard {
         try {
             await dataManager.loadData();
             this.renderDivisionStandings();
+
+            // Initialize DataTables after DOM update
+            setTimeout(() => {
+                this.initDataTables();
+            }, 100);
         } catch (error) {
             console.error('Error initializing dashboard:', error);
             this.showError();
         }
     }
 
+    initDataTables() {
+        const tableIds = ['entrepot-hockey-table', 'hockey-experts-table', 'sports-rousseau-table'];
+
+        tableIds.forEach(tableId => {
+            this.dataTables[tableId] = $(`#${tableId}`).DataTable({
+                paging: false,
+                searching: false,
+                ordering: true,
+                info: false,
+                columnDefs: [
+                    { orderable: false, targets: [0] }, // Position column
+                    { type: 'num', targets: [2, 3, 4, 5, 6, 7, 8, 9, 10] }, // Numeric columns
+                ],
+                order: [[6, 'desc']] // Sort by Points (Pts) column descending by default
+            });
+        });
+    }
 
     renderDivisionStandings() {
         const divisions = {
@@ -37,6 +60,9 @@ class Dashboard {
             standingsBody.innerHTML = '';
 
             divisionTeams.forEach((team, index) => {
+                const pocScore = team.poc_adjusted || team.poc_rating || 1000;
+                const pocClass = pocScore > 1000 ? 'positive' : (pocScore < 1000 ? 'negative' : '');
+
                 const row = document.createElement('tr');
                 row.innerHTML = `
                     <td>${index + 1}</td>
@@ -56,6 +82,7 @@ class Dashboard {
                     <td>${team.losses}</td>
                     <td>${team.ties}</td>
                     <td><strong>${team.points}</strong></td>
+                    <td class="${pocClass}" data-order="${pocScore}"><strong>${pocScore.toFixed(1)}</strong></td>
                     <td>${team.goals_for}</td>
                     <td>${team.goals_against}</td>
                     <td class="${team.goal_differential >= 0 ? 'positive' : 'negative'}">
