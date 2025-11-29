@@ -930,6 +930,16 @@
     "game_type": "season"
   },
   {
+    "id": 618217,
+    "date": "2025-11-23",
+    "home_team": "ROCKET JR LAVAL",
+    "away_team": "INTREPIDE OUTAOUAIS",
+    "home_score": 10,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
     "id": 618222,
     "date": "2025-11-02",
     "home_team": "AS QUÉBEC",
@@ -966,6 +976,16 @@
     "away_team": "AS QUÉBEC",
     "home_score": 3,
     "away_score": 3,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
+    "id": 618235,
+    "date": "2025-11-28",
+    "home_team": "ESPOIR SAGUENAY LAC ST-JEAN",
+    "away_team": "BLIZZARD SSF",
+    "home_score": 1,
+    "away_score": 8,
     "status": "FINAL",
     "game_type": "season"
   },
@@ -1036,6 +1056,16 @@
     "away_team": "COLLEGE FRANCAIS RIVE-SUD",
     "home_score": 7,
     "away_score": 3,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
+    "id": 618249,
+    "date": "2025-11-23",
+    "home_team": "LIONS LAC ST-LOUIS",
+    "away_team": "NOIR ET OR DE MORTAGNE",
+    "home_score": 2,
+    "away_score": 0,
     "status": "FINAL",
     "game_type": "season"
   },
@@ -1160,6 +1190,16 @@
     "game_type": "season"
   },
   {
+    "id": 618277,
+    "date": "2025-11-26",
+    "home_team": "CORSAIRES POINTE-LÉVY",
+    "away_team": "CANAM BEAUCE-APPALACHES",
+    "home_score": 3,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
     "id": 618283,
     "date": "2025-10-25",
     "home_team": "INTREPIDE OUTAOUAIS",
@@ -1270,6 +1310,16 @@
     "game_type": "season"
   },
   {
+    "id": 618304,
+    "date": "2025-11-23",
+    "home_team": "PIONNIERS LANAUDIÈRE",
+    "away_team": "SÉLECT DU NORD",
+    "home_score": 0,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
     "id": 618306,
     "date": "2025-11-08",
     "home_team": "AS QUÉBEC",
@@ -1286,6 +1336,16 @@
     "away_team": "CORSAIRES POINTE-LÉVY",
     "home_score": 4,
     "away_score": 1,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
+    "id": 618309,
+    "date": "2025-11-23",
+    "home_team": "CASCADES ÉLITE",
+    "away_team": "CORSAIRES POINTE-LÉVY",
+    "home_score": 5,
+    "away_score": 2,
     "status": "FINAL",
     "game_type": "season"
   },
@@ -1346,6 +1406,16 @@
     "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
     "home_score": 1,
     "away_score": 3,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
+    "id": 618327,
+    "date": "2025-11-23",
+    "home_team": "ALBATROS",
+    "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
+    "home_score": 2,
+    "away_score": 5,
     "status": "FINAL",
     "game_type": "season"
   },
@@ -1480,6 +1550,16 @@
     "game_type": "season"
   },
   {
+    "id": 618356,
+    "date": "2025-11-23",
+    "home_team": "NATIONAL MONTRÉAL",
+    "away_team": "CONQUÉRANTS BASSES-LAURENTIDES",
+    "home_score": 4,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
     "id": 618357,
     "date": "2025-10-05",
     "home_team": "ROCKET JR LAVAL",
@@ -1525,6 +1605,16 @@
     "home_team": "BLIZZARD SSF",
     "away_team": "CANAM BEAUCE-APPALACHES",
     "home_score": 3,
+    "away_score": 0,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
+    "id": 618362,
+    "date": "2025-11-23",
+    "home_team": "BLIZZARD SSF",
+    "away_team": "AS QUÉBEC",
+    "home_score": 10,
     "away_score": 0,
     "status": "FINAL",
     "game_type": "season"
@@ -1576,6 +1666,16 @@
     "away_team": "ALBATROS",
     "home_score": 1,
     "away_score": 2,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
+    "id": 621323,
+    "date": "2025-11-28",
+    "home_team": "ESTACADES MAURICIE",
+    "away_team": "CASCADES ÉLITE",
+    "home_score": 4,
+    "away_score": 0,
     "status": "FINAL",
     "game_type": "season"
   },
