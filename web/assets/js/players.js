@@ -408,7 +408,7 @@ class PlayersPage {
             <td>${player.games_played}</td>
             <td>${player.goals}</td>
             <td>${player.assists}</td>
-            <td><strong>${player.points}</strong></td>
+            <td data-order="${player.points}"><strong>${player.points}</strong></td>
             <td>${player.penalty_minutes}</td>
             <td>${player.powerplay_goals}</td>
             <td>${player.powerplay_assists}</td>

@@ -68,8 +68,7 @@ class Dashboard {
                 info: false,
                 columnDefs: [
                     { orderable: false, targets: [0, 1] }, // Position and Team columns
-                    { type: 'num', targets: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] }, // Numeric columns
-                    { orderData: [10], targets: [10] } // ~POC column
+                    { type: 'num', targets: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] } // Numeric columns
                 ],
                 order: [[10, 'desc']] // Sort by ~POC column descending by default
             });
@@ -129,9 +128,9 @@ class Dashboard {
                     <td>${team.losses}</td>
                     <td>${overtimeLosses}</td>
                     <td>${team.ties}</td>
-                    <td><strong>${team.points}</strong></td>
+                    <td data-order="${team.points}"><strong>${team.points}</strong></td>
                     <td>${fairPlayPoints}</td>
-                    <td><strong>${totalPoints}</strong></td>
+                    <td data-order="${totalPoints}"><strong>${totalPoints}</strong></td>
                     <td class="${pocClass}" data-order="${pocScore}"><strong>${pocScore.toFixed(1)}</strong></td>
                     <td>${team.goals_for}</td>
                     <td>${team.goals_against}</td>
