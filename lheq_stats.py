@@ -2035,12 +2035,6 @@ def main():
         action='store_true',
         help='Skip logo download step'
     )
-    parser.add_argument(
-        '--exclude-tournaments',
-        action='store_true',
-        help='Exclude tournament games from statistics (only include season games)'
-    )
-
     args = parser.parse_args()
 
     # Configuration
@@ -2069,19 +2063,32 @@ def main():
                 print(f"✗ Starting goalie parsing failed: {e}")
                 print("Continuing with remaining steps...")
 
-        # Step 2: Compile Statistics
+        # Step 2: Compile Statistics (both versions: all games + season only)
         if args.step in ['stats', 'all']:
+            # 2a: Compile stats with ALL games (including tournaments)
             print("\n" + "=" * 70)
-            print("STEP 2: COMPILING TEAM AND PLAYER STATISTICS")
+            print("STEP 2a: COMPILING STATISTICS (ALL GAMES)")
             print("=" * 70)
-            include_tournaments = not args.exclude_tournaments
-            compiler = HockeyStatsCompiler(games_dir, web_dir, include_tournaments=include_tournaments)
-            compiler.compile_all()
+            compiler_all = HockeyStatsCompiler(games_dir, web_dir, include_tournaments=True)
+            compiler_all.load_games()
+            compiler_all.process_games()
+            compiler_all.calculate_poc_ratings()
+            if not args.skip_logos:
+                compiler_all.download_team_logos()
+            compiler_all.save_data(suffix='')  # teams.json, players.json
+            print("✓ All games statistics completed")
 
-            if args.skip_logos:
-                print("(Skipped logo download as requested)")
-
-            print("✓ Statistics compilation completed")
+            # 2b: Compile stats with SEASON games only (excluding tournaments)
+            print("\n" + "=" * 70)
+            print("STEP 2b: COMPILING STATISTICS (SEASON ONLY)")
+            print("=" * 70)
+            compiler_season = HockeyStatsCompiler(games_dir, web_dir, include_tournaments=False)
+            compiler_season.load_games()
+            compiler_season.process_games()
+            compiler_season.calculate_poc_ratings()
+            # Skip logo download for season-only (already done above)
+            compiler_season.save_data(suffix='_season')  # teams_season.json, players_season.json
+            print("✓ Season-only statistics completed")
 
         # Step 3: Assign Divisions
         if args.step in ['divisions', 'all']:
@@ -2098,7 +2105,7 @@ def main():
             print("STEP 4: ANALYZING LINE COMBINATIONS")
             print("=" * 70)
 
-            # Load games
+            # Load all games (including tournaments for formation analysis)
             print("Loading game files for formation analysis...")
             games = []
             for filename in os.listdir(games_dir):
@@ -2108,10 +2115,6 @@ def main():
                         with open(file_path, 'r', encoding='utf-8') as f:
                             game_data = json.load(f)
                             if game_data.get('status') == 'FINAL' and 'boxscore' in game_data:
-                                game_type = game_data.get('game_type', 'season')
-                                # Skip tournament games if excluded
-                                if not include_tournaments and game_type == 'tournament':
-                                    continue
                                 games.append(game_data)
                     except Exception as e:
                         print(f"  Error loading {filename}: {e}")
