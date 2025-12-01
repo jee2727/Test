@@ -300,6 +300,26 @@
     "game_type": "season"
   },
   {
+    "id": 618081,
+    "date": "2025-11-30",
+    "home_team": "CONQUÉRANTS BASSES-LAURENTIDES",
+    "away_team": "ROCKET JR LAVAL",
+    "home_score": 1,
+    "away_score": 4,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
+    "id": 618085,
+    "date": "2025-11-29",
+    "home_team": "COLLEGE FRANCAIS RIVE-SUD",
+    "away_team": "DYNAMIQUES CCL",
+    "home_score": 1,
+    "away_score": 2,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
     "id": 618088,
     "date": "2025-10-19",
     "home_team": "COLLEGE FRANCAIS RIVE-SUD",
@@ -375,6 +395,16 @@
     "home_team": "HARFANGS SHERBROOKE",
     "away_team": "COLLEGE FRANCAIS RIVE-SUD",
     "home_score": 3,
+    "away_score": 2,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
+    "id": 618100,
+    "date": "2025-11-30",
+    "home_team": "HARFANGS SHERBROOKE",
+    "away_team": "VERT & NOIR DE L'ÉCOLE FADETTE",
+    "home_score": 2,
     "away_score": 2,
     "status": "FINAL",
     "game_type": "season"
@@ -530,6 +560,16 @@
     "game_type": "season"
   },
   {
+    "id": 618134,
+    "date": "2025-11-30",
+    "home_team": "GRENADIERS LAC ST-LOUIS",
+    "away_team": "LIONS LAC ST-LOUIS",
+    "home_score": 2,
+    "away_score": 4,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
     "id": 618140,
     "date": "2025-09-27",
     "home_team": "FORESTIERS A-T",
@@ -620,12 +660,32 @@
     "game_type": "season"
   },
   {
+    "id": 618158,
+    "date": "2025-11-30",
+    "home_team": "ESTACADES MAURICIE",
+    "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
+    "home_score": 5,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
     "id": 618159,
     "date": "2025-11-20",
     "home_team": "ESTACADES MAURICIE",
     "away_team": "BLIZZARD SSF",
     "home_score": 1,
     "away_score": 6,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
+    "id": 618160,
+    "date": "2025-11-29",
+    "home_team": "ESTACADES MAURICIE",
+    "away_team": "ESPOIR SAGUENAY LAC ST-JEAN",
+    "home_score": 4,
+    "away_score": 1,
     "status": "FINAL",
     "game_type": "season"
   },
@@ -736,6 +796,16 @@
     "away_team": "ESTACADES MAURICIE",
     "home_score": 2,
     "away_score": 2,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
+    "id": 618181,
+    "date": "2025-11-29",
+    "home_team": "CASCADES ÉLITE",
+    "away_team": "ALBATROS",
+    "home_score": 2,
+    "away_score": 1,
     "status": "FINAL",
     "game_type": "season"
   },
@@ -1130,6 +1200,16 @@
     "game_type": "season"
   },
   {
+    "id": 618261,
+    "date": "2025-11-30",
+    "home_team": "CANAM BEAUCE-APPALACHES",
+    "away_team": "AS QUÉBEC",
+    "home_score": 3,
+    "away_score": 3,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
     "id": 618262,
     "date": "2025-10-25",
     "home_team": "CANAM BEAUCE-APPALACHES",
@@ -1360,6 +1440,16 @@
     "game_type": "season"
   },
   {
+    "id": 618312,
+    "date": "2025-11-29",
+    "home_team": "SÉLECT DU NORD",
+    "away_team": "PIONNIERS LANAUDIÈRE",
+    "home_score": 4,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
     "id": 618313,
     "date": "2025-10-04",
     "home_team": "SÉLECTS",
@@ -1520,6 +1610,16 @@
     "game_type": "season"
   },
   {
+    "id": 618348,
+    "date": "2025-11-30",
+    "home_team": "NOIR ET OR DE MORTAGNE",
+    "away_team": "COLLEGE FRANCAIS RIVE-SUD",
+    "home_score": 4,
+    "away_score": 1,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
     "id": 618352,
     "date": "2025-10-19",
     "home_team": "PIONNIERS LANAUDIÈRE",
@@ -1676,6 +1776,26 @@
     "away_team": "CASCADES ÉLITE",
     "home_score": 4,
     "away_score": 0,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
+    "id": 621330,
+    "date": "2025-11-30",
+    "home_team": "CORSAIRES POINTE-LÉVY",
+    "away_team": "ALBATROS",
+    "home_score": 5,
+    "away_score": 2,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
+    "id": 648668,
+    "date": "2025-11-30",
+    "home_team": "SÉLECT DU NORD",
+    "away_team": "INTREPIDE OUTAOUAIS",
+    "home_score": 4,
+    "away_score": 1,
     "status": "FINAL",
     "game_type": "season"
   },
