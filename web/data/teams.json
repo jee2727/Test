@@ -28,7 +28,8 @@
     "logo_url": "https://cdn.hcr.spordle.com/teams/1f05e5ce-4399-650e-967a-0627b38ad1df/logos/1f05e5ce-437a-6d2a-9fc1-0627b38ad1df.jpg",
     "poc_rating": 1238.7,
     "poc_adjusted": 1238.7,
-    "local_logo": "assets/logos/team_128307.jpg"
+    "local_logo": "assets/logos/team_128307.jpg",
+    "division": "Hockey Experts"
   },
   {
     "id": 128306,
@@ -59,7 +60,8 @@
     "logo_url": "https://cdn.hcr.spordle.com/organizations/1eb7ee01-e283-693e-8e6e-06ba8f7ba4e0/logos/small/1f0ac18b-dcfd-6658-976a-02d85374e4dd.png",
     "poc_rating": 1158.9,
     "poc_adjusted": 1152.0,
-    "local_logo": "assets/logos/team_128306.png"
+    "local_logo": "assets/logos/team_128306.png",
+    "division": "Sports Rousseau"
   },
   {
     "id": 128297,
@@ -90,7 +92,8 @@
     "logo_url": "https://cdn.hcr.spordle.com/teams/1f05e5ce-41f4-6e38-8f29-0627b38ad1df/logos/1f05e5ce-41d3-6db4-a90d-0627b38ad1df.png",
     "poc_rating": 1157.3,
     "poc_adjusted": 1130.0,
-    "local_logo": "assets/logos/team_128297.png"
+    "local_logo": "assets/logos/team_128297.png",
+    "division": "L'Entrepôt du Hockey"
   },
   {
     "id": 128302,
@@ -121,7 +124,8 @@
     "logo_url": "https://cdn.hcr.spordle.com/organizations/1ed2e08f-5514-6f80-990d-0200d75649b0/logos/1ed2e08f-552d-6dbe-9020-0200d75649b0.png",
     "poc_rating": 1068.8,
     "poc_adjusted": 1062.8,
-    "local_logo": "assets/logos/team_128302.png"
+    "local_logo": "assets/logos/team_128302.png",
+    "division": "L'Entrepôt du Hockey"
   },
   {
     "id": 128300,
@@ -152,7 +156,8 @@
     "logo_url": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ed339d2-d0e3-62e6-9b19-0672fb667b66/logos/1ed339d2-d0f5-6d42-aa87-0672fb667b66.jpg",
     "poc_rating": 1065.0,
     "poc_adjusted": 1053.7,
-    "local_logo": "assets/logos/team_128300.jpg"
+    "local_logo": "assets/logos/team_128300.jpg",
+    "division": "Hockey Experts"
   },
   {
     "id": 128310,
@@ -183,7 +188,8 @@
     "logo_url": "https://cdn.hcr.spordle.com/teams/1f05e5ce-43b6-667c-8c7a-0627b38ad1df/logos/1f05e5ce-4399-67a2-a606-0627b38ad1df.png",
     "poc_rating": 1046.6,
     "poc_adjusted": 1040.5,
-    "local_logo": "assets/logos/team_128310.png"
+    "local_logo": "assets/logos/team_128310.png",
+    "division": "Hockey Experts"
   },
   {
     "id": 128314,
@@ -214,7 +220,8 @@
     "logo_url": "https://d1yykh3c16sa22.cloudfront.net/teams/1f05e5ce-437a-6ab4-a7a0-0627b38ad1df/logos/1f05e5ce-435c-66f4-bc4b-0627b38ad1df.jpg",
     "poc_rating": 1037.5,
     "poc_adjusted": 1031.0,
-    "local_logo": "assets/logos/team_128314.jpg"
+    "local_logo": "assets/logos/team_128314.jpg",
+    "division": "L'Entrepôt du Hockey"
   },
   {
     "id": 128318,
@@ -245,7 +252,8 @@
     "logo_url": "https://d1yykh3c16sa22.cloudfront.net/teams/1f05e5ce-42ae-61ee-9d0e-0627b38ad1df/logos/1f05e5ce-428d-61c4-8f5d-0627b38ad1df.jpg",
     "poc_rating": 1029.0,
     "poc_adjusted": 1007.6,
-    "local_logo": "assets/logos/team_128318.jpg"
+    "local_logo": "assets/logos/team_128318.jpg",
+    "division": "Sports Rousseau"
   },
   {
     "id": 128298,
@@ -276,7 +284,8 @@
     "logo_url": "https://d1yykh3c16sa22.cloudfront.net/teams/1ece2826-40e9-63b0-b384-02f1899482f4/logos/1ece2826-40c7-6dc8-884a-02f1899482f4.jpg",
     "poc_rating": 1004.8,
     "poc_adjusted": 1004.0,
-    "local_logo": "assets/logos/team_128298.jpg"
+    "local_logo": "assets/logos/team_128298.jpg",
+    "division": "L'Entrepôt du Hockey"
   },
   {
     "id": 118876,
@@ -307,7 +316,8 @@
     "logo_url": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ed2df62-3669-6064-951a-0672fb667b66/logos/1ed2df62-3682-68e8-8690-0672fb667b66.png",
     "poc_rating": 1001.3,
     "poc_adjusted": 1000.9,
-    "local_logo": "assets/logos/team_118876.png"
+    "local_logo": "assets/logos/team_118876.png",
+    "division": "L'Entrepôt du Hockey"
   },
   {
     "id": 128304,
@@ -338,7 +348,8 @@
     "logo_url": "https://cdn.hcr.spordle.com/teams/1f05e5ce-41b4-690a-be7d-0627b38ad1df/logos/1f05e5ce-4194-6e3e-872e-0627b38ad1df.png",
     "poc_rating": 996.2,
     "poc_adjusted": 996.8,
-    "local_logo": "assets/logos/team_128304.png"
+    "local_logo": "assets/logos/team_128304.png",
+    "division": "L'Entrepôt du Hockey"
   },
   {
     "id": 128315,
@@ -369,7 +380,8 @@
     "logo_url": "https://cdn.hcr.spordle.com/teams/1f05e5ce-42e6-60da-826a-0627b38ad1df/logos/1f05e5ce-42cb-61b8-9c22-0627b38ad1df.jpg",
     "poc_rating": 982.2,
     "poc_adjusted": 994.6,
-    "local_logo": "assets/logos/team_128315.jpg"
+    "local_logo": "assets/logos/team_128315.jpg",
+    "division": "Sports Rousseau"
   },
   {
     "id": 128303,
@@ -400,7 +412,8 @@
     "logo_url": "https://cdn.hcr.spordle.com/organizations/1ed34347-cda8-6da0-a096-0200d75649b0/logos/1ed34347-cdad-6e18-a92b-0200d75649b0.jpg",
     "poc_rating": 990.4,
     "poc_adjusted": 992.9,
-    "local_logo": "assets/logos/team_128303.jpg"
+    "local_logo": "assets/logos/team_128303.jpg",
+    "division": "Hockey Experts"
   },
   {
     "id": 128299,
@@ -431,7 +444,8 @@
     "logo_url": "https://cdn.hcr.spordle.com/teams/1f05e5ce-428c-6ecc-b76e-0627b38ad1df/logos/1f05e5ce-426e-679c-a3c1-0627b38ad1df.png",
     "poc_rating": 982.6,
     "poc_adjusted": 989.4,
-    "local_logo": "assets/logos/team_128299.png"
+    "local_logo": "assets/logos/team_128299.png",
+    "division": "Sports Rousseau"
   },
   {
     "id": 128317,
@@ -462,7 +476,8 @@
     "logo_url": "https://cdn.hcr.spordle.com/teams/1f05e5ce-42cb-603c-8a5b-0627b38ad1df/logos/1f05e5ce-42ae-6400-9180-0627b38ad1df.jpg",
     "poc_rating": 983.3,
     "poc_adjusted": 984.8,
-    "local_logo": "assets/logos/team_128317.jpg"
+    "local_logo": "assets/logos/team_128317.jpg",
+    "division": "Sports Rousseau"
   },
   {
     "id": 128309,
@@ -493,7 +508,8 @@
     "logo_url": "https://d1yykh3c16sa22.cloudfront.net/teams/1f05e5ce-4301-6448-8550-0627b38ad1df/logos/1f05e5ce-42e6-6260-a9ec-0627b38ad1df.jpg",
     "poc_rating": 923.8,
     "poc_adjusted": 976.8,
-    "local_logo": "assets/logos/team_128309.jpg"
+    "local_logo": "assets/logos/team_128309.jpg",
+    "division": "Sports Rousseau"
   },
   {
     "id": 128305,
@@ -524,7 +540,8 @@
     "logo_url": "https://cdn.hcr.spordle.com/organizations/1ed33a68-cd0b-627c-ba61-066e4a4b1c90/logos/1ed33a68-cd0e-6c38-a68c-066e4a4b1c90.png",
     "poc_rating": 966.3,
     "poc_adjusted": 970.7,
-    "local_logo": "assets/logos/team_128305.png"
+    "local_logo": "assets/logos/team_128305.png",
+    "division": "Hockey Experts"
   },
   {
     "id": 128311,
@@ -555,7 +572,8 @@
     "logo_url": "https://d1yykh3c16sa22.cloudfront.net/teams/1f05e5ce-431f-6ca4-b354-0627b38ad1df/logos/1f05e5ce-4301-65b0-9867-0627b38ad1df.jpg",
     "poc_rating": 955.2,
     "poc_adjusted": 959.1,
-    "local_logo": "assets/logos/team_128311.jpg"
+    "local_logo": "assets/logos/team_128311.jpg",
+    "division": "Sports Rousseau"
   },
   {
     "id": 128308,
@@ -586,7 +604,8 @@
     "logo_url": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ef66190-e29f-6800-9e14-0243b7c607a7/logos/1ef66190-e2b9-6c3c-840b-0243b7c607a7.jpg",
     "poc_rating": 943.1,
     "poc_adjusted": 950.5,
-    "local_logo": "assets/logos/team_128308.jpg"
+    "local_logo": "assets/logos/team_128308.jpg",
+    "division": "Sports Rousseau"
   },
   {
     "id": 128316,
@@ -617,7 +636,8 @@
     "logo_url": "https://cdn.hcr.spordle.com/teams/1f05e5ce-435c-649c-b0b0-0627b38ad1df/logos/1f05e5ce-433e-64d8-85f3-0627b38ad1df.png",
     "poc_rating": 920.6,
     "poc_adjusted": 941.3,
-    "local_logo": "assets/logos/team_128316.png"
+    "local_logo": "assets/logos/team_128316.png",
+    "division": "Hockey Experts"
   },
   {
     "id": 128312,
@@ -648,7 +668,8 @@
     "logo_url": "https://cdn.hcr.spordle.com/teams/1f05e5ce-433e-62f8-a08b-0627b38ad1df/logos/1f05e5ce-431f-6e66-9568-0627b38ad1df.jpg",
     "poc_rating": 899.7,
     "poc_adjusted": 908.4,
-    "local_logo": "assets/logos/team_128312.jpg"
+    "local_logo": "assets/logos/team_128312.jpg",
+    "division": "L'Entrepôt du Hockey"
   },
   {
     "id": 128313,
@@ -679,7 +700,8 @@
     "logo_url": "https://d1yykh3c16sa22.cloudfront.net/teams/1f05e5ce-43d4-632a-b940-0627b38ad1df/logos/1f05e5ce-43b6-68d4-876a-0627b38ad1df.jpg",
     "poc_rating": 894.5,
     "poc_adjusted": 908.3,
-    "local_logo": "assets/logos/team_128313.jpg"
+    "local_logo": "assets/logos/team_128313.jpg",
+    "division": "L'Entrepôt du Hockey"
   },
   {
     "id": 128301,
@@ -710,6 +732,7 @@
     "logo_url": "https://cdn.hcr.spordle.com/organizations/1ed3433a-a9d0-6b2e-b9be-0203e3f8a0f8/logos/1ed3433a-a9ec-6018-8b36-0203e3f8a0f8.png",
     "poc_rating": 800.2,
     "poc_adjusted": 843.7,
-    "local_logo": "assets/logos/team_128301.png"
+    "local_logo": "assets/logos/team_128301.png",
+    "division": "Hockey Experts"
   }
 ]
