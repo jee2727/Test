@@ -2086,7 +2086,8 @@ def main():
             compiler_season.load_games()
             compiler_season.process_games()
             compiler_season.calculate_poc_ratings()
-            # Skip logo download for season-only (already done above)
+            # Assign local_logo paths (logos already downloaded above, this just assigns paths)
+            compiler_season.download_team_logos()
             compiler_season.save_data(suffix='_season')  # teams_season.json, players_season.json
             print("✓ Season-only statistics completed")
 
