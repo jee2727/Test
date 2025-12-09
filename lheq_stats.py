@@ -1633,98 +1633,204 @@ class FormationDetector:
         return deduced_trios, used_pairs
 
     def _get_ranked_forward_lines(self, team_data):
-        """Get forward lines ranked by points"""
+        """
+        Build optimal forward lines by assigning ALL forwards to trios.
+        Each forward can only be on ONE trio.
+        Uses pair connection scores to determine optimal assignments.
+        """
+        # Step 1: Get all forwards from player_positions
+        all_forwards = {}
+        for player_id, info in team_data['player_positions'].items():
+            if info['position'] == 'F':
+                all_forwards[player_id] = info
+
+        if len(all_forwards) < 3:
+            return []
+
+        # Step 2: Build connection scores from pairs (goals + assists together at 5v5)
+        pair_scores = {}
+        for pair_key, stats in team_data['even_strength_f_pairs'].items():
+            if stats['points'] > 0:
+                pair_scores[pair_key] = stats['points']
+
+        # Also include trio data to boost connections
+        for trio_key, stats in team_data['even_strength_f_trios'].items():
+            if stats['points'] > 0:
+                # Add points to each pair within the trio
+                for pair in combinations(trio_key, 2):
+                    pair_key = tuple(sorted(pair))
+                    if pair_key not in pair_scores:
+                        pair_scores[pair_key] = 0
+                    pair_scores[pair_key] += stats['points']
+
+        # Step 3: Build trios using greedy algorithm with connection scores
+        assigned_forwards = set()
         lines = []
-        scores_trios = {}
-        scores_pairs = {}
-        existing_trio_keys = set()
 
-        # Get all trios with goals > 0
-        if team_data['even_strength_f_trios']:
-            for trio_key, stats in team_data['even_strength_f_trios'].items():
-                if stats['goals'] > 0:
-                    players = []
-                    for player_id in trio_key:
-                        if player_id in team_data['player_positions']:
-                            players.append(team_data['player_positions'][player_id])
+        # Sort pairs by score descending
+        sorted_pairs = sorted(pair_scores.items(), key=lambda x: x[1], reverse=True)
 
-                    if len(players) == 3:
-                        lines.append({
-                            'players': players,
-                            'goals': stats['goals'],
-                            'assists': stats['assists'],
-                            'points': stats['points'],
-                            'type': 'trio',
-                            'key': trio_key
-                        })
-                        scores_trios[trio_key] = stats['points']
-                        existing_trio_keys.add(trio_key)
+        # First pass: build trios from strongest pairs
+        for pair_key, pair_score in sorted_pairs:
+            p1, p2 = pair_key
+            # Skip if either player already assigned or not a forward
+            if p1 in assigned_forwards or p2 in assigned_forwards:
+                continue
+            if p1 not in all_forwards or p2 not in all_forwards:
+                continue
 
-        # Detect deduced trios from pairs
-        deduced_trios, used_pair_keys = self._detect_deduced_trios(
-            team_data['even_strength_f_pairs'],
-            team_data
-        )
+            # Find best third player based on connections with both
+            best_third = None
+            best_third_score = -1
 
-        # Add deduced trios to lines, replacing direct trios if the deduced trio has more points
-        for deduced_trio in deduced_trios:
-            deduced_key = deduced_trio['key']
+            for candidate_id in all_forwards:
+                if candidate_id in assigned_forwards or candidate_id == p1 or candidate_id == p2:
+                    continue
 
-            if deduced_key not in existing_trio_keys:
-                # New trio, just add it
-                lines.append(deduced_trio)
-                scores_trios[deduced_key] = deduced_trio['points']
-            else:
-                # Trio already exists as direct trio - compare points
-                # Find the existing direct trio in lines
-                existing_trio = None
-                existing_index = None
-                for i, line in enumerate(lines):
-                    if line.get('key') == deduced_key:
-                        existing_trio = line
-                        existing_index = i
-                        break
+                # Calculate connection score with both players in the pair
+                score_with_p1 = pair_scores.get(tuple(sorted([candidate_id, p1])), 0)
+                score_with_p2 = pair_scores.get(tuple(sorted([candidate_id, p2])), 0)
+                total_score = score_with_p1 + score_with_p2
 
-                if existing_trio and deduced_trio['points'] > existing_trio['points']:
-                    # Deduced trio has more points, replace the direct trio
-                    lines[existing_index] = deduced_trio
-                    scores_trios[deduced_key] = deduced_trio['points']
-                    # Change type to indicate it was upgraded
-                    lines[existing_index]['type'] = 'deduced_trio'
+                if total_score > best_third_score:
+                    best_third_score = total_score
+                    best_third = candidate_id
 
-        # Get forward pairs with goals > 0 that are NOT part of a deduced trio
-        if team_data['even_strength_f_pairs']:
-            for pair_key, stats in team_data['even_strength_f_pairs'].items():
-                if stats['goals'] > 0 and pair_key not in used_pair_keys:
-                    players = []
-                    for player_id in pair_key:
-                        if player_id in team_data['player_positions']:
-                            players.append(team_data['player_positions'][player_id])
+            if best_third is not None:
+                # Form the trio
+                trio_ids = [p1, p2, best_third]
+                assigned_forwards.update(trio_ids)
 
-                    if len(players) == 2:
-                        lines.append({
-                            'players': players,
-                            'goals': stats['goals'],
-                            'assists': stats['assists'],
-                            'points': stats['points'],
-                            'type': 'pair',
-                            'key': pair_key
-                        })
-                        scores_pairs[pair_key] = stats['points']
+                # Get trio stats from actual trio data if available
+                trio_key = tuple(sorted(trio_ids))
+                trio_stats = team_data['even_strength_f_trios'].get(trio_key, {'goals': 0, 'assists': 0, 'points': 0})
+
+                # If trio stats not found, calculate from pairs
+                if trio_stats['points'] == 0:
+                    # Get stats from the 3 pairs that form this trio
+                    pair_keys = [
+                        tuple(sorted([trio_ids[0], trio_ids[1]])),
+                        tuple(sorted([trio_ids[0], trio_ids[2]])),
+                        tuple(sorted([trio_ids[1], trio_ids[2]]))
+                    ]
+                    total_goals = 0
+                    total_assists = 0
+                    for pk in pair_keys:
+                        pair_stat = team_data['even_strength_f_pairs'].get(pk, {'goals': 0, 'assists': 0})
+                        total_goals += pair_stat['goals']
+                        total_assists += pair_stat['assists']
+                    # Use max of pairs to avoid over-counting (a goal with 3 players counts in all 3 pairs)
+                    trio_stats = {
+                        'goals': total_goals,
+                        'assists': total_assists,
+                        'points': total_goals + total_assists
+                    }
+
+                # Calculate combined pair score for this trio
+                combined_score = pair_score + best_third_score
+
+                lines.append({
+                    'players': [all_forwards[pid] for pid in trio_ids],
+                    'goals': trio_stats['goals'],
+                    'assists': trio_stats['assists'],
+                    'points': trio_stats['points'] if trio_stats['points'] > 0 else combined_score,
+                    'type': 'trio',
+                    'key': trio_key,
+                    'connection_score': combined_score
+                })
+
+        # Step 4: Handle remaining unassigned forwards
+        unassigned = [pid for pid in all_forwards if pid not in assigned_forwards]
+
+        # Try to complete incomplete trios or form new ones
+        while len(unassigned) >= 3:
+            # Form trio from top 3 unassigned by their total connection scores
+            candidate_scores = []
+            for pid in unassigned:
+                total_conn = sum(
+                    pair_scores.get(tuple(sorted([pid, other])), 0)
+                    for other in unassigned if other != pid
+                )
+                candidate_scores.append((pid, total_conn))
+
+            candidate_scores.sort(key=lambda x: x[1], reverse=True)
+            trio_ids = [c[0] for c in candidate_scores[:3]]
+
+            trio_key = tuple(sorted(trio_ids))
+            trio_stats = team_data['even_strength_f_trios'].get(trio_key, {'goals': 0, 'assists': 0, 'points': 0})
+
+            # If trio stats not found, calculate from pairs
+            if trio_stats['points'] == 0:
+                pair_keys = [
+                    tuple(sorted([trio_ids[0], trio_ids[1]])),
+                    tuple(sorted([trio_ids[0], trio_ids[2]])),
+                    tuple(sorted([trio_ids[1], trio_ids[2]]))
+                ]
+                total_goals = 0
+                total_assists = 0
+                for pk in pair_keys:
+                    pair_stat = team_data['even_strength_f_pairs'].get(pk, {'goals': 0, 'assists': 0})
+                    total_goals += pair_stat['goals']
+                    total_assists += pair_stat['assists']
+                trio_stats = {
+                    'goals': total_goals,
+                    'assists': total_assists,
+                    'points': total_goals + total_assists
+                }
+
+            lines.append({
+                'players': [all_forwards[pid] for pid in trio_ids],
+                'goals': trio_stats['goals'],
+                'assists': trio_stats['assists'],
+                'points': trio_stats['points'],
+                'type': 'trio',
+                'key': trio_key,
+                'connection_score': 0
+            })
+
+            for pid in trio_ids:
+                unassigned.remove(pid)
+                assigned_forwards.add(pid)
+
+        # Step 5: If exactly 1-2 forwards remain, try to add them to existing lines as partial
+        # or form a pair/single entry
+        if len(unassigned) == 1 and len(lines) > 0:
+            # Find the line with lowest connection score and check if we can swap
+            # Or just note this player as unassigned (4th line extra)
+            pass  # For now, we leave them unassigned
+
+        if len(unassigned) == 2:
+            # Form a pair
+            p1, p2 = unassigned
+            pair_key = tuple(sorted([p1, p2]))
+            pair_stats = team_data['even_strength_f_pairs'].get(pair_key, {'goals': 0, 'assists': 0, 'points': 0})
+
+            lines.append({
+                'players': [all_forwards[p1], all_forwards[p2]],
+                'goals': pair_stats['goals'],
+                'assists': pair_stats['assists'],
+                'points': pair_stats['points'],
+                'type': 'pair',
+                'key': pair_key,
+                'connection_score': pair_scores.get(pair_key, 0)
+            })
+
+        # Step 6: Sort lines by points + connection_score
+        lines.sort(key=lambda x: (x['points'], x.get('connection_score', 0)), reverse=True)
 
         # Calculate dominance scores
+        scores_trios = {l['key']: l['points'] for l in lines if l['type'] == 'trio'}
+        scores_pairs = {l['key']: l['points'] for l in lines if l['type'] == 'pair'}
         lines = self._calculate_dominance_scores(lines, scores_trios, scores_pairs)
 
-        # Sort by points descending, then by dominance score
-        lines.sort(key=lambda x: (x['points'], x.get('dominance_score', 0)), reverse=True)
-
-        # Add rank (Line 1, Line 2, Line 3, etc.)
+        # Add rank and clean up - only return top 3 lines
         ranked_lines = []
-        for i, line in enumerate(lines[:3]):  # Top 3 lines
+        for i, line in enumerate(lines[:3]):  # Top 3 lines only
             line['rank'] = f"Line {i + 1}"
-            # Remove internal keys used for calculation
             if 'key' in line:
                 del line['key']
+            if 'connection_score' in line:
+                del line['connection_score']
             if 'source_pairs' in line:
                 del line['source_pairs']
             ranked_lines.append(line)
@@ -1732,81 +1838,265 @@ class FormationDetector:
         return ranked_lines
 
     def _get_ranked_defense_pairs(self, team_data):
-        """Get defense pairs ranked by goals"""
+        """
+        Build 3 defense pairs where each defenseman appears on only ONE pair.
+        Uses connection scores from goals/assists together at 5v5.
+        """
+        # Step 1: Get all defensemen from player_positions
+        all_defensemen = {}
+        for player_id, info in team_data['player_positions'].items():
+            if info['position'] == 'D':
+                all_defensemen[player_id] = info
+
+        if len(all_defensemen) < 2:
+            return []
+
+        # Step 2: Build connection scores from defense duos
+        pair_scores = {}
+        for pair_key, stats in team_data['even_strength_d_duos'].items():
+            if stats['points'] > 0:
+                pair_scores[pair_key] = {
+                    'goals': stats['goals'],
+                    'assists': stats['assists'],
+                    'points': stats['points']
+                }
+
+        # Step 3: Build pairs using greedy algorithm
+        assigned_defensemen = set()
         pairs = []
 
-        # Get all defense pairs with goals > 0
-        if team_data['even_strength_d_duos']:
-            for pair_key, stats in team_data['even_strength_d_duos'].items():
-                if stats['goals'] > 0:
-                    players = []
-                    for player_id in pair_key:
-                        if player_id in team_data['player_positions']:
-                            players.append(team_data['player_positions'][player_id])
+        # Sort existing pairs by points descending
+        sorted_pairs = sorted(pair_scores.items(), key=lambda x: x[1]['points'], reverse=True)
 
-                    if len(players) == 2:
-                        pairs.append({
-                            'players': players,
-                            'goals': stats['goals'],
-                            'assists': stats['assists'],
-                            'points': stats['points']
-                        })
+        # First pass: use pairs with actual connection data
+        for pair_key, stats in sorted_pairs:
+            d1, d2 = pair_key
+            # Skip if either player already assigned or not a defenseman
+            if d1 in assigned_defensemen or d2 in assigned_defensemen:
+                continue
+            if d1 not in all_defensemen or d2 not in all_defensemen:
+                continue
 
-        # Sort by goals descending
-        pairs.sort(key=lambda x: x['goals'], reverse=True)
+            assigned_defensemen.add(d1)
+            assigned_defensemen.add(d2)
 
-        # Add rank (D1, D2, etc.)
+            pairs.append({
+                'players': [all_defensemen[d1], all_defensemen[d2]],
+                'goals': stats['goals'],
+                'assists': stats['assists'],
+                'points': stats['points'],
+                'key': pair_key
+            })
+
+        # Step 4: Handle remaining unassigned defensemen
+        unassigned = [pid for pid in all_defensemen if pid not in assigned_defensemen]
+
+        # Form pairs from remaining defensemen (even without connection data)
+        while len(unassigned) >= 2:
+            d1 = unassigned.pop(0)
+
+            # Find best partner based on any connection score
+            best_partner = None
+            best_score = -1
+
+            for d2 in unassigned:
+                pair_key = tuple(sorted([d1, d2]))
+                score = pair_scores.get(pair_key, {}).get('points', 0)
+                if score > best_score:
+                    best_score = score
+                    best_partner = d2
+
+            # If no connection found, just take the first available
+            if best_partner is None and unassigned:
+                best_partner = unassigned[0]
+
+            if best_partner:
+                unassigned.remove(best_partner)
+                assigned_defensemen.add(d1)
+                assigned_defensemen.add(best_partner)
+
+                pair_key = tuple(sorted([d1, best_partner]))
+                stats = pair_scores.get(pair_key, {'goals': 0, 'assists': 0, 'points': 0})
+
+                pairs.append({
+                    'players': [all_defensemen[d1], all_defensemen[best_partner]],
+                    'goals': stats.get('goals', 0),
+                    'assists': stats.get('assists', 0),
+                    'points': stats.get('points', 0),
+                    'key': pair_key
+                })
+
+        # Step 5: Sort pairs by points descending
+        pairs.sort(key=lambda x: x['points'], reverse=True)
+
+        # Add rank and clean up - return top 3 pairs
         ranked_pairs = []
-        for i, pair in enumerate(pairs[:2]):  # Top 2 pairs
+        for i, pair in enumerate(pairs[:3]):
             pair['rank'] = f"D{i + 1}"
+            if 'key' in pair:
+                del pair['key']
             ranked_pairs.append(pair)
 
         return ranked_pairs
 
     def _get_ranked_powerplay_units(self, team_data):
-        """Get powerplay units ranked by goals"""
-        units = []
-        scores_units = {}
+        """
+        Build 2 power play units where each player appears on only ONE unit.
+        Uses PP goals/assists connection scores to form optimal units.
+        """
+        # Step 1: Build player PP scores and pair stats from powerplay_units data
+        player_pp_goals = defaultdict(int)
+        player_pp_assists = defaultdict(int)
+        pair_pp_stats = defaultdict(lambda: {'goals': 0, 'assists': 0, 'points': 0})
 
-        # Get all PP units with goals > 0
-        if team_data['powerplay_units']:
-            for unit_key, stats in team_data['powerplay_units'].items():
-                if stats['goals'] > 0:
-                    players = []
-                    for player_id in unit_key:
-                        if player_id in team_data['player_positions']:
-                            players.append(team_data['player_positions'][player_id])
+        for unit_key, stats in team_data['powerplay_units'].items():
+            if stats['points'] > 0:
+                # Add stats to each player in the unit
+                for player_id in unit_key:
+                    if player_id in team_data['player_positions']:
+                        player_pp_goals[player_id] += stats['goals']
+                        player_pp_assists[player_id] += stats['assists']
 
-                    if len(players) >= 2:  # At least 2 players
-                        # Sort players: Forwards (F) first, then Defensemen (D)
-                        players.sort(key=lambda p: (0 if p['position'] in ['LW', 'C', 'RW', 'F'] else 1, p['name']))
+                # Add pair connection stats
+                for pair in combinations(unit_key, 2):
+                    pair_key = tuple(sorted(pair))
+                    pair_pp_stats[pair_key]['goals'] += stats['goals']
+                    pair_pp_stats[pair_key]['assists'] += stats['assists']
+                    pair_pp_stats[pair_key]['points'] += stats['points']
 
-                        units.append({
-                            'players': players,
-                            'goals': stats['goals'],
-                            'assists': stats['assists'],
-                            'points': stats['points'],
-                            'type': 'powerplay',
-                            'key': unit_key
-                        })
-                        scores_units[unit_key] = stats['points']
+        player_pp_points = {pid: player_pp_goals[pid] + player_pp_assists[pid]
+                          for pid in set(player_pp_goals.keys()) | set(player_pp_assists.keys())}
 
-        # Calculate dominance scores
-        units = self._calculate_dominance_scores(units, scores_units, {})
+        if not player_pp_points:
+            return []
 
-        # Sort by points descending, then by dominance score
-        units.sort(key=lambda x: (x['points'], x.get('dominance_score', 0)), reverse=True)
+        # Step 2: Get all players who have PP points, sorted by points
+        pp_players = sorted(player_pp_points.items(), key=lambda x: x[1], reverse=True)
 
-        # Add rank (PP1, PP2, etc.)
-        ranked_units = []
-        for i, unit in enumerate(units[:3]):  # Top 3 units
-            unit['rank'] = f"PP{i + 1}"
-            # Remove internal key used for calculation
-            if 'key' in unit:
-                del unit['key']
-            ranked_units.append(unit)
+        # Step 3: Build PP1 from the highest scoring players with best connections
+        assigned_players = set()
+        pp_units = []
 
-        return ranked_units
+        # PP1: Start with top scorer, add players with best connections
+        if pp_players:
+            pp1_players = []
+            top_player = pp_players[0][0]
+            pp1_players.append(top_player)
+            assigned_players.add(top_player)
+
+            # Add up to 4 more players based on connection with existing unit members
+            while len(pp1_players) < 5:
+                best_candidate = None
+                best_score = -1
+
+                for player_id, _ in pp_players:
+                    if player_id in assigned_players:
+                        continue
+                    if player_id not in team_data['player_positions']:
+                        continue
+
+                    # Calculate total connection score with current unit members
+                    total_conn = sum(
+                        pair_pp_stats.get(tuple(sorted([player_id, member])), {}).get('points', 0)
+                        for member in pp1_players
+                    )
+
+                    if total_conn > best_score:
+                        best_score = total_conn
+                        best_candidate = player_id
+
+                if best_candidate is not None:
+                    pp1_players.append(best_candidate)
+                    assigned_players.add(best_candidate)
+                else:
+                    break
+
+            if len(pp1_players) >= 2:
+                # Calculate unit stats from all pairs in the unit
+                total_goals = 0
+                total_assists = 0
+                for pair in combinations(pp1_players, 2):
+                    pair_key = tuple(sorted(pair))
+                    total_goals += pair_pp_stats.get(pair_key, {}).get('goals', 0)
+                    total_assists += pair_pp_stats.get(pair_key, {}).get('assists', 0)
+
+                players_info = []
+                for pid in pp1_players:
+                    if pid in team_data['player_positions']:
+                        players_info.append(team_data['player_positions'][pid])
+
+                # Sort: Forwards first, then Defensemen
+                players_info.sort(key=lambda p: (0 if p['position'] == 'F' else 1, p['name']))
+
+                pp_units.append({
+                    'players': players_info,
+                    'goals': total_goals,
+                    'assists': total_assists,
+                    'points': total_goals + total_assists,
+                    'type': 'powerplay',
+                    'rank': 'PP1'
+                })
+
+        # PP2: Build from remaining players
+        remaining_players = [(pid, pts) for pid, pts in pp_players if pid not in assigned_players]
+
+        if remaining_players:
+            pp2_players = []
+            top_remaining = remaining_players[0][0]
+            pp2_players.append(top_remaining)
+            assigned_players.add(top_remaining)
+
+            while len(pp2_players) < 5:
+                best_candidate = None
+                best_score = -1
+
+                for player_id, _ in remaining_players:
+                    if player_id in assigned_players:
+                        continue
+                    if player_id not in team_data['player_positions']:
+                        continue
+
+                    total_conn = sum(
+                        pair_pp_stats.get(tuple(sorted([player_id, member])), {}).get('points', 0)
+                        for member in pp2_players
+                    )
+
+                    if total_conn > best_score:
+                        best_score = total_conn
+                        best_candidate = player_id
+
+                if best_candidate is not None:
+                    pp2_players.append(best_candidate)
+                    assigned_players.add(best_candidate)
+                else:
+                    break
+
+            if len(pp2_players) >= 2:
+                # Calculate unit stats from all pairs
+                total_goals = 0
+                total_assists = 0
+                for pair in combinations(pp2_players, 2):
+                    pair_key = tuple(sorted(pair))
+                    total_goals += pair_pp_stats.get(pair_key, {}).get('goals', 0)
+                    total_assists += pair_pp_stats.get(pair_key, {}).get('assists', 0)
+
+                players_info = []
+                for pid in pp2_players:
+                    if pid in team_data['player_positions']:
+                        players_info.append(team_data['player_positions'][pid])
+
+                players_info.sort(key=lambda p: (0 if p['position'] == 'F' else 1, p['name']))
+
+                pp_units.append({
+                    'players': players_info,
+                    'goals': total_goals,
+                    'assists': total_assists,
+                    'points': total_goals + total_assists,
+                    'type': 'powerplay',
+                    'rank': 'PP2'
+                })
+
+        return pp_units
 
     def _get_ranked_penalty_kill_units(self, team_data):
         """Get penalty kill units ranked by goals"""
