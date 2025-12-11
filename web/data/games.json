@@ -1390,6 +1390,16 @@
     "game_type": "season"
   },
   {
+    "id": 618278,
+    "date": "2025-12-10",
+    "home_team": "CORSAIRES POINTE-LÉVY",
+    "away_team": "AS QUÉBEC",
+    "home_score": 4,
+    "away_score": 5,
+    "status": "FINAL",
+    "game_type": "season"
+  },
+  {
     "id": 618283,
     "date": "2025-10-25",
     "home_team": "INTREPIDE OUTAOUAIS",

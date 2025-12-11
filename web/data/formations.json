@@ -488,9 +488,9 @@
             "number": 24
           }
         ],
-        "goals": 18,
-        "assists": 34,
-        "points": 52,
+        "goals": 21,
+        "assists": 40,
+        "points": 61,
         "type": "powerplay",
         "rank": "PP1"
       },
@@ -6723,27 +6723,27 @@
             "number": 27
           },
           {
-            "name": "LUDOVIC GAGNÉ",
+            "name": "JAMES VEILLEUX",
             "position": "D",
-            "number": 28
+            "number": 34
           }
         ],
-        "goals": 0,
-        "assists": 0,
-        "points": 0,
+        "goals": 1,
+        "assists": 1,
+        "points": 2,
         "rank": "D2"
       },
       {
         "players": [
           {
+            "name": "LUDOVIC GAGNÉ",
+            "position": "D",
+            "number": 28
+          },
+          {
             "name": "NOÉ GIRARD",
             "position": "D",
             "number": 29
-          },
-          {
-            "name": "JAMES VEILLEUX",
-            "position": "D",
-            "number": 34
           }
         ],
         "goals": 0,
@@ -6753,40 +6753,6 @@
       }
     ],
     "powerplay_units": [
-      {
-        "players": [
-          {
-            "name": "RAPHAËL TANGUAY",
-            "position": "F",
-            "number": 37
-          },
-          {
-            "name": "THOMAS PELLETIER",
-            "position": "F",
-            "number": 25
-          },
-          {
-            "name": "JAMES VEILLEUX",
-            "position": "D",
-            "number": 34
-          },
-          {
-            "name": "NATHAN CARRIER",
-            "position": "D",
-            "number": 27
-          },
-          {
-            "name": "THÉO OUELLET",
-            "position": "D",
-            "number": 22
-          }
-        ],
-        "goals": 7,
-        "assists": 13,
-        "points": 20,
-        "type": "powerplay",
-        "rank": "PP1"
-      },
       {
         "players": [
           {
@@ -6818,6 +6784,40 @@
         "goals": 6,
         "assists": 12,
         "points": 18,
+        "type": "powerplay",
+        "rank": "PP1"
+      },
+      {
+        "players": [
+          {
+            "name": "RAPHAËL TANGUAY",
+            "position": "F",
+            "number": 37
+          },
+          {
+            "name": "THOMAS PELLETIER",
+            "position": "F",
+            "number": 25
+          },
+          {
+            "name": "JAMES VEILLEUX",
+            "position": "D",
+            "number": 34
+          },
+          {
+            "name": "NATHAN CARRIER",
+            "position": "D",
+            "number": 27
+          },
+          {
+            "name": "THÉO OUELLET",
+            "position": "D",
+            "number": 22
+          }
+        ],
+        "goals": 7,
+        "assists": 13,
+        "points": 20,
         "type": "powerplay",
         "rank": "PP2"
       }
@@ -6894,6 +6894,21 @@
       {
         "players": [
           {
+            "name": "ALEXIS EMOND",
+            "position": "F",
+            "number": 24
+          },
+          {
+            "name": "NATHAN CARRIER",
+            "position": "D",
+            "number": 27
+          }
+        ],
+        "goals": 2
+      },
+      {
+        "players": [
+          {
             "name": "THOMAS PELLETIER",
             "position": "F",
             "number": 25
@@ -6920,21 +6935,6 @@
           }
         ],
         "goals": 2
-      },
-      {
-        "players": [
-          {
-            "name": "THOMAS PELLETIER",
-            "position": "F",
-            "number": 25
-          },
-          {
-            "name": "NATHAN CARRIER",
-            "position": "D",
-            "number": 27
-          }
-        ],
-        "goals": 1
       }
     ]
   }
