@@ -146,7 +146,16 @@ class GameDetailManager {
             return;
         }
 
-        goalsList.innerHTML = goals.map(goal => this.createGoalCard(goal)).join('');
+        // Trier par période puis par temps (ordre croissant)
+        const sortedGoals = [...goals].sort((a, b) => {
+            const periodDiff = parseInt(a.gameTime.period) - parseInt(b.gameTime.period);
+            if (periodDiff !== 0) return periodDiff;
+            const timeDiffMin = parseInt(a.gameTime.minutes) - parseInt(b.gameTime.minutes);
+            if (timeDiffMin !== 0) return timeDiffMin;
+            return parseInt(a.gameTime.seconds) - parseInt(b.gameTime.seconds);
+        });
+
+        goalsList.innerHTML = sortedGoals.map(goal => this.createGoalCard(goal)).join('');
     }
 
     createGoalCard(goal) {
@@ -192,7 +201,16 @@ class GameDetailManager {
             return;
         }
 
-        penaltiesList.innerHTML = penalties.map(penalty => this.createPenaltyCard(penalty)).join('');
+        // Trier par période puis par temps (ordre croissant)
+        const sortedPenalties = [...penalties].sort((a, b) => {
+            const periodDiff = parseInt(a.gameTime.period) - parseInt(b.gameTime.period);
+            if (periodDiff !== 0) return periodDiff;
+            const timeDiffMin = parseInt(a.gameTime.minutes) - parseInt(b.gameTime.minutes);
+            if (timeDiffMin !== 0) return timeDiffMin;
+            return parseInt(a.gameTime.seconds) - parseInt(b.gameTime.seconds);
+        });
+
+        penaltiesList.innerHTML = sortedPenalties.map(penalty => this.createPenaltyCard(penalty)).join('');
     }
 
     createPenaltyCard(penalty) {
