@@ -1170,6 +1170,16 @@
     "game_type": "season"
   },
   {
+  "id": 618251,
+  "date": "2025-09-28",
+  "home_team": "DYNAMIQUES CCL",
+  "away_team": "LIONS LAC ST-LOUIS",
+  "home_score": 0,
+  "away_score": 12,
+  "status": "FINAL",
+  "game_type": "season"
+  },
+  {
     "id": 618240,
     "date": "2025-10-05",
     "home_team": "ESPOIR SAGUENAY LAC ST-JEAN",
