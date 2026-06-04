@@ -28,8 +28,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y poppler-utils
       
-      - name: Run LHEQ Scraper
-        run: python lheq_scraper.py
+      - name: Run LHEQ Scraper (Full Season 2025-26)
+        run: python lheq_scraper.py 2025-09-01 2026-06-30
         continue-on-error: true
       
       - name: Run Statistics Compiler
